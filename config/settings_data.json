@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/nctrn-logo.png",
+    "logo": "shopify://shop_images/ruga-logo.png",
     "sections": {
       "header": {
         "type": "header",
@@ -17,6 +17,10 @@
       },
       "cart-drawer": {
         "type": "cart-drawer",
+        "settings": {}
+      },
+      "footer": {
+        "type": "footer",
         "settings": {}
       }
     },
