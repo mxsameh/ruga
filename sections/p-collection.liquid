@@ -1,0 +1,35 @@
+{{ 's-p-collection.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'j-collection.js' | asset_url }}" defer></script>
+
+<div class="p">
+  {% comment %}
+    <div class="collection_sort_">
+      {% render 'collection-sort',
+        sort_by: collection.sort_by,
+        default: collection.default_sort_by,
+        sort_options: collection.sort_options
+      %}
+    </div>
+  {% endcomment %}
+
+  {% comment %} {% assign breadcrumbs = collection.metafields.custom.breadcrumbs.value %} {% endcomment %}
+
+  {% paginate collection.products by 6 %}
+    <div class="collection_products">
+      {% for product in collection.products %}
+        {% render 'collection-product', product: product %}
+      {% endfor %}
+    </div>
+
+    <div class="collection_nav">
+      {{ paginate | default_pagination }}
+    </div>
+  {% endpaginate %}
+</div>
+
+{% schema %}
+{
+  "name": "collection",
+  "settings": []
+}
+{% endschema %}

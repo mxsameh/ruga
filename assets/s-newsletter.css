@@ -1,0 +1,28 @@
+.nl_form label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.nl_form fieldset div {
+  margin-top: 16px;
+  display: flex;
+  padding: 8px;
+  border-bottom: 1px solid #bbb;
+  align-items: center;
+}
+
+.nl_form input {
+  width: 100%;
+  font-size: 14px;
+}
+
+.nl_form button {
+  flex-shrink: 0;
+}
+.nl_form button svg {
+  width: 16px;
+}
+.nl_form .success {
+  font-size: 15px;
+  font-weight: 500;
+}

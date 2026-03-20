@@ -1,0 +1,35 @@
+{% liquid
+  assign current_variant = product.selected_or_first_available_variant
+  assign available = current_variant.available
+%}
+
+{% form 'product', product, class: 'pf' %}
+  <input type="hidden" id="variant-id" name="id" value="{{ current_variant.id }}">
+  {% comment %}
+    Options
+  {% endcomment %}
+  {% for option in product.options_with_values %}
+    {% render 'product-option', option:option %}
+  {% endfor %}
+
+  {% comment %}
+    Add to Cart
+  {% endcomment %}
+  <div class="product_atc">
+    {% if available %}
+      <button
+        type="submit"
+      >
+        Add to Bag
+      </button>
+    {% else %}
+      <button
+        type="submit"
+        disabled
+        class="disabled"
+      >
+        Sold Out
+      </button>
+    {% endif %}
+  </div>
+{% endform %}

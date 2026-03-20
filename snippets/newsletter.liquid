@@ -1,0 +1,47 @@
+{{ 's-newsletter.css' | asset_url | stylesheet_tag }}
+
+{% form 'customer', class: 'nl_form' %}
+  <input type="hidden" name="contact[tags]" value="newsletter">
+
+  {%- unless form.posted_successfully? -%}
+    <fieldset>
+      <label for="email">Subscribe to our Newsletter</label>
+      <div>
+        <input
+          id="email"
+          type="email"
+          name="contact[email]"
+          autocorrect="off"
+          autocapitalize="off"
+          autocomplete="email"
+          {% if form.errors %}
+            autofocus
+          {% endif %}
+          placeholder="Your email address"
+          required
+        >
+        <button
+          type="submit"
+        >
+          {{ 'i-chev.svg' | inline_asset_content }}
+        </button>
+      </div>
+    </fieldset>
+  {% else %}
+    <h3
+      class="success"
+      autofocus
+    >
+      Thanks for subscribing!
+    </h3>
+  {%- endunless -%}
+
+  {% comment %}
+    {%- if form.errors -%}
+      <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
+        {{- form.errors.translated_fields.email | capitalize }}
+        {{ form.errors.messages.email -}}
+      </small>
+    {%- endif -%}
+  {% endcomment %}
+{% endform %}

@@ -1,0 +1,32 @@
+.accordion {
+  padding-block: 10px;
+}
+.accordion_h {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.accordion_h h2 {
+  font-size: 12px;
+  font-weight: 400;
+}
+.accordion_h svg {
+  width: 10px;
+  transition: transform 0.2s ease-in;
+}
+.accordion.active svg {
+  transform: rotate(45deg);
+}
+.accordion_b_ {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease-out;
+}
+
+.accordion_b {
+  padding-top: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}

@@ -1,0 +1,39 @@
+{{ 's-banner.css' | asset_url | stylesheet_tag }}
+
+<section class="s-banner">
+  <a href="{{ section.settings.collection_url }}">
+    <figure>
+      <img
+        src="{{ section.settings.d_image | image_url}}"
+        width="auto"
+        height="auto"
+      >
+    </figure>
+  </a>
+  {% comment %} {% render 'looping-header', title: 'new arrivals' %}
+  {% render 'looping-header', title: 'collection' %} {% endcomment %}
+</section>
+
+{% schema %}
+{
+  "name": "banner",
+  "settings": [
+    {
+      "id": "collection_url",
+      "label": "Collection URL",
+      "type": "url"
+    },
+    {
+      "id": "d_image",
+      "label": "Desktop Image",
+      "type": "image_picker"
+    },
+    {
+      "id": "m_image",
+      "label": "Mobile Image",
+      "type": "image_picker"
+    }
+  ],
+  "presets": [{ "name": "Banner" }]
+}
+{% endschema %}

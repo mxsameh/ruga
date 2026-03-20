@@ -1,0 +1,14 @@
+.s-banner{
+    padding: 20px;
+}
+.s-banner a {
+  display: block;
+}
+.s-banner figure {
+    aspect-ratio: 16/9;
+    background-color: #ededed;
+}
+.s-banner figure img {
+  width: 100%;
+  object-fit: cover;
+}

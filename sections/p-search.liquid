@@ -1,0 +1,24 @@
+{{ 's-collection-product.css' | asset_url | stylesheet_tag }}
+{{ 's-p-search.css' | asset_url | stylesheet_tag }}
+
+<div class="search">
+  <div class="search_h">
+    <h2>RESULTS FOR "{{ search.terms | upcase }}"</h2>
+    <span>({{ search.results_count }})</span>
+  </div>
+
+  <div class="search_results">
+    {% for item in search.results %}
+      <div class="search_item">
+        {% render 'collection-product', product: item %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "search",
+  "settings": []
+}
+{% endschema %}

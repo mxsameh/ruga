@@ -1,0 +1,168 @@
+.p {
+  /* padding: 20px; */
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  @media (width > 1000px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* PRODUCT GALLERY */
+.product_gallery {
+  width: 100%;
+  display: flex;
+  @media (width > 1000px) {
+    width: 75%;
+    flex-wrap: wrap;
+    padding-right: 40px;
+  }
+}
+.product_fig {
+  flex-shrink: 0;
+  width: 100%;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  @media (width> 1000px) {
+    width: 50%;
+  }
+}
+
+/* PRODUCT INFO */
+.product_info_ {
+  width: 100%;
+  padding-top: 40px;
+  @media (width > 1000px) {
+    width: 25%;
+    position: sticky;
+    top: calc(var(--h-h) + 20px);
+    padding-right: 40px;
+  }
+}
+.product_info {
+  padding-inline: var(--p-i);
+  @media (width > 1000px) {
+    padding-inline: 0;
+  }
+}
+
+.product_title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  @media (width>1000px) {
+    font-size: 18px;
+  }
+}
+.product_price {
+  font-size: 16px;
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+.product_price .compare-price {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+/* PRODUCT OPTIONS */
+.pf {
+  margin-top: 40px;
+  @media (width > 1000px) {
+    margin-top: 80px;
+  }
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  &:not(:first-of-type) {
+    margin-top: 24px;
+  }
+}
+.option_name {
+  width: 120px;
+  font-size: 14px;
+}
+
+.option_values {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.value input[type="radio"] {
+  display: none;
+}
+.value label {
+  display: block;
+  cursor: pointer;
+}
+
+.value.not-swatch label {
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  font-size: 14px;
+}
+.value.not-swatch input[type="radio"]:checked + label {
+  border-color: black;
+}
+
+.value.is-swatch label {
+  padding: 4px;
+  width: 24px;
+  aspect-ratio: 1;
+  border: 1px solid transparent;
+  /* border-radius: 100%; */
+}
+.value.is-swatch input[type="radio"]:checked + label {
+  border-color: black;
+}
+.swatch {
+  display: block;
+  width: 14px;
+  aspect-ratio: 1 / 1;
+  background: var(--swatch--background);
+  background-position: var(--swatch-focal-point, initial);
+  background-size: cover;
+  background-origin: border-box;
+  /* border-radius: 100%; */
+}
+
+.product_atc button {
+  width: 100%;
+  padding-block: 16px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: 40px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.1;
+}
+.product_atc button:disabled {
+  background-color: #999;
+}
+
+
+/* PRODUCT DATA */
+.product_data {
+  margin-top: 40px;
+}
+.product_desc{
+  margin-bottom:24px;
+}
+.product_desc h2{
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.product_desc p{
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}

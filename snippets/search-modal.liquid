@@ -1,0 +1,27 @@
+{{ 's-search-modal.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'j-search-modal.js' | asset_url }}" defer="defer"></script>
+
+<div class="search-modal">
+  <div class="search-modal_t">
+    {{ 'i-search.svg' | inline_asset_content }}
+    <div class="ps-f">
+      <form action="{{ routes.search_url }}" method="get" role="search">
+        <input
+          id="Search-input"
+          type="text"
+          name="q"
+          value="{{ search.terms | escape }}"
+          placeholder="Search"
+        >
+        <input name="options[prefix]" type="hidden" value="last">
+      </form>
+    </div>
+
+    <button class="search-modal_close">
+      {{ 'i-close.svg' | inline_asset_content }}
+    </button>
+  </div>
+  <div class="search-modal_b h-s">
+    <div id="predictive-search" tabindex="-1"></div>
+  </div>
+</div>

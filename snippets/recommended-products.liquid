@@ -1,0 +1,44 @@
+{{ 's-recommended-products.css' | asset_url | stylesheet_tag }}
+{% liquid
+  assign limit = 6
+  assign has_recommendations = false
+  if recommendations.performed? and recommendations.products_count > 0
+    assign has_recommendations = true
+  endif
+%}
+
+<div class="_">
+  <div
+    class="
+      recommendations
+      {% if has_recommendations == false %}d-n{% endif %}
+    "
+    data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{limit}}&intent=related"
+  >
+    <h2>RECOMMENDED PRODUCTS</h2>
+
+    <div class="products-slider_">
+      {% render 'products-slider', products: recommendations.products %}
+    </div>
+  </div>
+</div>
+
+{% javascript %}
+  const recommendations = document.querySelector('.recommendations');
+  const url = recommendations.dataset.url;
+
+  const getRecommendations = async () => {
+    const res = await fetch(url);
+    const text = await res.text();
+
+    const html = document.createElement('div');
+    html.innerHTML = text;
+
+    if (recommendations && recommendations.innerHTML.trim().length) {
+      const x = html.querySelector('.recommendations');
+      recommendations.parentNode.innerHTML = x.parentNode.innerHTML;
+    }
+  };
+
+  getRecommendations();
+{% endjavascript %}

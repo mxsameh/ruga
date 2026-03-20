@@ -1,0 +1,20 @@
+:root {
+  --h-h: 80px;
+  --p-i: 20px;
+  @media (width> 1024px) {
+    --p-i: 40px;
+  }
+}
+.h-s {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.d-n {
+  display: none !important;
+}
+
+.s-s {
+  height: 100vh;
+  overflow: hidden;
+}
