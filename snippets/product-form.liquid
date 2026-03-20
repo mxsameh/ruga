@@ -8,9 +8,9 @@
   {% comment %}
     Options
   {% endcomment %}
-   {{  }}
+  {{ product.options_with_values | json }}
   {% for option in product.options_with_values %}
-    {% render 'product-option', option:option %}
+    {% render 'product-option', option: option %}
   {% endfor %}
 
   {% comment %}
