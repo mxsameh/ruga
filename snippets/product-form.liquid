@@ -11,10 +11,10 @@
   {{ product.options_with_values | json }}
   {% for option in product.options_with_values %}
     {% if option.name == 'Title' %}
-      {}
+      {% continue %}
     {% else %}
+      {% render 'product-option', option: option %}
     {% endif %}
-    {% render 'product-option', option: option %}
   {% endfor %}
 
   {% comment %}
