@@ -1,7 +1,7 @@
 {{ 's-p-main.css' | asset_url | stylesheet_tag }}
 
 <div class="p">
-  <section class="s-video">
+  <section class="s-hero">
     <a href="{{ section.settings.collection_url }}">
       <figure>
         {{ section.settings.d_video | video_tag: autoplay: true, muted: true, loop: true, class: 'd-video' }}
