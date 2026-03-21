@@ -34,7 +34,7 @@
   flex-shrink: 0;
 }
 .h_r {
-  display: none;
+  flex-basis: 100%;
   @media (width > 768px) {
     display: flex;
     justify-content: flex-end;
