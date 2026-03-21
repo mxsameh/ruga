@@ -1,5 +1,7 @@
 {{ 's-p-main.css' | asset_url | stylesheet_tag }}
 
+{% assign collection = collections %}
+
 <div class="p">
   <section class="s-hero">
     <a href="{{ section.settings.collection_url }}">
