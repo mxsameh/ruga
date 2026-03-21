@@ -5,7 +5,6 @@
   <div class="h-ph"></div>
 
   <header id="h" class="h">
-
     <!-- Header Left -->
     <div class="h_l">
       {% render 'menu-icon' %}
@@ -22,7 +21,7 @@
       </a>
     </div>
 
-    <!-- Header Middle Mobile Only-->
+    <!-- Header Middle Mobile Only -->
     <div class="h_m m-o">
       <a href="/">
         {% if settings.logo %}
@@ -52,9 +51,6 @@
     </div>
 
     <div class="h_r-m">
-      <div id="search-btn">
-        {{ 'i-search.svg' | inline_asset_content }}
-      </div>
       <div id="cart-btn">
         {{ 'i-bag.svg' | inline_asset_content }}
         <div class="h_r-m_cc" id="cart-count">{{- cart.item_count -}}</div>
