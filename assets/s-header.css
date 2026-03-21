@@ -15,6 +15,7 @@
   gap: 24px;
   @media (width > 770px) {
     justify-content: space-between;
+    padding-block: 24rem;
   }
 }
 .h_l {
