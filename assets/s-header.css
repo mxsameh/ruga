@@ -40,8 +40,8 @@
 }
 
 .h_n {
-    display: flex;
-    gap: 32rem;
+  display: flex;
+  gap: 32rem;
 }
 .h_n-item {
   text-transform: uppercase;
@@ -59,9 +59,8 @@
   color: #333;
 }
 
-
 .h_cb {
-  font-size: 12px;
+  font-size: 14rem;
 }
 .h_cb_count {
   color: #333;
