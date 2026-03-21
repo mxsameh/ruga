@@ -14,9 +14,8 @@
   align-items: center;
   gap: 24px;
 }
-
 .h_l{
-  width: inherit;
+  width: ;
 
 }
 
@@ -31,10 +30,11 @@
 .h_r {
   display: none;
   @media (width > 768px) {
-    width: 150rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 28px;
   }
 }
-
 
 .h_n {
   display: none;
