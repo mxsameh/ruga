@@ -10,10 +10,9 @@
 {
   "sections": {
     "main": {
-      "type": "p-contact",
+      "type": "p-about",
       "settings": {}
     }
   },
   "order": ["main"]
 }
-
