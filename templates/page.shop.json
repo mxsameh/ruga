@@ -9,11 +9,10 @@
  */
 {
   "sections": {
-    "contact": {
+    "shop": {
       "type": "p-shop",
       "settings": {}
     }
   },
-  "order": ["contact"]
+  "order": ["shop"]
 }
-
