@@ -98,47 +98,6 @@
 }
 
 /*****************
-DROPDOWN MENU
-/****************/
-.dd-menu {
-  width: 100%;
-  height: calc(100vh - var(--h-h));
-  position: absolute;
-  top: var(--h-h);
-  left: 0;
-  display: flex;
-  opacity: 0;
-  visibility: hidden;
-}
-.h_n-item.active .dd-menu {
-  opacity: 1;
-  visibility: visible;
-}
-
-.dd-menu ul {
-  flex-shrink: 0;
-  width: 500px;
-  padding-inline: var(--p-i);
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  background-color: white;
-  height: 100%;
-  opacity: 50%;
-  transition: opacity 0.3s ease-out;
-}
-.h_n-item.active .dd-menu ul {
-  opacity: 1;
-}
-
-.dd-menu button {
-  width: 100%;
-  cursor: unset;
-  background-color: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-}
-
-/*****************
 MENU ICON
 /****************/
 #menu-icon {
