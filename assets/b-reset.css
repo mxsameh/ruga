@@ -3,6 +3,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: calc(100vw / 1440);
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  @media screen and (max-width: 700px) {
+    font-size: calc(100vw / 400);
+  }
+}
 body {
   font-family: "helv", serif;
   overscroll-behavior: none;
