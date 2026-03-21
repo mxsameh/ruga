@@ -1,12 +1,12 @@
 .p {
   padding-top: 40px;
 }
-.s-video {
+.s-hero {
   /* padding-inline: var(--p-i); */
   width: 75%;
   margin-inline: auto;
 }
-.s-video figure {
+.s-hero figure {
   aspect-ratio: 9/16;
   overflow: hidden;
   background-color: #e5e5e5;
@@ -14,19 +14,19 @@
     aspect-ratio: 16/9;
   }
 }
-.s-video video:first-child {
+.s-hero video:first-child {
   display: none;
   @media (width>768px) {
     display: block;
   }
 }
-.s-video video:last-child {
+.s-hero video:last-child {
   @media (width>768px) {
     display: none;
   }
 }
 
-.s-video h3 {
+.s-hero h3 {
   margin-top: 24px;
   font-size: 12px;
   font-weight: 400;
