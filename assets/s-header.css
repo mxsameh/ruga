@@ -19,6 +19,7 @@
   }
 }
 .h_l {
+  flex-basis: 100%;
   @media (width > 770px) {
     width: 150rem;
   }
