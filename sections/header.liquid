@@ -38,14 +38,14 @@
 
     <!-- Header Right -->
     <div class="h_r">
-      <nav class="h_n">
+      <nav class="h_n d-o">
         {% for link in linklists['main-menu1'].links -%}
           <div class="h_n-item">
             {{ link.title | link_to: link.url }}
           </div>
         {%- endfor %}
       </nav>
-      <button id="cart-btn" class="h_cb" type="button">
+      <button id="cart-btn" class="h_cb d-o" type="button">
         BAG (<span id="cart-count" class="h_cb_count">{{- cart.item_count -}}</span>)
       </button>
       <div id="cart-btn" class="m-o">
