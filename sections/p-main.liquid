@@ -4,12 +4,10 @@
 
 <div class="p">
   <section class="s-hero">
-    <a href="{{ collection.url }}">
       <figure>
         {{ section.settings.d_video | video_tag: autoplay: true, muted: true, loop: true, class: 'd-video' }}
         {{ section.settings.m_video | video_tag: autoplay: true, muted: true, loop: true, class: 'm-video' }}
       </figure>
-    </a>
     <h3>
       {{ section.settings.title | link_to: section.settings.collection_url }}
     </h3>
