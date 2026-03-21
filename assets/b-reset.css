@@ -13,9 +13,9 @@ html {
 }
 body {
   font-family: "t", serif;
-  font-weight: 5;
-  overscroll-behavior: none;
   font-size: 14rem;
+  font-weight: 500;
+  overscroll-behavior: none;
 }
 li {
   list-style: none;
