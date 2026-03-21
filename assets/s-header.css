@@ -74,11 +74,11 @@
     display: none;
   }
 }
-.h_r-m > div {
+.h_cb-m {
   /* padding: 4px 8px; */
   position: relative;
 }
-.h_r-m svg {
+.h_cb-m svg {
   width: 20px;
 }
 
