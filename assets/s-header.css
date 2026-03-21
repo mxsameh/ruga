@@ -80,6 +80,7 @@
 .h_cb-m {
   /* padding: 4px 8px; */
   position: relative;
+  margin-left: auto;
 }
 .h_cb-m svg {
   width: 20px;
