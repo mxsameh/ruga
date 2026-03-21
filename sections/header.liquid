@@ -20,13 +20,6 @@
           </span>
         {% endif %}
       </a>
-      <nav class="h_n">
-        {% for link in linklists['main-menu'].links -%}
-          <div class="h_n-item">
-            {{ link.title | link_to: link.url }}
-          </div>
-        {%- endfor %}
-      </nav>
     </div>
 
     <!-- Header Middle -->
@@ -46,8 +39,13 @@
 
     <!-- Header Right -->
     <div class="h_r">
-      <a href="/collections/shop">SHOP</a>
-      <a href="/built-different">BUILT DIFFERENT</a>
+      <nav class="h_n">
+        {% for link in linklists['main-menu'].links -%}
+          <div class="h_n-item">
+            {{ link.title | link_to: link.url }}
+          </div>
+        {%- endfor %}
+      </nav>
       <button id="cart-btn" class="h_cb" type="button">
         BAG (<span id="cart-count" class="h_cb_count">{{- cart.item_count -}}</span>)
       </button>
