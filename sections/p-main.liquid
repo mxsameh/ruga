@@ -1,10 +1,10 @@
 {{ 's-p-main.css' | asset_url | stylesheet_tag }}
 
-{% assign collection = collections['coolers'] %}
+{% assign collection = collections.coolers %}
 
 <div class="p">
   <section class="s-hero">
-    <a href="{{ section.settings.collection_url }}">
+    <a href="{{ collection.url }}">
       <figure>
         {{ section.settings.d_video | video_tag: autoplay: true, muted: true, loop: true, class: 'd-video' }}
         {{ section.settings.m_video | video_tag: autoplay: true, muted: true, loop: true, class: 'm-video' }}
