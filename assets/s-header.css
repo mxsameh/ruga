@@ -14,11 +14,10 @@
   align-items: center;
   gap: 24px;
   @media (width > 770px) {
-    
-  
+    justify-content: space-between;
   }
 }
-.h_l{
+.h_l {
   width: 150rem;
 }
 
