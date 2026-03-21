@@ -40,11 +40,8 @@
 }
 
 .h_n {
-  display: none;
-  @media (width > 768px) {
     display: flex;
     gap: 20px;
-  }
 }
 .h_n-item {
   text-transform: uppercase;
