@@ -14,6 +14,7 @@ html {
 body {
   font-family: "helv", serif;
   overscroll-behavior: none;
+  font-size: 14rem;
 }
 li {
   list-style: none;
