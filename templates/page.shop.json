@@ -1,0 +1,9 @@
+{
+  "sections": {
+    "main": {
+      "type": "p-shop",
+      "settings": {}
+    }
+  },
+  "order": ["main"]
+}

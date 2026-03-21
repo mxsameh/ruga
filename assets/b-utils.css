@@ -18,3 +18,13 @@
   height: 100vh;
   overflow: hidden;
 }
+.m-o {
+  @media (width >= 770px) {
+    display: none !important;
+  }
+}
+.d-o {
+  @media (width < 770px) {
+    display: none !important;
+  }
+}
