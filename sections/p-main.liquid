@@ -1,7 +1,7 @@
 {{ 's-p-main.css' | asset_url | stylesheet_tag }}
 
 <div class="p">
-  {{ collection }}
+  {{ collections.coolers | json }}
   <section class="s-video">
     <a href="{{ section.settings.collection_url }}">
       <figure>
