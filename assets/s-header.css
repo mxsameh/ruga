@@ -41,7 +41,7 @@
 
 .h_n {
     display: flex;
-    gap: 20px;
+    gap: 32rem;
 }
 .h_n-item {
   text-transform: uppercase;
