@@ -38,7 +38,7 @@
 
     <!-- Header Right -->
     <div class="h_r">
-      {{ linklists['main-menu'] }}
+      {{ linklists['main-menu'] | json }}
       <nav class="h_n">
         {% for link in linklists['main-menu'].links -%}
           <div class="h_n-item">
