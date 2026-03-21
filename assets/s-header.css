@@ -15,15 +15,14 @@
   gap: 24px;
 }
 .h_l{
-  width: ;
-
+  width: 150rem;
 }
 
-.h_l,
+/* .h_l,
 .h_r,
 .h_r-m {
   flex-basis: 100%;
-}
+} */
 .h_m {
   flex-shrink: 0;
 }
