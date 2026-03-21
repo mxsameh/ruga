@@ -24,11 +24,6 @@
         {% for link in linklists['main-menu'].links -%}
           <div class="h_n-item">
             {{ link.title | link_to: link.url }}
-
-            <!-- Dropdown Menu -->
-            {% if link.links.size > 0 %}
-              {% render 'dropdown-menu', links: link.links %}
-            {% endif %}
           </div>
         {%- endfor %}
       </nav>
