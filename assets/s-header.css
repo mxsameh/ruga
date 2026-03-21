@@ -3,6 +3,7 @@
 }
 .h {
   padding-inline: var(--p-i);
+  padding-block: 16rem;
   /* height: var(--h-h); */
   width: 100%;
   background: white;
