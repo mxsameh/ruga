@@ -7,7 +7,18 @@
   <header id="h" class="h">
     <!-- Header Left -->
     <div class="h_l">
-      {% render 'menu-icon' %}
+
+      <a href="/">
+        {% if settings.logo %}
+          <figure>
+            {{ settings.logo | image_url: width: 200 | image_tag }}
+          </figure>
+        {% else %}
+          <span>
+            {{ shop.name }}
+          </span>
+        {% endif %}
+      </a>
       <nav class="h_n">
         {% for link in linklists['main-menu'].links -%}
           <div class="h_n-item">
