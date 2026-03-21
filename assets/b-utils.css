@@ -1,6 +1,6 @@
 :root {
-  --h-h: 92.5px;
-  --p-i: 20px;
+  --h-h: 92.5rem;
+  --p-i: 20rem;
   @media (width > 770px) {
     --p-i: 50rem;
   }
