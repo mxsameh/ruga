@@ -131,7 +131,11 @@
 .s-ban {
   margin-top: 80rem;
   padding-inline: var(--p-i);
+}
+.s-ban figure {
   border-radius: 40rem;
+  aspect-ratio: 5/2;
+  overflow: hidden;
 }
 
 #f {
