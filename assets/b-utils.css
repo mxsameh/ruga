@@ -1,8 +1,8 @@
 :root {
-  --h-h: 80px;
-  --p-i: 20px;
-  @media (width> 1024px) {
-    --p-i: 40px;
+  --h-h: 92.5rem;
+  --p-i: 20rem;
+  @media (width > 770px) {
+    --p-i: 50rem;
   }
 }
 .h-s {

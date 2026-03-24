@@ -1,33 +1,139 @@
 .p {
-  padding-top: 40px;
+  padding-top: 24px;
 }
-.s-video {
-  /* padding-inline: var(--p-i); */
-  width: 75%;
-  margin-inline: auto;
+.s-hero {
+  padding-inline: var(--p-i);
 }
-.s-video figure {
-  aspect-ratio: 9/16;
+.s-hero figure {
+  aspect-ratio: 5/2;
+  border-radius: 40rem;
   overflow: hidden;
   background-color: #e5e5e5;
   @media (width>768px) {
-    aspect-ratio: 16/9;
+    /* aspect-ratio: 16/9; */
   }
 }
-.s-video video:first-child {
+.s-hero video:first-child {
   display: none;
   @media (width>768px) {
     display: block;
   }
 }
-.s-video video:last-child {
+.s-hero video:last-child {
   @media (width>768px) {
     display: none;
   }
 }
 
-.s-video h3 {
+.s-hero h3 {
   margin-top: 24px;
   font-size: 12px;
   font-weight: 400;
+}
+.s-colc {
+  margin-top: 80rem;
+}
+.s-colc h2 {
+  text-align: center;
+  font-size: 50rem;
+  font-family: "m";
+  font-weight: 200;
+  letter-spacing: 1%;
+  span {
+    font-weight: 300;
+    letter-spacing: 5%;
+    span {
+      font-weight: 200;
+    }
+  }
+}
+.s-colc ul {
+  margin-top: 40rem;
+  display: flex;
+  gap: 20rem;
+}
+
+.s-colc .cp_info {
+  margin-top: 16rem;
+}
+.s-colc .cp_info h3 {
+  text-align: center;
+  font-size: 20rem;
+  font-weight: 500;
+}
+.s-life {
+  margin-top: 24rem;
+}
+.s-anat {
+  margin-top: 48rem;
+}
+.s-anat h2 {
+  width: 800rem;
+  text-align: center;
+  margin-inline: auto;
+  font-size: 128rem;
+  line-height: 98rem;
+  font-weight: 800;
+}
+.anat {
+  position: relative;
+}
+.anat figure {
+  width: 450rem;
+  margin-inline: auto;
+}
+
+.anat p {
+  font-size: 24rem;
+  line-height: 24rem;
+  position: absolute;
+  width: 250rem;
+  &:nth-of-type(1) {
+    left: 160rem;
+    top: 408rem;
+  }
+  &:nth-of-type(2) {
+    left: 160rem;
+    top: 575rem;
+  }
+  &:nth-of-type(3) {
+    text-align: right;
+    right: 160rem;
+    top: 408rem;
+  }
+  &:nth-of-type(4) {
+    text-align: right;
+    right: 160rem;
+    top: 575rem;
+  }
+}
+.s-usp {
+  margin-top: 40rem;
+  display: flex;
+  gap: 120rem;
+  align-items: center;
+  justify-content: center;
+}
+.s-usp img {
+  &:nth-of-type(1) {
+    width: 120rem;
+  }
+  &:nth-of-type(2) {
+    width: 148rem;
+  }
+  &:nth-of-type(3) {
+    width: 166rem;
+  }
+  &:nth-of-type(4) {
+    width: 111rem;
+  }
+}
+.s-ban {
+  margin-top: 80rem;
+  padding-inline: var(--p-i);
+  border-radius: 40rem;
+}
+
+#f {
+  margin-top: 80rem;
 }

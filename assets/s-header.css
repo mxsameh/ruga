@@ -3,7 +3,8 @@
 }
 .h {
   padding-inline: var(--p-i);
-  height: var(--h-h);
+  padding-block: 16rem;
+  /* height: var(--h-h); */
   width: 100%;
   background: white;
   position: fixed;
@@ -13,17 +14,29 @@
   display: flex;
   align-items: center;
   gap: 24px;
+  @media (width > 770px) {
+    justify-content: space-between;
+    padding-block: 24rem;
+  }
 }
-.h_l,
+.h_l {
+  flex-basis: 100%;
+  @media (width > 770px) {
+    flex-basis: unset;
+    width: 150rem;
+  }
+}
+
+/* .h_l,
 .h_r,
 .h_r-m {
   flex-basis: 100%;
-}
+} */
 .h_m {
   flex-shrink: 0;
 }
 .h_r {
-  display: none;
+  flex-basis: 100%;
   @media (width > 768px) {
     display: flex;
     justify-content: flex-end;
@@ -32,34 +45,27 @@
 }
 
 .h_n {
-  display: none;
-  @media (width > 768px) {
-    display: flex;
-    gap: 20px;
-  }
+  display: flex;
+  gap: 32rem;
 }
 .h_n-item {
   text-transform: uppercase;
 }
 .h_n a {
-  font-size: 12px;
+  font-size: 14rem;
 }
 
 .h_m a figure {
   width: 80px;
 }
 .h_m a span {
-  font-size: 14px;
+  font-size: 14rem;
   font-weight: 500;
   color: #333;
 }
 
-.h_r div {
-  font-size: 12px;
-}
-
 .h_cb {
-  font-size: 12px;
+  font-size: 14rem;
 }
 .h_cb_count {
   color: #333;
@@ -73,15 +79,16 @@
     display: none;
   }
 }
-.h_r-m > div {
+.h_cb-m {
   /* padding: 4px 8px; */
   position: relative;
+  margin-left: auto;
 }
-.h_r-m svg {
+.h_cb-m svg {
   width: 20px;
 }
 
-.h_r-m_cc {
+.h_cb-m > div {
   position: absolute;
   background-color: black;
   color: white;
@@ -95,47 +102,6 @@
   justify-content: center;
   top: calc(50% - 4px);
   right: -3px;
-}
-
-/*****************
-DROPDOWN MENU
-/****************/
-.dd-menu {
-  width: 100%;
-  height: calc(100vh - var(--h-h));
-  position: absolute;
-  top: var(--h-h);
-  left: 0;
-  display: flex;
-  opacity: 0;
-  visibility: hidden;
-}
-.h_n-item.active .dd-menu {
-  opacity: 1;
-  visibility: visible;
-}
-
-.dd-menu ul {
-  flex-shrink: 0;
-  width: 500px;
-  padding-inline: var(--p-i);
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  background-color: white;
-  height: 100%;
-  opacity: 50%;
-  transition: opacity 0.3s ease-out;
-}
-.h_n-item.active .dd-menu ul {
-  opacity: 1;
-}
-
-.dd-menu button {
-  width: 100%;
-  cursor: unset;
-  background-color: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
 }
 
 /*****************

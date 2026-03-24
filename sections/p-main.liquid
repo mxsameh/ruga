@@ -1,23 +1,83 @@
 {{ 's-p-main.css' | asset_url | stylesheet_tag }}
 
+{% assign collection = collections.coolers %}
+
 <div class="p">
-  <section class="s-video">
-    <a href="{{ section.settings.collection_url }}">
-      <figure>
+  <section class="s-hero">
+    <figure>
+      {% comment %} {{ settings.banner | image_url: width: 2000 | image_tag }} {% endcomment %}
+
+      <img src="{{ 'im-ban1.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+      {% comment %}
         {{ section.settings.d_video | video_tag: autoplay: true, muted: true, loop: true, class: 'd-video' }}
         {{ section.settings.m_video | video_tag: autoplay: true, muted: true, loop: true, class: 'm-video' }}
-      </figure>
-    </a>
+      {% endcomment %}
+    </figure>
     <h3>
       {{ section.settings.title | link_to: section.settings.collection_url }}
     </h3>
   </section>
+  <section class="s-colc">
+    <h2>
+      <span>RUG<span>A</span></span>
+      COOLER
+    </h2>
+    <ul>
+      {% for product in collection.products %}
+        <li>
+          <a class="cp" href="{{ product.url }}">
+            <figure>
+              {{ product.featured_image | image_url: width: 800 | image_tag }}
+            </figure>
+            <div class="cp_info">
+              <h3>{{ product.title }}</h3>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section class="s-life">
+    <img src="{{ 'im-life.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+  </section>
+
+  <section class="s-anat">
+    <h2>THE ANATOMY OF RUGA</h2>
+    <div class="anat">
+      <figure>
+        <img src="{{ 'im-anat.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+      </figure>
+      <p>Pressure Injected Foam Insulation</p>
+      <p>Seamless Rotomolded Body</p>
+      <p>Inner Rotomolded Lid Liner</p>
+      <p>Pressure Injected Foam Insulation</p>
+    </div>
+  </section>
+  <section class="s-usp">
+    <img src="{{ 'im-usp3.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+    <img src="{{ 'im-usp4.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+    <img src="{{ 'im-usp2.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+    <img src="{{ 'im-usp1.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+  </section>
+
+  <section class="s-ban">
+    <img src="{{ 'im-ban2.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+  </section>
+
+  <footer id="f" class="f">
+    <img src="{{ 'im-footer.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+  </footer>
 </div>
 
 {% schema %}
 {
   "name": "main",
   "settings": [
+    {
+      "id": "banner",
+      "label": "Desktop Banner",
+      "type": "image_picker"
+    },
     {
       "id": "d_video",
       "label": "Desktop Video",
