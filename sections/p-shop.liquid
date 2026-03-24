@@ -1,5 +1,35 @@
-<div>
-  <h1>Shop</h1>
+{{ 's-p-shop.css' | asset_url | stylesheet_tag }}
+
+{% assign collection = collections.coolers %}
+
+<div class="p">
+  <figure class="ban">
+    <img src="{{ 'im-sh0.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+  </figure>
+  <figure>
+    <img src="{{ 'im-sh1.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+  </figure>
+  <section class="s0">
+    <h2>RUG<span>A COOLER</span></h2>
+    <ul>
+      {% for product in collection.products %}
+        <li>
+          <a class="cp" href="{{ product.url }}">
+            <figure>
+              {{ product.featured_image | image_url: width: 800 | image_tag }}
+            </figure>
+            <div class="cp_info">
+              <h3>{{ product.title }}</h3>
+              <p>
+                {{ product.price | money_without_currency | remove: '.00' }}
+                {{ shop.currency }}
+              </p>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
 </div>
 
 {% schema %}

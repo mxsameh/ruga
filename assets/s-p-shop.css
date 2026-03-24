@@ -1,0 +1,44 @@
+.p {
+  padding-inline: var(--p-i);
+  padding-bottom: 80rem;
+}
+.ban {
+  border-radius: 40rem;
+  aspect-ratio: 5/2;
+  background-color: #ededed;
+  overflow: hidden;
+}
+.p figure:nth-of-type(2) {
+  margin-top: 80rem;
+  width: 750rem;
+  margin-inline: auto;
+}
+.s0 {
+  margin-top: 80rem;
+}
+.s0 h2 {
+  font-family: "m";
+  font-size: 50rem;
+  font-weight: 300;
+  color: var(--c-y);
+  text-align: center;
+  & span {
+    font-weight: 200;
+  }
+}
+.s0 ul {
+  margin-top: 48rem;
+  display: flex;
+  gap: 40rem;
+}
+.s0 .cp h3 {
+  text-align: center;
+  font-family: "t";
+  font-weight: normal;
+  font-size: 20rem;
+  margin-top: 24rem;
+}
+.s0 .cp p {
+  font-size: 16rem;
+  text-align: center;
+}

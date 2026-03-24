@@ -1,5 +1,64 @@
-<div>
-  <h1>Built Different</h1>
+{{ 's-p-about.css' | asset_url | stylesheet_tag }}
+
+<div class="p">
+  <section class="sab0">
+    <figure class="ban">
+      <img src="{{ 'im-ab1.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+    </figure>
+    <p>
+      Ruga was built on a simple idea: outdoor products should never be the weakest part of the adventure. They should
+      show up, hold their ground, and keep going long after the easy options give up. Whatever we create whether it’s
+      something that keeps things cold, carries essentials, or supports time spent outdoors it has to earn its place
+      outside, not just look good in a photo.
+    </p>
+    <figure class="ban">
+      <img src="{{ 'im-ab2.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+    </figure>
+    <p>
+      We design for real use. Long days. Rough surfaces. Heat, water, impact, repetition. The kind of environments that
+      don’t respond to marketing claims, only to performance. Every Ruga product begins with function and is refined
+      with intention. Because serious gear can still be thoughtful. It can be engineered properly and designed with care
+      at the same time.
+    </p>
+
+    <ul>
+      <li>
+        <img src="{{ 'im-ab-ls1.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+      </li>
+      <li>
+        <img src="{{ 'im-ab-ls2.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+      </li>
+      <li>
+        <img src="{{ 'im-ab-ls3.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+      </li>
+      <li>
+        <img src="{{ 'im-ab-ls4.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+      </li>
+    </ul>
+  </section>
+  <section class="sab1">
+    <h2>The name Ruga comes from tartaruga the Italian word for <span>TURTLE</span>.</h2>
+    <p>
+      A creature built with purpose. Protective. Enduring. Designed by nature to move steadily through demanding
+      terrain. That mindset shapes everything we do. Strength without noise. Durability without drama. Built to last not
+      to impress for a moment.
+    </p>
+    <figure class="ban">
+      <img src="{{ 'im-ab3.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+    </figure>
+    <h2>RUGA ISN'T ABOUT A SINGLE CATEGORY</h2>
+    <p>
+      It’s about building a standard across outdoor recreational products pieces that feel solid in your hands,
+      dependable in unpredictable conditions, and natural in the environments they’re made for.
+    </p>
+
+    <h2>We don’t believe in decorative equipment. We believe in gear that belongs outside.</h2>
+  </section>
+  <section class="sab2">
+    <figure>
+      <img src="{{ 'im-ab-f.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+    </figure>
+  </section>
 </div>
 
 {% schema %}
@@ -8,4 +67,3 @@
   "settings": []
 }
 {% endschema %}
-
