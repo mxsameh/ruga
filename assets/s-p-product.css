@@ -140,10 +140,9 @@ body {
   background-origin: border-box;
   /* border-radius: 100%; */
 }
-.product_atc_{
+.product_atc_ {
   display: flex;
   align-items: center;
-
 }
 
 .product_price {
@@ -157,14 +156,12 @@ body {
   color: #aaa;
 }
 
-
-
 .product_atc button {
   width: 100%;
   padding-block: 16px;
   text-align: center;
   background-color: var(--c-y);
-  color: white;
+  color: #f26648;
   margin-top: 40px;
   font-size: 12px;
   font-weight: bold;
