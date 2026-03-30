@@ -1,7 +1,8 @@
 .recommendations {
-  margin-top: 40px;
+  /* margin-top: 40px; */
   border-top: 1px solid black;
   /* padding: 40px var(--p-i); */
+  margin-top: 120rem;
   padding-inline: var(--p-i);
 }
 .recommendations h2 {
