@@ -64,17 +64,17 @@ body {
   font-weight: 500;
   line-height: 1.4;
   /* span */
-          font-weight: 300;
-        letter-spacing: 5%;
+  font-weight: 300;
+  letter-spacing: 5%;
   /* d */
-      text-align: center;
+  text-align: center;
+  @media (width>1000px) {
     font-size: 50rem;
     font-family: "m";
     font-weight: 200;
     letter-spacing: 1%;
-  @media (width>1000px) {
-    font-size: 18px;
   }
+
 }
 .product_price {
   font-size: 16px;
