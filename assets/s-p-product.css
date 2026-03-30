@@ -162,6 +162,7 @@ body {
   text-align: center;
   background-color: var(--c-y);
   color: #f26648;
+  font-family: "m";
   font-size: 18rem;
   font-weight: 150;
   text-transform: uppercase;
