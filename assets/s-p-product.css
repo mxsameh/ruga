@@ -142,6 +142,7 @@ body {
 }
 .product_atc_{
   display: flex;
+  align-items: center;
 
 }
 
