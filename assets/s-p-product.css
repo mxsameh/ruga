@@ -167,6 +167,7 @@ body {
   font-size: 18rem;
   font-weight: 150;
   text-transform: uppercase;
+  border-radius: 14rem;
 }
 .product_atc button:disabled {
   background-color: #999;
