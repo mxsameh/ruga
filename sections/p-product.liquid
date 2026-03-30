@@ -51,6 +51,12 @@
         <h1 class="product_title">
           <span>RUGA</span>
           {{ product.title | upcase }}</h1>
+          <div>
+              <p>
+                {{ product.description | strip_html }}
+              </p>
+          </div>
+
         <div class="product_price">
           <div class="current-price">
             <span>{{ current_variant.price | money_without_currency | remove: '.00' }}</span>
