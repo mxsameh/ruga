@@ -163,7 +163,7 @@ body {
   width: 100%;
   padding-block: 16px;
   text-align: center;
-  background-color: black;
+  background-color: var(--c-y);
   color: white;
   margin-top: 40px;
   font-size: 12px;
