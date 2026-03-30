@@ -74,7 +74,7 @@
 
         {% render 'product-form' %}
 
-        <div class="product_data">
+        {% comment %} <div class="product_data">
           {% if product.description %}
             <div class="product_desc">
               <h2>PPODUCT DESCRIPTION</h2>
@@ -108,7 +108,7 @@
 
             {% render 'accordion', heading: 'MORE INFORMATION', content: x, default: 'Contact for more info.' %}
           {% endif %}
-        </div>
+        </div> {% endcomment %}
       </div>
     </div>
 
