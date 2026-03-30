@@ -9,7 +9,7 @@
   font-family: "m";
   font-weight: 300;
   text-transform: uppercase;
-  color: ;
+  color: var(--c-y);
   @media (width>1000px) {
     font-size: 50rem;
   }
