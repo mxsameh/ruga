@@ -48,7 +48,8 @@ body {
     flex: 6;
     /* width: 25%; */
     position: sticky;
-    top: calc(var(--h-h) + 20px);
+    /* top: calc(var(--h-h) + 20px); */
+    top: calc(150rem;
     padding-right: var(--p-i);
   }
 }
