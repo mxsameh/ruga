@@ -15,9 +15,9 @@
   width: 100%;
   display: flex;
   @media (width > 1000px) {
-    width: 75%;
+    /* width: 75%; */
     /* flex-wrap: wrap; */
-    padding-right: 40px;
+    /* padding-right: 40px; */
   }
 }
 .product_fig {
