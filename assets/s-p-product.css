@@ -49,7 +49,7 @@ body {
     /* width: 25%; */
     position: sticky;
     /* top: calc(var(--h-h) + 20px); */
-    top: calc(150rem;
+    top: calc(150rem + var(--h-h));
     padding-right: var(--p-i);
   }
 }
