@@ -42,7 +42,7 @@
     /* width: 25%; */
     position: sticky;
     top: calc(var(--h-h) + 20px);
-    padding-right: 40px;
+    padding-right: var(--p-i);
   }
 }
 .product_info {
