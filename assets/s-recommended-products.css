@@ -8,6 +8,8 @@
   letter-spacing: 7%;
   font-family: "m";
   font-weight: 300;
+  text-transform: uppercase;
+  color: ;
   @media (width>1000px) {
     font-size: 50rem;
   }
