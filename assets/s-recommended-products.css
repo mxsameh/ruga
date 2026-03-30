@@ -4,8 +4,9 @@
   padding: 40px var(--p-i);
 }
 .recommendations h2 {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 50rem;
+  letter-spacing: 7%;
+  font-weight: ;
   @media (width>1000px) {
     font-size: 18px;
   }
