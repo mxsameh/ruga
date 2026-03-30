@@ -1,7 +1,8 @@
 .products-slider {
   width: 100%;
   display: flex;
-  gap: 20px;
+  /* gap: 20px; */
+  gap: 24rem;
 }
 .products-slider li {
   flex-shrink: 0;
@@ -14,7 +15,6 @@
 }
 .products-slider figure {
   aspect-ratio: 4/5;
-  background-color: #e5e5e5;
 }
 .products-slider h4 {
   margin-top: 16px;
