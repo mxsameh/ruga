@@ -162,11 +162,9 @@ body {
   text-align: center;
   background-color: var(--c-y);
   color: #f26648;
-  margin-top: 40px;
   font-size: 18rem;
   font-weight: 150;
   text-transform: uppercase;
-  letter-spacing: 1.1;
 }
 .product_atc button:disabled {
   background-color: #999;
