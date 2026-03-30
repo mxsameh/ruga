@@ -18,21 +18,23 @@
   {% comment %}
     Add to Cart
   {% endcomment %}
-  <div class="product_atc">
-    {% if available %}
-      <button
-        type="submit"
-      >
-        Add to Bag
-      </button>
-    {% else %}
-      <button
-        type="submit"
-        disabled
-        class="disabled"
-      >
-        Sold Out
-      </button>
-    {% endif %}
+  <div>
+    <div class="product_atc">
+      {% if available %}
+        <button
+          type="submit"
+        >
+          Add to Bag
+        </button>
+      {% else %}
+        <button
+          type="submit"
+          disabled
+          class="disabled"
+        >
+          Sold Out
+        </button>
+      {% endif %}
+    </div>
   </div>
 {% endform %}
