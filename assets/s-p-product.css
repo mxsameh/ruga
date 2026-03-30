@@ -80,7 +80,8 @@ body {
 .pf {
   margin-top: 40px;
   @media (width > 1000px) {
-    margin-top: 80px;
+    /* margin-top: 80px; */
+    margin-top: 48rem;
   }
 }
 
@@ -148,7 +149,7 @@ body {
 
 .product_price {
   font-size: 24rem;
-  font-family: 'm';
+  font-family: "m";
   font-weight: 150;
   display: flex;
   gap: 8px;
