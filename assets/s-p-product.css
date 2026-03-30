@@ -29,7 +29,8 @@
   aspect-ratio: 4/5;
   overflow: hidden;
   @media (width> 1000px) {
-    width: 50%;
+    /* width: 50%; */
+
   }
 }
 
