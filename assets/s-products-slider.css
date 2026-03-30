@@ -7,6 +7,7 @@
 .products-slider li {
   flex-shrink: 0;
   flex-basis: 446rem;
+  border: 1px solid black;
   /* flex-basis: calc((100% - 100px) / 3); */
   /* min-width: clamp(180px, calc(100% / 4.25), 100%); */
 }
