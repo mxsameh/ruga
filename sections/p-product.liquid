@@ -50,7 +50,7 @@
       <div class="product_info">
         <h1 class="product_title">
           <span>RUGA</span>
-          {{ product.title | capitalize }}</h1>
+          {{ product.title | upcase }}</h1>
         <div class="product_price">
           <div class="current-price">
             <span>{{ current_variant.price | money_without_currency | remove: '.00' }}</span>
