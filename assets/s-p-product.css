@@ -74,8 +74,13 @@ body {
     font-weight: 200;
     letter-spacing: 1%;
   }
-
 }
+.product_title span {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  margin-bottom: 8px;
 .product_price {
   font-size: 16px;
   display: flex;
