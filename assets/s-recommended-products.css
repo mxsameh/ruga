@@ -6,9 +6,10 @@
 .recommendations h2 {
   font-size: 50rem;
   letter-spacing: 7%;
-  font-weight: ;
+  font-family: "m";
+  font-weight: 300;
   @media (width>1000px) {
-    font-size: 18px;
+    font-size: 50rem;
   }
 }
 .products-slider_ {
