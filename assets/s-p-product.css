@@ -151,6 +151,10 @@ body {
   background-origin: border-box;
   /* border-radius: 100%; */
 }
+.product_atc_{
+  display: flex;
+
+}
 
 .product_atc button {
   width: 100%;
@@ -180,6 +184,9 @@ body {
   font-weight: 400;
   margin-bottom: 16px;
 } */
+.product_desc {
+  margin-top: 48rem;
+}
 
 .product_desc p {
   font-size: 16rem;
