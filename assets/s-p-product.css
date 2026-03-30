@@ -67,7 +67,7 @@ body {
   @media (width>1000px) {
     font-family: "m";
     font-weight: 200;
-    letter-spacing: 1%;
+    /* letter-spacing: 1%; */
     font-size: 64rem;
     line-height: 78rem;
   }
