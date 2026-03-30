@@ -14,7 +14,7 @@
   display: block;
 }
 .products-slider figure {
-  aspect-ratio: 4/5;
+  aspect-ratio: 3/2;
 }
 .products-slider h4 {
   margin-top: 16px;
