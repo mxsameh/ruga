@@ -63,6 +63,9 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.4;
+  /* span */
+          font-weight: 300;
+        letter-spacing: 5%;
   /* d */
       text-align: center;
     font-size: 50rem;
