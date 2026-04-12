@@ -1,15 +1,22 @@
 .recommendations {
-  margin-top: 40px;
-  border-top: 1px solid black;
-  padding: 40px var(--p-i);
+  /* margin-top: 40px; */
+ /* border-top: 1px solid black; */
+  /* padding: 40px var(--p-i); */
+  margin-top: 120rem;
+  padding-inline: var(--p-i);
 }
 .recommendations h2 {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 50rem;
+  letter-spacing: 7%;
+  font-family: "m";
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--c-y);
   @media (width>1000px) {
-    font-size: 18px;
+    font-size: 50rem;
   }
 }
 .products-slider_ {
-  margin-top: 24px;
+  /* margin-top: 24px; */
+  margin-top: 40rem;
 }

@@ -18,21 +18,38 @@
   {% comment %}
     Add to Cart
   {% endcomment %}
-  <div class="product_atc">
-    {% if available %}
-      <button
-        type="submit"
+  <div class="product_atc_">
+    <div class="product_price">
+      <div class="current-price">
+        <span>{{ current_variant.price | money_without_currency | remove: '.00' }}</span>
+        {{ shop.currency }}
+      </div>
+      <div
+        class="compare-price {%unless compare_at_price %}d-n{% endunless %}"
       >
-        Add to Bag
-      </button>
-    {% else %}
-      <button
-        type="submit"
-        disabled
-        class="disabled"
-      >
-        Sold Out
-      </button>
-    {% endif %}
+        <span>
+          {{ current_variant.compare_at_price | money_without_currency | remove: '.00' }}
+        </span>
+        {{ shop.currency }}
+      </div>
+    </div>
+
+    <div class="product_atc">
+      {% if available %}
+        <button
+          type="submit"
+        >
+          Add to cart
+        </button>
+      {% else %}
+        <button
+          type="submit"
+          disabled
+          class="disabled"
+        >
+          Sold Out
+        </button>
+      {% endif %}
+    </div>
   </div>
 {% endform %}
