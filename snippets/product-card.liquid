@@ -1,0 +1,9 @@
+<a href="{{ product.url }}" class="pc">
+  <figure>
+    {{ product.featured_image | image_url: width: 800 | image_tag }}
+  </figure>
+  <div class="pc_info">
+    <h3>{{ product.title }}</h3>
+    <p class="price">{{ product.price | money }}</p>
+  </div>
+</a>

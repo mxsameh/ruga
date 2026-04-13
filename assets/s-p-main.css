@@ -3,6 +3,7 @@
 }
 .s-hero {
   padding-inline: var(--p-i);
+  position: relative;
 }
 .s-hero figure {
   aspect-ratio: 5/2;
@@ -26,9 +27,16 @@
 }
 
 .s-hero h3 {
-  margin-top: 24px;
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 128rem;
+  color: var(--c-y);
+  position: absolute;
+  top: 250rem;
+  left: 120rem;
+  & span {
+    display: block;
+    margin-left: 376rem;
+    margin-top: -80rem;
+  }
 }
 .s-colc {
   margin-top: 80rem;

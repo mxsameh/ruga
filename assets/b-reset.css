@@ -7,6 +7,7 @@ html {
   font-size: calc(100vw / 400);
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
   @media (width > 770px) {
     font-size: calc(100vw / 1440);
   }
@@ -15,7 +16,6 @@ body {
   font-family: "t", serif;
   font-size: 14rem;
   font-weight: 500;
-  overscroll-behavior: none;
 }
 li {
   list-style: none;

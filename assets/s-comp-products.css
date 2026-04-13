@@ -1,0 +1,18 @@
+.s-comp {
+  margin-top: 120rem;
+  padding-inline: var(--p-i);
+}
+.s-comp h2 {
+  font-size: 50rem;
+  letter-spacing: 7%;
+  font-family: "m";
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--c-y);
+  & span {
+    font-weight: 200;
+  }
+}
+.s-comp .p-s_ {
+  margin-top: 40rem;
+}

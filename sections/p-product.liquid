@@ -1,4 +1,5 @@
 {{ 's-p-product.css' | asset_url | stylesheet_tag }}
+{{ 's-product-card.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'j-product.js' | asset_url }}" defer></script>
 <script src="{{ 'j-accordion.js' | asset_url }}" defer></script>
 
@@ -7,9 +8,11 @@
   if current_variant.compare_at_price > current_variant.price
     assign compare_at_price = current_variant.compare_at_price
   endif
+
+  assign bgc = product.metafields.custom.background_color
 %}
 
-<div class="p">
+<div class="p" style="--bgc: {{ bgc }};">
   <div class="product">
     {% comment %}
       IMAGES
@@ -58,71 +61,18 @@
           </p>
         </div>
 
-        {% comment %}
-          <div class="product_price">
-            <div class="current-price">
-              <span>{{ current_variant.price | money_without_currency | remove: '.00' }}</span>
-              {{ shop.currency }}
-            </div>
-            <div
-              class="compare-price {%unless compare_at_price %}d-n{% endunless %}"
-            >
-              <span>
-                {{ current_variant.compare_at_price | money_without_currency | remove: '.00' }}
-              </span>
-              {{ shop.currency }}
-            </div>
-          </div>
-        {% endcomment %}
-
         {% render 'product-form' %}
-
-        {% comment %}
-          <div class="product_data">
-            {% if product.description %}
-              <div class="product_desc">
-                <h2>PPODUCT DESCRIPTION</h2>
-                <p>
-                  {{ product.description | strip_html }}
-                </p>
-              </div>
-            {% endif %}
-
-            {% comment %}
-              {% render 'accordion',
-                heading: 'MATERIALS',
-                content: product.metafields.custom.material,
-                default: '100% Cotton'
-              %}
-            {% endcomment %}
-            {% liquid
-              assign y = false
-              if product.metafields.custom.fit or product.metafields.custom.material
-                assign y = true
-              endif
-            %}
-
-            {% if y %}
-              {% assign x = 'Materials: '
-                | append: product.metafields.custom.material
-                | append: '<br>'
-                | append: 'Fit: '
-                | append: product.metafields.custom.fit
-              %}
-
-              {% render 'accordion', heading: 'MORE INFORMATION', content: x, default: 'Contact for more info.' %}
-            {% endif %}
-          </div>
-        {% endcomment %}
       </div>
     </div>
   </div>
+
+  {% render 'complementary-products' %}
+
   {% render 'recommended-products' %}
 
   <footer class="f">
     <img src="{{ 'im-footer.png' | asset_url  }}" width="auto" height="auto" alt="logo">
   </footer>
-
 </div>
 
 <script>

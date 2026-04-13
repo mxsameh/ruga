@@ -2,43 +2,49 @@
   padding-inline: var(--p-i);
   padding-bottom: 80rem;
 }
-.ban {
-  border-radius: 40rem;
-  aspect-ratio: 5/2;
-  background-color: #ededed;
-  overflow: hidden;
+.s-he {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 80rem;
 }
-.p figure:nth-of-type(2) {
+.s-he h1 {
+  font-size: 140rem;
+  line-height: 1;
+  & span {
+    display: block;
+    margin-left: 260rem;
+    margin-top: -30rem;
+  }
+}
+.s-he figure {
+  width: 500rem;
+}
+.s-col {
   margin-top: 80rem;
-  width: 750rem;
-  margin-inline: auto;
 }
-.s0 {
-  margin-top: 80rem;
-}
-.s0 h2 {
+.s-col h2 {
   font-family: "m";
   font-size: 50rem;
   font-weight: 300;
   color: var(--c-y);
-  text-align: center;
+  /* text-align: center; */
   & span {
     font-weight: 200;
   }
 }
-.s0 ul {
+.s-col ul {
   margin-top: 48rem;
   display: flex;
-  gap: 40rem;
+  gap: 24rem;
 }
-.s0 .cp h3 {
-  text-align: center;
-  font-family: "t";
-  font-weight: normal;
-  font-size: 20rem;
-  margin-top: 24rem;
+.s-col li {
+  width: calc((100% - 24rem * 2) / 3);
 }
-.s0 .cp p {
-  font-size: 16rem;
-  text-align: center;
+
+.s-ban {
+  margin-top: 80rem;
+}
+.s-ban figure {
+  aspect-ratio: 10/4;
 }
