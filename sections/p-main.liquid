@@ -7,31 +7,43 @@
     <figure>
       {% comment %} {{ settings.banner | image_url: width: 2000 | image_tag }} {% endcomment %}
 
-      <img src="{{ 'im-ban1.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+      <picture>
+        <source srcset="{{'im-ban1.png' | asset_url}}" media="(min-width: 770px)">
+        <img src="{{ 'im-ban1-m.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+      </picture>
       {% comment %}
         {{ section.settings.d_video | video_tag: autoplay: true, muted: true, loop: true, class: 'd-video' }}
         {{ section.settings.m_video | video_tag: autoplay: true, muted: true, loop: true, class: 'm-video' }}
       {% endcomment %}
     </figure>
-    <h3>
-      THIS IS
-      <span> RUGA </span>
-    </h3>
+    {% comment %}
+      <h3>
+        THIS IS
+        <span> RUGA </span>
+      </h3>
+    {% endcomment %}
   </section>
   <section class="s-colc">
     <h2>
       <span>RUG<span>A</span></span>
       COOLER
     </h2>
-    <ul>
+    <ul class="h-s">
       {% for product in collection.products %}
+        {% liquid
+          assign bgc = product.metafields.custom.background_color
+        %}
         <li>
-          <a class="cp" href="{{ product.url }}">
+          <a class="cp" href="{{ product.url }}" style="background-color: {{bgc}};">
+            <h3 class='m-o'>
+              <span>RUG<span>A</span></span>
+              COOLER
+            </h3>
             <figure>
               {{ product.featured_image | image_url: width: 800 | image_tag }}
             </figure>
             <div class="cp_info">
-              <h3>{{ product.title }}</h3>
+              <h4>{{ product.title }}</h4>
             </div>
           </a>
         </li>
@@ -39,7 +51,36 @@
     </ul>
   </section>
   <section class="s-life">
-    <img src="{{ 'im-life.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+    <ul>
+      <li>
+        <img src="{{ 'im-ls-i1.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+        <figure>
+          <img src="{{ 'im-ls1.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+          <figcaption>OUR CAMPERS</figcaption>
+        </figure>
+      </li>
+      <li>
+        <img src="{{ 'im-ls-i2.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+        <figure>
+          <img src="{{ 'im-ls2.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+          <figcaption>OUR WIND & WATER PEOPLE</figcaption>
+        </figure>
+      </li>
+      <li>
+        <img src="{{ 'im-ls-i3.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+        <figure>
+          <img src="{{ 'im-ls3.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+          <figcaption>OUR ANGLERS</figcaption>
+        </figure>
+      </li>
+      <li>
+        <img src="{{ 'im-ls-i4.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+        <figure>
+          <img src="{{ 'im-ls4.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+          <figcaption>OUR HOSTS</figcaption>
+        </figure>
+      </li>
+    </ul>
   </section>
 
   <section class="s-anat">
@@ -48,26 +89,40 @@
       <figure>
         <img src="{{ 'im-anat.png' | asset_url  }}" width="auto" height="auto" alt="logo">
       </figure>
-      <p>Pressure Injected Foam Insulation</p>
-      <p>Seamless Rotomolded Body</p>
-      <p>Inner Rotomolded Lid Liner</p>
-      <p>Pressure Injected Foam Insulation</p>
+      <p class="d-o">Pressure Injected Foam Insulation</p>
+      <p class="d-o">Seamless Rotomolded Body</p>
+      <p class="d-o">Inner Rotomolded Lid Liner</p>
+      <p class="d-o">Pressure Injected Foam Insulation</p>
     </div>
   </section>
   <section class="s-usp">
-    <img src="{{ 'im-usp3.png' | asset_url  }}" width="auto" height="auto" alt="logo">
-    <img src="{{ 'im-usp4.png' | asset_url  }}" width="auto" height="auto" alt="logo">
-    <img src="{{ 'im-usp2.png' | asset_url  }}" width="auto" height="auto" alt="logo">
-    <img src="{{ 'im-usp1.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+    <ul>
+      <li>
+        <img src="{{ 'im-usp3.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+      </li>
+
+      <li>
+        <img src="{{ 'im-usp4.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+      </li>
+      <li>
+        <img src="{{ 'im-usp2.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+      </li>
+      <li>
+        <img src="{{ 'im-usp1.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+      </li>
+    </ul>
   </section>
 
   <section class="s-ban">
     <figure>
-      <img src="{{ 'im-ban2.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+      <picture>
+        <source srcset="{{'im-ban2.png' | asset_url}}" media="(min-width: 770px)">
+        <img src="{{ 'im-ban2-m.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+      </picture>
     </figure>
   </section>
 
-  <footer id="f" class="f">
+  <footer class="f">
     <img src="{{ 'im-footer.png' | asset_url  }}" width="auto" height="auto" alt="logo">
   </footer>
 </div>

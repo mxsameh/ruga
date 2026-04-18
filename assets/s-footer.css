@@ -1,47 +1,97 @@
-.f {
-  margin-top: 40px;
-  max-width: 600px;
-  margin-inline: auto;
+#f {
+  margin-top: 40rem;
   padding-inline: var(--p-i);
-  border-top: 1px solid #bbb;
-  @media (width > 860px) {
-    max-width: unset;
+  background-color: #00628f;
+  color: white;
+  border-radius: 45rem 45rem 0 0;
+  @media (width < 770px) {
+    border-radius: 35rem 35rem 0 0;
   }
 }
 .f_t {
   display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding-block: 32px;
-  @media (width > 860px) {
-    flex-direction: row;
-    justify-content: space-between;
+  gap: 24rem;
+  padding-block: 80rem;
+  @media (width < 770px) {
+    flex-direction: column;
+    gap: 40rem;
+    padding-block: 32rem;
   }
 }
+.f_t .l {
+  flex: 6;
+  figure {
+    width: 120rem;
 
-.f_t ul {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+    @media (width < 770px) {
+      width: 80rem;
+    }
+  }
+
+  a {
+    display: block;
+    margin-top: 40rem;
+    font-size: 18rem;
+    @media (width < 770px) {
+      margin-top: 16rem;
+      font-size: 14rem;
+    }
+  }
+}
+.f_t .m {
+  flex: 4;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+  }
+  a {
+    font-size: 16rem;
+    @media (width < 770px) {
+      font-size: 14rem;
+    }
+  }
+  .nl {
+    margin-top: 40rem;
+    @media (width < 770px) {
+      margin-top: 32rem;
+    }
+  }
+}
+.f_t .r {
+  padding-left: 40rem;
+  flex: 2;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-}
+  gap: 8rem;
+  @media (width < 770px) {
+    padding-left: 0;
+    align-items: center;
+  }
 
-.f_t li {
-  font-size: 14px;
-}
-.f_t .nl {
-  @media (width > 860px) {
-    width: 50%;
+  a {
+    font-size: 16rem;
+    display: flex;
+    gap: 8rem;
+    @media (width < 770px) {
+      font-size: 14rem;
+      gap: 4rem;
+    }
+  }
+  svg {
+    width: 20rem;
+    @media (width < 770px) {
+      width: 16rem;
+    }
   }
 }
 
 .f_b {
-  border-top: 1px solid #bbb;
-  padding-block: 24px;
+  padding-block: 16rem;
   display: flex;
   justify-content: center;
-  gap: 8px;
-  font-size: 12px;
+  font-size: 14px;
+  @media (width < 770px) {
+    font-size: 12px;
+  }
 }

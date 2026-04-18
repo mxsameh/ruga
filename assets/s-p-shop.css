@@ -7,7 +7,11 @@
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 80rem;
+  @media (width < 770px) {
+    flex-direction: column;
+  }
 }
+
 .s-he h1 {
   font-size: 140rem;
   line-height: 1;
@@ -16,12 +20,26 @@
     margin-left: 260rem;
     margin-top: -30rem;
   }
+  @media (width < 770px) {
+    font-size: 65rem;
+    & span {
+      margin-left: 130rem;
+      margin-top: -15rem;
+    }
+  }
 }
 .s-he figure {
   width: 500rem;
+  @media (width < 770px) {
+    width: 100%;
+  }
 }
 .s-col {
   margin-top: 80rem;
+
+  @media (width < 770px) {
+    margin-top: 48rem;
+  }
 }
 .s-col h2 {
   font-family: "m";
@@ -32,14 +50,26 @@
   & span {
     font-weight: 200;
   }
+  @media (width < 770px) {
+    font-size: 40rem;
+    text-align: center;
+    color: black;
+  }
 }
 .s-col ul {
   margin-top: 48rem;
   display: flex;
   gap: 24rem;
+  @media (width < 770px) {
+    margin-top: 40rem;
+    flex-direction: column;
+  }
 }
 .s-col li {
   width: calc((100% - 24rem * 2) / 3);
+  @media (width < 770px) {
+    width: 100%;
+  }
 }
 
 .s-ban {

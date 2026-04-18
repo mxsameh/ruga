@@ -1,28 +1,37 @@
 .nl_form label {
-  font-size: 15px;
+  font-size: 15rem;
   font-weight: 500;
+  color: white;
+  @media (width < 770px) {
+    font-size: 13rem;
+  }
 }
 
 .nl_form fieldset div {
-  margin-top: 16px;
+  margin-top: 10rem;
   display: flex;
-  padding: 8px;
+  padding: 8rem;
+  padding-right: 0;
   border-bottom: 1px solid #bbb;
   align-items: center;
 }
 
 .nl_form input {
   width: 100%;
-  font-size: 14px;
+  font-size: 14rem;
+  &::placeholder {
+    color: #aaa;
+  }
 }
 
 .nl_form button {
   flex-shrink: 0;
 }
 .nl_form button svg {
-  width: 16px;
+  width: 14rem;
+  fill: white;
 }
 .nl_form .success {
-  font-size: 15px;
+  font-size: 15rem;
   font-weight: 500;
 }

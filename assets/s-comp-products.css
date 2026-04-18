@@ -1,6 +1,9 @@
 .s-comp {
   margin-top: 120rem;
   padding-inline: var(--p-i);
+  @media (width < 770px) {
+    margin-top: 80rem;
+  }
 }
 .s-comp h2 {
   font-size: 50rem;
@@ -12,7 +15,14 @@
   & span {
     font-weight: 200;
   }
+  @media (width < 770px) {
+    font-size: 32rem;
+  }
 }
 .s-comp .p-s_ {
   margin-top: 40rem;
+
+  @media (width< 770px) {
+    margin-top: 24rem;
+  }
 }
