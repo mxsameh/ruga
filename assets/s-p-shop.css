@@ -51,7 +51,7 @@
     font-weight: 200;
   }
   @media (width < 770px) {
-    font-size: 40rem;
+    font-size: 35rem;
     text-align: center;
     color: black;
   }

@@ -36,6 +36,8 @@
 
     if (recommendations && recommendations.innerHTML.trim().length) {
       const x = html.querySelector('.recommendations');
+      console.log(x);
+
       recommendations.parentNode.innerHTML = x.parentNode.innerHTML;
     }
   };

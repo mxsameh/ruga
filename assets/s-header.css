@@ -19,6 +19,9 @@
     padding-block: 24rem;
   }
 }
+.h.active {
+  background-color: white !important;
+}
 .h_l {
   flex-basis: 100%;
   @media (width > 770px) {

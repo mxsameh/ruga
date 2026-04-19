@@ -4,15 +4,25 @@
 body {
   background-color: var(--c-y);
 }
+.p {
+  padding-bottom: 80rem;
+}
 .p p {
   font-size: 24rem;
   line-height: 32rem;
+  @media (width < 770px) {
+    font-size: 14rem;
+    line-height: 16rem;
+  }
 }
 .p .ban {
   border-radius: 40rem;
   aspect-ratio: 5/2;
   background-color: #ededed;
   overflow: hidden;
+  @media (width < 770px) {
+    aspect-ratio: 3/4;
+  }
 }
 .sab0 {
   padding-inline: var(--p-i);
@@ -20,22 +30,44 @@ body {
 .sab0 p:first-of-type {
   width: 1235rem;
   margin-block: 88rem 64rem;
+  @media (width < 770px) {
+    width: unset;
+    margin-block: 32rem 24rem;
+  }
 }
 .sab0 p:last-of-type {
   width: 970rem;
   text-align: right;
   margin-top: 64rem;
   margin-left: auto;
+  @media (width < 770px) {
+    width: unset;
+    text-align: left;
+    margin-top: 32rem;
+  }
 }
 .sab0 ul {
   margin-top: 56rem;
   display: flex;
   gap: 24rem;
-  margin-inline: calc(var(--p-i) * -1);
+  /* margin-inline: calc(var(--p-i) * -1); */
+  @media (width < 770px) {
+    margin-top: 32rem;
+    flex-wrap: wrap;
+    gap: 16rem;
+  }
+}
+.sab0 li {
+  @media (width < 770px) {
+    flex-basis: calc((100% - 16rem) / 2);
+  }
 }
 .sab1 {
   margin-top: 100rem;
   padding-inline: var(--p-i);
+  @media (width < 770px) {
+    margin-top: 60rem;
+  }
 }
 .sab1 h2 {
   font-size: 64rem;
@@ -45,24 +77,43 @@ body {
   & span {
     font-weight: 250;
   }
+  @media (width < 770px) {
+    font-size: 28rem;
+    line-height: 32rem;
+  }
 }
 .sab1 p {
   margin-top: 64rem;
+  @media (width < 770px) {
+    margin-top: 24rem;
+  }
 }
 .sab1 figure {
   margin-top: 64rem;
+  @media (width < 770px) {
+    margin-top: 24rem;
+  }
 }
 .sab1 h2:nth-of-type(2) {
   margin-top: 40rem;
 }
 .sab1 p:last-of-type {
   margin-top: 50rem;
+  @media (width < 770px) {
+    margin-top: 24rem;
+  }
 }
 .sab1 h2:last-of-type {
   margin-top: 120rem;
   width: 750rem;
+  @media (width < 770px) {
+    width: unset;
+    margin-top: 60rem;
+  }
 }
 .sab2 {
   margin-top: 200rem;
+  @media (width < 770px) {
+    margin-top: 80rem;
+  }
 }
-

@@ -16,7 +16,7 @@
     font-weight: 200;
   }
   @media (width < 770px) {
-    font-size: 32rem;
+    font-size: 28rem;
   }
 }
 .s-comp .p-s_ {

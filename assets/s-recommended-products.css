@@ -13,7 +13,7 @@
   text-transform: uppercase;
   color: var(--c-y);
   @media (width< 770px) {
-    font-size: 32rem;
+    font-size: 28rem;
   }
 }
 .products-slider_ {

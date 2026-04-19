@@ -1,5 +1,9 @@
 .p {
   padding-top: 24px;
+  padding-bottom: 80rem;
+  @media (width < 770px) {
+    padding-bottom: 40rem;
+  }
 }
 .s-hero {
   padding-inline: var(--p-i);
@@ -42,6 +46,9 @@
 
 .s-colc {
   margin-top: 80rem;
+  @media (width < 770px) {
+    margin-top: 40rem;
+  }
 }
 .s-colc h2 {
   text-align: center;
@@ -67,6 +74,7 @@
   @media (width < 770px) {
     padding-inline: var(--p-i);
     gap: var(--p-i);
+    margin-top: 0;
   }
 }
 
@@ -111,6 +119,9 @@
 .s-life {
   margin-top: 120rem;
   padding-inline: var(--p-i);
+  @media (width < 770px) {
+    margin-top: 80rem;
+  }
 }
 .s-life ul {
   display: flex;
@@ -198,6 +209,9 @@
 
 .s-anat {
   margin-top: 120rem;
+  @media (width < 770px) {
+    margin-top: 80rem;
+  }
 }
 .s-anat h2 {
   width: 800rem;
@@ -302,6 +316,9 @@
 .s-ban {
   margin-top: 80rem;
   padding-inline: var(--p-i);
+  @media (width < 770px) {
+    margin-top: 40rem;
+  }
 }
 .s-ban figure {
   border-radius: 40rem;
@@ -316,4 +333,7 @@
 .f {
   margin-top: 80rem;
   padding-inline: 20rem;
+  @media (width < 770px) {
+    margin-top: 40rem;
+  }
 }

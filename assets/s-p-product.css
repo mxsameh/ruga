@@ -9,6 +9,10 @@
   /* padding-top: 150rem; */
   padding-top: var(--h-h);
   background-color: var(--bgc, #fff);
+  padding-bottom: 40rem;
+  @media (width < 770px) {
+    padding-bottom: 24rem;
+  }
 }
 .product {
   display: flex;
@@ -42,7 +46,7 @@
 
 .product_title {
   font-family: "m";
-  font-size: 32px;
+  font-size: 28rem;
   font-weight: 200;
   line-height: 1.2;
   /* text-align: center; */
@@ -60,7 +64,9 @@
 }
 .product_desc p {
   font-size: 16rem;
-  line-height: 18rem;
+  line-height: 20rem;
+  @media (width < 770px) {
+  }
 }
 
 .product_price {
@@ -169,6 +175,17 @@
 }
 .product_atc button:disabled {
   background-color: #999;
+}
+
+.f {
+  margin-top: 120rem;
+  padding-inline: 10rem;
+  @media (width < 770px) {
+    margin-top: 80rem;
+  }
+}
+#f {
+  display: none;
 }
 
 /* PRODUCT DATA */

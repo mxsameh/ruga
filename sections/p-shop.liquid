@@ -29,7 +29,10 @@
   </section>
   <section class="s-ban">
     <figure>
-      <img src="{{ 'im-sh0.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+      <picture>
+        <source srcset="{{'im-sh0.png' | asset_url}}" media="(min-width: 770px)">
+        <img src="{{ 'im-sh0-m.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+      </picture>
     </figure>
   </section>
 
