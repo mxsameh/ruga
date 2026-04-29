@@ -27,14 +27,14 @@
   flex-direction: column;
   gap: 80rem;
 }
-.s-amb li{
-    display: flex;
-    gap: 80rem;
+.s-amb li {
+  display: flex;
+  gap: 80rem;
 }
-.s-amb li div{
-    display: flex;
-    flex-direction: column;
+.s-amb li div {
+  display: flex;
+  flex-direction: column;
 }
-.s-amb li p{
-    display: ;
+.s-amb li p {
+  margin-top: auto;
 }
