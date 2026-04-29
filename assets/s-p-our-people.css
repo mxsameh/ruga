@@ -46,10 +46,16 @@
   flex-direction: column;
 }
 .s-amb li h3 {
-    font-family: 'm';
+  font-family: "m";
   font-size: 40rem;
   font-weight: 200;
 }
 .s-amb li p {
   margin-top: auto;
+  font-size: 24rem;
+  line-height: 32rem;
+  @media (width < 770px) {
+    font-size: 14rem;
+    line-height: 16rem;
+  }
 }
