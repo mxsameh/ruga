@@ -1,0 +1,6 @@
+.p ban {
+  border-radius: 40rem;
+  aspect-ratio: 5 / 2;
+  background-color: #ededed;
+  overflow: hidden;
+}
