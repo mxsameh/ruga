@@ -10,6 +10,7 @@
 }
 
 .s-he p {
+  margin-top: 64rem;
   font-size: 24rem;
   line-height: 32rem;
   @media (width < 770px) {
