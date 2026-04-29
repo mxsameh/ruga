@@ -2,14 +2,14 @@
   padding-bottom: 80rem;
 }
 
-.p ban {
+.s-he ban {
   border-radius: 40rem;
   aspect-ratio: 5 / 2;
   background-color: #ededed;
   overflow: hidden;
 }
 
-.p p {
+.s-he p {
   font-size: 24rem;
   line-height: 32rem;
   @media (width < 770px) {
