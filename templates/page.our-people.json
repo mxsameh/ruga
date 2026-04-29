@@ -1,0 +1,9 @@
+{
+  "sections": {
+    "main": {
+      "type": "p-our-people",
+      "settings": {}
+    }
+  },
+  "order": ["main"]
+}
