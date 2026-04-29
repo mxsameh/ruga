@@ -22,3 +22,8 @@
 .s-amb {
   margin-top: 120rem;
 }
+.s-amb ul {
+    display: flex;
+    flex-direction: column;
+
+}
