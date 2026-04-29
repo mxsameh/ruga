@@ -1,0 +1,26 @@
+{{ 's-p-our-people.css' | asset_url | stylesheet_tag }}
+
+<div class="p">
+  <section class="s-he">
+    <figure class="ban">
+      <picture>
+        <source srcset="{{'im-ab1.png' | asset_url}}" media="(min-width: 770px)">
+        <img src="{{ 'im-ab1-m.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+      </picture>
+    </figure>
+
+    <p>
+      Ruga was built on a simple idea: outdoor products should never be the weakest part of the adventure. They should
+      show up, hold their ground, and keep going long after the easy options give up. Whatever we create whether it’s
+      something that keeps things cold, carries essentials, or supports time spent outdoors it has to earn its place
+      outside, not just look good in a photo.
+    </p>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "our-people",
+  "settings": []
+}
+{% endschema %}
