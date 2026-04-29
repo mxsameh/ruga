@@ -2,6 +2,10 @@
   padding-bottom: 80rem;
 }
 
+.s-he {
+    padding-inline: var(--p-i);
+}
+
 .s-he ban {
   border-radius: 40rem;
   aspect-ratio: 5 / 2;
