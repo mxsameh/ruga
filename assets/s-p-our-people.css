@@ -38,6 +38,7 @@
 }
 .s-amb li figure {
   flex: 1;
+  aspect-ratio: 1;
 }
 .s-amb li div {
   flex: 1;
