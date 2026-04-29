@@ -28,5 +28,9 @@
   gap: 80rem;
 }
 .s-amb li{
-    
+    display: flex;
+    gap: 80rem;
+}
+.s-amb li div{
+    display: flex;
 }
