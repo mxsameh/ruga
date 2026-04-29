@@ -23,7 +23,10 @@
   margin-top: 120rem;
 }
 .s-amb ul {
-    display: flex;
-    flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
+  gap: 80rem;
+}
+.s-amb li{
+    
 }
