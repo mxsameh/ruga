@@ -33,4 +33,8 @@
 }
 .s-amb li div{
     display: flex;
+    flex-direction: column;
+}
+.s-amb li p{
+    display: ;
 }
