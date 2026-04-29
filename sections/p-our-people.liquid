@@ -18,9 +18,8 @@
   </section>
   <section class="s-amb">
     <ul>
-         {% for block in section.blocks %}
-
-         {%  endfor %}
+      {% for block in section.blocks %}
+      {% endfor %}
       <li>
         <div>
           <h3>name</h3>
@@ -42,6 +41,19 @@
 {% schema %}
 {
   "name": "our-people",
-  "settings": []
+  "settings": [],
+      "blocks": [
+    {
+      "name": "am",
+      "type": "banner",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+]
 }
 {% endschema %}
