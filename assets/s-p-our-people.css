@@ -46,6 +46,7 @@
   flex-direction: column;
 }
 .s-amb li h3 {
+    font-family: 'm';
   font-size: 40rem;
   font-weight: 200;
 }
