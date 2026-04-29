@@ -40,6 +40,9 @@
   flex: 1;
   aspect-ratio: 1;
 }
+.s-amb li img {
+  height: 100%;
+}
 .s-amb li div {
   flex: 1;
   display: flex;
