@@ -11,8 +11,50 @@
   "sections": {
     "main": {
       "type": "p-our-people",
+      "blocks": {
+        "ambassador_xfJYki": {
+          "type": "ambassador",
+          "settings": {
+            "image": "shopify://shop_images/f.png",
+            "title": "NAME NAME",
+            "bio": "Ruga was built on a simple idea: outdoor products should never be the weakest part of the adventure. They should show up, hold their ground, and keep going long after the easy options give up. Whatever we create whether it’s something that keeps things cold, carries essentials, or supports time spent outdoors it has to earn its place outside, not just look good in a photo."
+          }
+        },
+        "ambassador_E46p7T": {
+          "type": "ambassador",
+          "settings": {
+            "image": "shopify://shop_images/f.png",
+            "title": "NAME NAME",
+            "bio": "Ruga was built on a simple idea: outdoor products should never be the weakest part of the adventure. They should show up, hold their ground, and keep going long after the easy options give up. Whatever we create whether it’s something that keeps things cold, carries essentials, or supports time spent outdoors it has to earn its place outside, not just look good in a photo."
+          }
+        },
+        "ambassador_WhdN6r": {
+          "type": "ambassador",
+          "settings": {
+            "image": "shopify://shop_images/f.png",
+            "title": "NAME NAME",
+            "bio": "Ruga was built on a simple idea: outdoor products should never be the weakest part of the adventure. They should show up, hold their ground, and keep going long after the easy options give up. Whatever we create whether it’s something that keeps things cold, carries essentials, or supports time spent outdoors it has to earn its place outside, not just look good in a photo."
+          }
+        },
+        "ambassador_XYff9W": {
+          "type": "ambassador",
+          "settings": {
+            "image": "shopify://shop_images/f.png",
+            "title": "NAME NAME",
+            "bio": "Ruga was built on a simple idea: outdoor products should never be the weakest part of the adventure. They should show up, hold their ground, and keep going long after the easy options give up. Whatever we create whether it’s something that keeps things cold, carries essentials, or supports time spent outdoors it has to earn its place outside, not just look good in a photo."
+          }
+        }
+      },
+      "block_order": [
+        "ambassador_xfJYki",
+        "ambassador_E46p7T",
+        "ambassador_WhdN6r",
+        "ambassador_XYff9W"
+      ],
       "settings": {}
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }
