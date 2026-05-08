@@ -10,8 +10,9 @@
   z-index: 9999;
   background: var(--c-y);
 }
-.lo{
-    width:
+.lo svg {
+  width: unset;
+  height: unset;
 }
 .lo span.y_,
 .lo span.y {
