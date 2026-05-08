@@ -14,8 +14,8 @@
   font-size: 170rem;
   line-height: 130rem;
   letter-spacing: -5%;
-  width: fit-content;
 }
 .lo span {
+  display: block;
   margin-left: 295rem;
 }
