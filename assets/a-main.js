@@ -5,7 +5,9 @@ const init = () => {
 };
 
 const loA = () => {
-  gsap.from("#lo .y", {
+    const tl = gsap.timeline();
+
+  tl.from("#lo .y", {
     yPercent: 100,
     duration: 1.2,
     ease: "power2.inOut",
