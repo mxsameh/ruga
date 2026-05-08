@@ -8,8 +8,8 @@ const init = () => {
 const loA = () => {
   gsap.from("#lo .y", {
     yPercent: 100,
-    ease:'power1.inOut'
-    stagger:
+    ease: "power1.inOut",
+    stagger: 0.2,
   });
 };
 const heA = () => {
@@ -25,4 +25,5 @@ document.addEventListener("DOMContentLoaded", async () => {
   await document.fonts.ready;
   init();
   heA();
+  loA();
 });
