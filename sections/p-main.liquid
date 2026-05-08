@@ -4,7 +4,10 @@
 
 {% javascript %}
   const $he_ban = document.getElementById('he-ban');
-  console.log(x);
+  gsap.to($he_ban, {
+    scale: 1.05,
+    ease: 'none',
+  })
 
 {% endjavascript %}
 
