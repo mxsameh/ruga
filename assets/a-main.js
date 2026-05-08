@@ -5,16 +5,15 @@ const init = () => {
 };
 
 const loA = () => {
-    const tl = gsap.timeline();
+  const tl = gsap.timeline();
 
   tl.from("#lo .y", {
     yPercent: 100,
     duration: 1.2,
     ease: "power2.inOut",
     stagger: 0.2,
-  });
-
-  gsap.from("#lo .y", {
+  }).from("#lo .y", {
+    delay: 1,
     yPercent: -100,
     duration: 1.2,
     ease: "power2.inOut",
