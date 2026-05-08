@@ -2,16 +2,17 @@
 
 {% assign collection = collections.coolers %}
 
-{% javascript %}
+{% comment %} {% javascript %} {% endcomment %}
+<script>
   document.addEventListener('DOMContentLoaded', (event) => {
     const $he_ban = document.getElementById('he-ban');
     gsap.from($he_ban, {
       autoAlpha: 0,
-      duration: 1,
+      duration: 3,
       ease: 'power2.out',
     });
   });
-{% endjavascript %}
+<script>
 
 <div class="p">
   <section class="s-hero">
