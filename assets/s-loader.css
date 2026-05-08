@@ -19,7 +19,7 @@
   display: block;
 }
 .lo span.y {
-    width: fit
+    width: fit-content;
 }
 .lo .y_ {
   overflow: hidden;
