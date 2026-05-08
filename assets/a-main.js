@@ -1,5 +1,5 @@
 const init = () => {
-  gsap.set('#_', {
+  gsap.set("#_", {
     autoAlpha: 1,
   });
 };
@@ -7,6 +7,7 @@ const init = () => {
 const loA = () => {
   gsap.from("#lo .y", {
     yPercent: 100,
+    duration: 1.2,
     ease: "power1.inOut",
     stagger: 0.2,
   });
