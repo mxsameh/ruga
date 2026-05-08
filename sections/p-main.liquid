@@ -3,11 +3,13 @@
 {% assign collection = collections.coolers %}
 
 {% javascript %}
-  const $he_ban = document.getElementById('he-ban');
-  gsap.from($he_ban, {
-    autoAlpha: 0,
-    duration: 0.8,
-    ease: 'power2.out',
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const $he_ban = document.getElementById('he-ban');
+    gsap.from($he_ban, {
+      autoAlpha: 0,
+      duration: 0.8,
+      ease: 'power2.out',
+    });
   });
 {% endjavascript %}
 
