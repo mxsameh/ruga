@@ -6,6 +6,7 @@ const init = () => {
 };
 
 const loA = () =>{
+    const $lo
 
 }
 const heA = () => {
