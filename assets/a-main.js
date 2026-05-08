@@ -5,12 +5,12 @@ const init = () => {
   });
 };
 
-const loA = () =>{
-    gsap.from('#lo .y',{
-
-    })
-
-}
+const loA = () => {
+  gsap.from("#lo .y", {
+    yPercent: 100,
+  });
+};
+cubic - bezier(0.62, 0, 0.38, 1);
 const heA = () => {
   const $he_ban = document.getElementById("he-ban");
   gsap.from($he_ban, {
