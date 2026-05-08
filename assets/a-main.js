@@ -9,6 +9,7 @@ const loA = () => {
   gsap.from("#lo .y", {
     yPercent: 100,
     ease:'power1.inOut'
+    stagger:
   });
 };
 const heA = () => {
