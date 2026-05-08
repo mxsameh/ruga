@@ -15,6 +15,9 @@
   line-height: 130rem;
   letter-spacing: -5%;
 }
+.lo .y_{
+    overflow:hidden
+}
 
 .lo span {
   display: block;
