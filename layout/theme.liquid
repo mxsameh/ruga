@@ -13,10 +13,12 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js" defer></script>
   </head>
   <body>
-    {% section 'header' %}
-    {% section 'cart-drawer' %}
-    {{ content_for_layout }}
-    {% section 'footer' %}
+    <div>
+      {% section 'header' %}
+      {% section 'cart-drawer' %}
+      {{ content_for_layout }}
+      {% section 'footer' %}
+    </div>
     <script src="{{ 'j-global.js' | asset_url }}" defer></script>
   </body>
 </html>
