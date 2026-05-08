@@ -7,6 +7,10 @@
     --p-i: 50rem;
   }
 }
+#_{
+  opacity: 0;
+  visibility: hidden;
+}
 .pi {
   opacity: 0;
   visibility: hidden;
