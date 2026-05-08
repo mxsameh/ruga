@@ -20,9 +20,12 @@ const loA = () => {
       ease: "power2.inOut",
       stagger: 0.2,
     })
-    .to("#lo", {
-      autoAlpha: 0,
-    });
+    .to("#lo.", {
+
+    })
+    // .to("#lo", {
+    //   autoAlpha: 0,
+    // });
 };
 
 const heA = () => {
