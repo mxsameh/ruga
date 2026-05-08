@@ -21,6 +21,7 @@ const loA = () => {
       stagger: 0.2,
     })
     .to("#lo.", {
+        width:
 
     })
     // .to("#lo", {
