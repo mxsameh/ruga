@@ -5,15 +5,10 @@ const init = () => {
   });
 };
 
-const animation = async() =>{
-    document.addEventListener("DOMContentLoaded", async () => {
-      await document.fonts.ready;
-
-      // gsap code
-    });
-	await document.fonts.ready;
-
-}
+  document.addEventListener("DOMContentLoaded", async () => {
+    await document.fonts.ready;
+    init();
+  });
 
 document.addEventListener("DOMContentLoaded", (event) => {
   const $he_ban = document.getElementById("he-ban");
