@@ -1,8 +1,9 @@
-const init = () =>{
-    const $p = document.getElementById("p");
-    gsap.set()
-
-}
+const init = () => {
+  const $p = document.getElementById("p");
+  gsap.set($p, {
+    autoAlpha: 1,
+  });
+};
 document.addEventListener("DOMContentLoaded", (event) => {
   const $he_ban = document.getElementById("he-ban");
   gsap.from($he_ban, {
