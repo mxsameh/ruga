@@ -6,7 +6,7 @@ const init = () => {
 };
 
 const loA = () =>{
-    const $lo
+    gsap.from
 
 }
 const heA = () => {
