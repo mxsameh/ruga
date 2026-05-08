@@ -5,8 +5,8 @@ const init = () => {
   });
 };
 
-const animation = () =>{
-
+const animation = async() =>{
+	await document.fonts.ready;
 
 }
 
