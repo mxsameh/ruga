@@ -19,6 +19,9 @@
 .lo span.y {
   display: block;
 }
+.lo span.y {
+  padding: 0.1em;
+}
 .lo .y_ {
   overflow: hidden;
 }
