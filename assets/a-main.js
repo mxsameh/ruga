@@ -6,7 +6,9 @@ const init = () => {
 };
 
 const loA = () =>{
-    gsap.from
+    gsap.from('#lo .y',{
+
+    })
 
 }
 const heA = () => {
