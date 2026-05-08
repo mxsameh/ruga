@@ -15,14 +15,11 @@
   line-height: 130rem;
   letter-spacing: -5%;
 }
-.lo span.y
+.lo span.y_, .lo span.y{
+    display:block;
+}
 .lo .y_{
     overflow:hidden
 }
+.lo .y_:
 
-.lo span {
-  display: block;
-  margin-left: 295rem;
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
-}
