@@ -9,8 +9,8 @@ const heA = () => {
   const $he_ban = document.getElementById("he-ban");
   gsap.from($he_ban, {
     autoAlpha: 0,
-    duration: 3,
-    ease: "power2.out",
+    duration: 0.8,
+    ease: "power3.inOut",
   });
 };
 
