@@ -1,16 +1,17 @@
-.lo{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100dvh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    background: var(--c-y);
+.lo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  background: var(--c-y);
 }
-.lo h1{
-    font-size: 3rem;
-
+.lo h1 {
+  font-size: 170rem;
+  line-height: 130rem;
+  letter-spacing: -20rem;
 }
