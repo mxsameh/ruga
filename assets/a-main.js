@@ -12,14 +12,16 @@ const loA = () => {
     duration: 1.2,
     ease: "power2.inOut",
     stagger: 0.2,
-  }).from("#lo .y", {
+  }).to("#lo .y", {
     delay: 1,
     yPercent: -100,
     duration: 1,
     ease: "power2.inOut",
     stagger: 0.2,
   });
+  .
 };
+
 const heA = () => {
   const $he_ban = document.getElementById("he-ban");
   gsap.from($he_ban, {
