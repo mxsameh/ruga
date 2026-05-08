@@ -1,6 +1,5 @@
 const init = () => {
-  const $p = document.getElementById("p");
-  gsap.set($p, {
+  gsap.set('#_', {
     autoAlpha: 1,
   });
 };
