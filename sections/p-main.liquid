@@ -4,15 +4,16 @@
 
 {% javascript %}
   const $he_ban = document.getElementById('he-ban');
-  gsap.to($he_ban, {
+  gsap.from($he_ban, {
     autoAlpha: 0,
-  })
-
+    duration: 0.8,
+    ease: 'power2.out',
+  });
 {% endjavascript %}
 
 <div class="p">
   <section class="s-hero">
-    <figure id='he-ban'>
+    <figure id="he-ban">
       {% comment %} {{ settings.banner | image_url: width: 2000 | image_tag }} {% endcomment %}
 
       <picture>
