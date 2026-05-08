@@ -12,14 +12,17 @@ const loA = () => {
     duration: 1.2,
     ease: "power2.inOut",
     stagger: 0.2,
-  }).to("#lo .y", {
-    delay: 1,
-    yPercent: -100,
-    duration: 1,
-    ease: "power2.inOut",
-    stagger: 0.2,
-  });
-  .
+  })
+    .to("#lo .y", {
+      delay: 1,
+      yPercent: -100,
+      duration: 1,
+      ease: "power2.inOut",
+      stagger: 0.2,
+    })
+    .to("#lo", {
+      autoAlpha: 0,
+    });
 };
 
 const heA = () => {
