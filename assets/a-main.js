@@ -15,7 +15,7 @@ const loA = () => {
   }).from("#lo .y", {
     delay: 1,
     yPercent: -100,
-    duration: 1.2,
+    duration: 1,
     ease: "power2.inOut",
     stagger: 0.2,
   });
