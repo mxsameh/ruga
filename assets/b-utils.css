@@ -7,9 +7,9 @@
     --p-i: 50rem;
   }
 }
-.i{
-  
-
+.i {
+  opacity: 0;
+  visibility: hidden;
 }
 .h-s {
   overflow: auto;
