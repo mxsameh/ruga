@@ -21,13 +21,13 @@ const loA = () => {
       stagger: 0.2,
     })
     .to("#lo.", {
-        width:'1340rem',
-        height:
-
-    })
-    // .to("#lo", {
-    //   autoAlpha: 0,
-    // });
+      width: "1340rem",
+      height: "754rem",
+      borderRadius: "48rem",
+    });
+  // .to("#lo", {
+  //   autoAlpha: 0,
+  // });
 };
 
 const heA = () => {
