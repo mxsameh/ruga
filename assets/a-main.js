@@ -5,6 +5,9 @@ const init = () => {
   });
 };
 
+const loA = () =>{
+
+}
 const heA = () => {
   const $he_ban = document.getElementById("he-ban");
   gsap.from($he_ban, {
