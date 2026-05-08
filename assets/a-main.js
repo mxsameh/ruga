@@ -17,6 +17,5 @@ const heA = () => {
 document.addEventListener("DOMContentLoaded", async () => {
   await document.fonts.ready;
   init();
+  heA();
 });
-
-document.addEventListener("DOMContentLoaded", (event) => {});
