@@ -4,6 +4,12 @@ const init = () => {
     autoAlpha: 1,
   });
 };
+
+const animation = () =>{
+
+
+}
+
 document.addEventListener("DOMContentLoaded", (event) => {
   const $he_ban = document.getElementById("he-ban");
   gsap.from($he_ban, {
