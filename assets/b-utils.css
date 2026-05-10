@@ -3,13 +3,20 @@
   --p-i: 20rem;
   --c-y: #f1e570;
   @media (width > 770px) {
-    --h-h: 92.5rem;
+    --h-h: 72rem;
     --p-i: 50rem;
   }
 }
-#_{
+#_ {
   opacity: 0;
   visibility: hidden;
+}
+.y_,
+.y {
+  display: block;
+}
+.y_ {
+  overflow: hidden;
 }
 .pi {
   opacity: 0;

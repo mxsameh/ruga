@@ -1,16 +1,22 @@
 .p {
-  padding-top: 24px;
+  /* padding-top: 24px; */
   padding-bottom: 80rem;
   @media (width < 770px) {
     padding-bottom: 40rem;
   }
 }
+
 .s-hero {
-  padding-inline: var(--p-i);
-  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-block: var(--h-h) 24rem;
 }
+
 .s-hero figure {
-  aspect-ratio: 5/2;
+  width: 1340rem;
+  /* aspect-ratio: 16/9; */
   border-radius: 40rem;
   overflow: hidden;
   background-color: #e5e5e5;
@@ -19,6 +25,11 @@
     /* aspect-ratio: 16/9; */
   }
 }
+
+.s-hero img {
+  height: 100%;
+}
+
 .s-hero video:first-child {
   display: none;
   @media (width>768px) {
@@ -52,27 +63,24 @@
 }
 .s-colc h2 {
   text-align: center;
-  font-size: 50rem;
-  font-family: "m";
-  font-weight: 200;
-  letter-spacing: 1%;
-  span {
-    font-weight: 300;
-    letter-spacing: 5%;
-    span {
-      font-weight: 200;
-    }
+  font-size: 100rem;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: -5%;
+  & > span:last-child {
+    margin-top: -10rem;
   }
+
   @media (width < 770px) {
     display: none;
   }
 }
 .s-colc ul {
-  margin-top: 40rem;
+  /* margin-top: 40rem; */
   display: flex;
-  gap: 20rem;
+  padding-inline: var(--p-i);
+  gap: 40rem;
   @media (width < 770px) {
-    padding-inline: var(--p-i);
     gap: var(--p-i);
     margin-top: 0;
   }

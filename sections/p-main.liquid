@@ -26,10 +26,15 @@
       </h3>
     {% endcomment %}
   </section>
-  <section class="s-colc">
+  <section  class="s-colc">
     <h2>
-      <span>RUG<span>A</span></span>
-      COOLER
+      <span class="y_">
+        <span class="y">RUGA</span>
+      </span>
+
+      <span class="y_">
+        <span class="y">COOLER</span>
+      </span>
     </h2>
     <ul class="h-s">
       {% for product in collection.products %}
@@ -45,9 +50,11 @@
             <figure>
               {{ product.featured_image | image_url: width: 800 | image_tag }}
             </figure>
-            <div class="cp_info">
-              <h4>{{ product.title }}</h4>
-            </div>
+            {% comment %}
+              <div class="cp_info">
+                <h4>{{ product.title }}</h4>
+              </div>
+            {% endcomment %}
           </a>
         </li>
       {% endfor %}
