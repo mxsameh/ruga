@@ -12,6 +12,7 @@
 
 }
 .f_t {
+  padding-inline: var(--p-i);
   display: flex;
   gap: 24rem;
   padding-block: 80rem;
