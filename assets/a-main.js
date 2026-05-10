@@ -68,7 +68,11 @@ const heA = () => {
     duration: 1.2,
     padding: 0,
     ease: "power3.inOut",
-  }).from(
+  })
+  .from('#he-ban',{
+    
+  })
+  .from(
     "#he-ban",
     {
       width: "100%",
