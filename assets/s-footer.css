@@ -7,15 +7,14 @@
     border-radius: 35rem 35rem 0 0;
   }
 }
-#f > img{
+#f > img {
   mix-blend-mode: difference;
-
 }
 .f_t {
+  margin-top: 40rem;
   padding-inline: var(--p-i);
   display: flex;
   gap: 24rem;
-  padding-block: 80rem;
   @media (width < 770px) {
     flex-direction: column;
     gap: 40rem;
