@@ -8,6 +8,7 @@
   }
 }
 #f > img{
+  blend-mode: difference;
 
 }
 .f_t {
