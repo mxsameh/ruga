@@ -65,8 +65,6 @@ const heA = () => {
   const tl = gsap.timeline();
 
   tl.from("#he-ban", {
-    width: "100%",
-    height: "100%",
     opacity: 0,
     duration: 0.6,
     ease: "power3.inOut",
