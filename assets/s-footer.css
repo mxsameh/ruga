@@ -63,8 +63,8 @@
   flex-direction: column;
   gap: 8rem;
 }
-.f_socials{
-  
+.f_socials {
+  justify-content: flex-end;
 }
 
 .f_b {
