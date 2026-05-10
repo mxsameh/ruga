@@ -19,12 +19,6 @@
         {{ section.settings.m_video | video_tag: autoplay: true, muted: true, loop: true, class: 'm-video' }}
       {% endcomment %}
     </figure>
-    {% comment %}
-      <h3>
-        THIS IS
-        <span> RUGA </span>
-      </h3>
-    {% endcomment %}
   </section>
   <section class="s-colc">
     <h2>
@@ -50,11 +44,6 @@
             <figure>
               {{ product.featured_image | image_url: width: 800 | image_tag }}
             </figure>
-            {% comment %}
-              <div class="cp_info">
-                <h4>{{ product.title }}</h4>
-              </div>
-            {% endcomment %}
           </a>
         </li>
       {% endfor %}
