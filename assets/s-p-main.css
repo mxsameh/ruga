@@ -154,7 +154,7 @@
     z-index: 1;
   }
   &:nth-child(1) > img {
-    width: 150rem;
+    width: 120rem;
     left: -30rem;
     top: 250rem;
     @media (width < 770px) {
