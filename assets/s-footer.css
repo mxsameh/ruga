@@ -12,7 +12,7 @@
 }
 .f_t {
   margin-top: 40rem;
-  padding-inline: var(--p-i);
+  padding-inline: 30rem;
   display: flex;
   gap: 24rem;
   @media (width < 770px) {
