@@ -111,22 +111,21 @@ const colcA = () => {
   });
 };
 
-const lifeA = () =>{
-    const tl = gsap.timeline();
-    tl.from('.s-life figure ',{
-        opacity: 0,
-        duration: 1,
-        stagger: 0.2,
-        ease: 'power2.inOut',
-    })
-
-}
+const lifeA = () => {
+  const tl = gsap.timeline();
+  tl.from(".s-life figure ", {
+    opacity: 0,
+    stagger: 0.2,
+    duration: 1,
+    ease: "sine.inOut",
+  });
+};
 
 document.addEventListener("DOMContentLoaded", async () => {
   await document.fonts.ready;
   init();
   //   heA();
   //   hA();
-//   masterTl.add(loA()).add(heA()).add(hA());
-//   colcA();
+  //   masterTl.add(loA()).add(heA()).add(hA());
+  //   colcA();
 });
