@@ -70,7 +70,15 @@
 .f_b {
   padding-block: 40rem;
   display: flex;
+  justify-content: space-between;
 }
 .f_b > div {
   width: 430rem;
+}
+.f_b p{
+  font-size: 14rem;
+  @media (width < 770px) {
+    text-align: center;
+  }
+
 }
