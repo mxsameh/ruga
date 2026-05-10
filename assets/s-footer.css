@@ -29,17 +29,8 @@
       width: 80rem;
     }
   }
-
-  a {
-    display: block;
-    margin-top: 40rem;
-    font-size: 18rem;
-    @media (width < 770px) {
-      margin-top: 16rem;
-      font-size: 14rem;
-    }
-  }
 }
+.f_
 .f_t .m {
   flex: 4;
   ul {
