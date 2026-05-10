@@ -71,3 +71,6 @@
   padding-block: 40rem;
   display: flex;
 }
+.f_b > div {
+  width: 430rem;
+}
