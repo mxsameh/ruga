@@ -111,11 +111,17 @@ const colcA = () => {
   });
 };
 
+const lifeA = () =>{
+    const tl = gsap.timeline();
+    tl.
+
+}
+
 document.addEventListener("DOMContentLoaded", async () => {
   await document.fonts.ready;
   init();
   //   heA();
   //   hA();
-  masterTl.add(loA()).add(heA()).add(hA());
-  colcA();
+//   masterTl.add(loA()).add(heA()).add(hA());
+//   colcA();
 });
