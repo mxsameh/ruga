@@ -68,6 +68,7 @@
 }
 
 .f_b {
+  padding-inline: 30rem;
   padding-block: 40rem;
   display: flex;
   justify-content: space-between;
