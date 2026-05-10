@@ -123,7 +123,8 @@ const lifeA = () => {
     stagger: 0.2,
     duration: 1,
     ease: "sine.inOut",
-  });
+  })
+  
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
