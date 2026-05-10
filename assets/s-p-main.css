@@ -1,4 +1,4 @@
-.p {
+#p {
   /* padding-top: 24px; */
   padding-bottom: 80rem;
   @media (width < 770px) {
@@ -335,13 +335,5 @@
   @media (width<770px) {
     border-radius: none;
     aspect-ratio: 3/4;
-  }
-}
-
-.f {
-  margin-top: 80rem;
-  padding-inline: 20rem;
-  @media (width < 770px) {
-    margin-top: 40rem;
   }
 }
