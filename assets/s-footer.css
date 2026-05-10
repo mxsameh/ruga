@@ -1,4 +1,5 @@
 #f {
+  
   padding-inline: var(--p-i);
   background-color: #00628f;
   color: white;
@@ -8,7 +9,7 @@
   }
 }
 #f > img{
-  blend-mode: difference;
+  mix-blend-mode: difference;
 
 }
 .f_t {
