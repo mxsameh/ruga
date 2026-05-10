@@ -156,7 +156,7 @@
   &:nth-child(1) > img {
     width: 120rem;
     left: 48rem;
-    top: 250rem;
+    bottom: -32rem;
     @media (width < 770px) {
       width: 90rem;
       left: -10rem;
