@@ -70,7 +70,11 @@ const heA = () => {
     ease: "power3.inOut",
   })
   .from('#he-ban',{
-    
+    width: '100%',
+    height: '100%',
+    borderRadius: 0,
+    duration: 1.2,
+    ease: "power3.inOut",
   })
   .from(
     "#he-ban",
