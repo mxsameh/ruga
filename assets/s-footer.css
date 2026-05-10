@@ -22,7 +22,7 @@
   }
 }
 .f_t .l {
-  flex: 6;
+  flex: 100%;
   figure {
     width: 120rem;
     @media (width < 770px) {
@@ -31,8 +31,8 @@
   }
 }
 
-
 .f_t .r {
+  flex: 100%;
   display: flex;
   flex-direction: column;
   gap: 8rem;
