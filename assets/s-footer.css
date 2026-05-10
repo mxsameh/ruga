@@ -64,7 +64,7 @@
   gap: 8rem;
 }
 .f_socials {
-  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .f_b {
