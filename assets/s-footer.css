@@ -57,6 +57,9 @@
     }
   }
 }
+.f_t ul {
+  flex-basis: 100%;
+}
 
 .f_b {
   padding-block: 16rem;
