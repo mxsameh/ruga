@@ -64,16 +64,16 @@ const heA = () => {
   // const vh = wh - 72 - 40;
   const tl = gsap.timeline();
 
-  tl.from(".s-hero", {
-    duration: 1.2,
-    padding: 0,
+  tl.from("#he-ban", {
+    width: "100%",
+    height: "100%",
+    opacity: 0,
+    duration: 0.6,
     ease: "power3.inOut",
   })
-    .from("#he-ban", {
-      width: "100%",
-      height: "100%",
-      opacity: 0,
-      duration: 0.6,
+    .from(".s-hero", {
+      duration: 1.2,
+      padding: 0,
       ease: "power3.inOut",
     })
     .from(
