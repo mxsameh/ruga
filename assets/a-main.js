@@ -114,7 +114,10 @@ const colcA = () => {
 const lifeA = () =>{
     const tl = gsap.timeline();
     tl.from('.s-life figure ',{
-        
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: 'power2.inOut',
     })
 
 }
