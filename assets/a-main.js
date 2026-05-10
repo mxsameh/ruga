@@ -108,8 +108,8 @@ const colcA = () => {
 document.addEventListener("DOMContentLoaded", async () => {
   await document.fonts.ready;
   init();
-  colcA();
   //   heA();
   //   hA();
-  //   masterTl.add(loA()).add(heA()).add(hA());
+  masterTl.add(loA()).add(heA()).add(hA());
+  colcA();
 });
