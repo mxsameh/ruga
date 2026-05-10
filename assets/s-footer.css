@@ -71,14 +71,11 @@
   padding-block: 40rem;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 .f_b > div {
   width: 430rem;
 }
-.f_b p{
-  font-size: 14rem;
-  @media (width < 770px) {
-    text-align: center;
-  }
-
+.f_b p {
+  font-size: 15rem;
 }
