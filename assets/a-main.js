@@ -113,7 +113,7 @@ const colcA = () => {
 
 const lifeA = () =>{
     const tl = gsap.timeline();
-    tl.
+    tl.from('.s-life  ')
 
 }
 
