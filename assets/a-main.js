@@ -124,6 +124,7 @@ const lifeA = () => {
 document.addEventListener("DOMContentLoaded", async () => {
   await document.fonts.ready;
   init();
+  lifeA();
   //   heA();
   //   hA();
   //   masterTl.add(loA()).add(heA()).add(hA());
