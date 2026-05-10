@@ -25,7 +25,6 @@
   flex: 6;
   figure {
     width: 120rem;
-
     @media (width < 770px) {
       width: 80rem;
     }
