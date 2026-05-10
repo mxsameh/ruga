@@ -59,6 +59,9 @@
 }
 .f_t ul {
   flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
 }
 
 .f_b {
