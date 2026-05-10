@@ -185,9 +185,9 @@
     }
   }
   &:nth-child(4) > img {
-    width: 65rem;
+    width: 100rem;
     right: 32rem;
-    top: 10rem;
+    top: -40rem;
 
     @media (width < 770px) {
       width: 60rem;
