@@ -1,0 +1,9 @@
+{
+  "sections": {
+    "main": {
+      "type": "p-warranty",
+      "settings": {}
+    }
+  },
+  "order": ["main"]
+}

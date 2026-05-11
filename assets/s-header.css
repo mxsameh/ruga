@@ -1,49 +1,43 @@
 .h-ph {
-  height: var(--h-h);
+  /* height: var(--h-h); */
 }
 .h {
+  height: var(--h-h);
   padding-inline: var(--p-i);
   padding-block: 16rem;
-  /* height: var(--h-h); */
   width: 100%;
-  background: white;
+  /* background: white; */
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 24px;
-  @media (width > 770px) {
-    justify-content: space-between;
-    padding-block: 24rem;
+
+  @media (width < 770px) {
+    justify-content: unset;
   }
 }
 .h.active {
   background-color: white !important;
 }
 .h_l {
-  flex-basis: 100%;
-  @media (width > 770px) {
-    flex-basis: unset;
-    width: 150rem;
+  flex-basis: 120rem;
+  @media (width < 770px) {
+    flex-basis: 100%;
   }
 }
-
-/* .h_l,
-.h_r,
-.h_r-m {
-  flex-basis: 100%;
-} */
 .h_m {
   flex-shrink: 0;
 }
 .h_r {
-  flex-basis: 100%;
-  @media (width > 768px) {
-    display: flex;
+  display: flex;
+  gap: 28px;
+  @media (width < 770px) {
+    flex-basis: 100%;
     justify-content: flex-end;
-    gap: 28px;
   }
 }
 
@@ -85,7 +79,6 @@
 .h_cb-m {
   /* padding: 4px 8px; */
   position: relative;
-  margin-left: auto;
 }
 .h_cb-m svg {
   width: 20px;

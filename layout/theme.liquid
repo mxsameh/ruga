@@ -7,12 +7,18 @@
     {{ 'b-reset.css' | asset_url | stylesheet_tag }}
     {{ 'b-utils.css' | asset_url | stylesheet_tag }}
     {% render 'fonts' %}
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js" defer></script>
   </head>
   <body>
-    {% section 'header' %}
-    {% section 'cart-drawer' %}
-    {{ content_for_layout }}
-    {% section 'footer' %}
+    <div id="_">
+      {% section 'header' %}
+      {% section 'cart-drawer' %}
+      {{ content_for_layout }}
+      {% section 'footer' %}
+    </div>
     <script src="{{ 'j-global.js' | asset_url }}" defer></script>
   </body>
 </html>

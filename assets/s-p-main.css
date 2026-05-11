@@ -1,16 +1,22 @@
-.p {
-  padding-top: 24px;
+#p {
+  /* padding-top: 24px; */
   padding-bottom: 80rem;
   @media (width < 770px) {
     padding-bottom: 40rem;
   }
 }
+
 .s-hero {
-  padding-inline: var(--p-i);
-  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-block: var(--h-h) 24rem;
 }
+
 .s-hero figure {
-  aspect-ratio: 5/2;
+  width: 1340rem;
+  /* aspect-ratio: 16/9; */
   border-radius: 40rem;
   overflow: hidden;
   background-color: #e5e5e5;
@@ -19,6 +25,11 @@
     /* aspect-ratio: 16/9; */
   }
 }
+
+.s-hero img {
+  height: 100%;
+}
+
 .s-hero video:first-child {
   display: none;
   @media (width>768px) {
@@ -52,27 +63,24 @@
 }
 .s-colc h2 {
   text-align: center;
-  font-size: 50rem;
-  font-family: "m";
-  font-weight: 200;
-  letter-spacing: 1%;
-  span {
-    font-weight: 300;
-    letter-spacing: 5%;
-    span {
-      font-weight: 200;
-    }
+  font-size: 100rem;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: -5%;
+  & > span:last-child {
+    margin-top: -10rem;
   }
+
   @media (width < 770px) {
     display: none;
   }
 }
 .s-colc ul {
-  margin-top: 40rem;
+  /* margin-top: 40rem; */
   display: flex;
-  gap: 20rem;
+  padding-inline: var(--p-i);
+  gap: 40rem;
   @media (width < 770px) {
-    padding-inline: var(--p-i);
     gap: var(--p-i);
     margin-top: 0;
   }
@@ -116,6 +124,7 @@
     font-size: 16rem;
   }
 }
+
 .s-life {
   margin-top: 120rem;
   padding-inline: var(--p-i);
@@ -145,9 +154,9 @@
     z-index: 1;
   }
   &:nth-child(1) > img {
-    width: 150rem;
-    left: -30rem;
-    top: 250rem;
+    width: 120rem;
+    left: 48rem;
+    bottom: -32rem;
     @media (width < 770px) {
       width: 90rem;
       left: -10rem;
@@ -156,9 +165,9 @@
     }
   }
   &:nth-child(2) > img {
-    width: 125rem;
-    right: -30rem;
-    top: -70rem;
+    width: 120rem;
+    right: -24rem;
+    top: -48rem;
     @media (width < 770px) {
       top: -20rem;
       right: -15rem;
@@ -166,9 +175,9 @@
     }
   }
   &:nth-child(3) > img {
-    width: 150rem;
-    right: 10rem;
-    bottom: -30rem;
+    width: 130rem;
+    left: 120rem;
+    bottom: -28rem;
     @media (width < 770px) {
       width: 110rem;
       right: 0;
@@ -176,9 +185,9 @@
     }
   }
   &:nth-child(4) > img {
-    width: 65rem;
-    left: 25rem;
-    top: 10rem;
+    width: 100rem;
+    right: 32rem;
+    top: -40rem;
 
     @media (width < 770px) {
       width: 60rem;
@@ -327,13 +336,5 @@
   @media (width<770px) {
     border-radius: none;
     aspect-ratio: 3/4;
-  }
-}
-
-.f {
-  margin-top: 80rem;
-  padding-inline: 20rem;
-  @media (width < 770px) {
-    margin-top: 40rem;
   }
 }

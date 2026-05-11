@@ -8,9 +8,9 @@
     <!-- Header Left -->
     <div class="h_l">
       {% render 'menu-icon' %}
-      <a href="/" class="d-o">
+      <a href="/" class="d-o y_">
         {% if settings.logo %}
-          <figure>
+          <figure class='y'>
             {{ settings.logo | image_url: width: 200 | image_tag }}
           </figure>
         {% else %}
@@ -40,14 +40,20 @@
     <div class="h_r">
       <nav class="h_n d-o">
         {% for link in linklists['main-menu-1'].links -%}
-          <div class="h_n-item">
-            {{ link.title | link_to: link.url }}
+          <div class="h_n-item y_">
+            <span class="y">
+              {{ link.title | link_to: link.url }}
+            </span>
           </div>
         {%- endfor %}
       </nav>
-      <button id="cart-btn" class="h_cb d-o" type="button">
-        BAG (<span id="cart-count" class="h_cb_count">{{- cart.item_count -}}</span>)
+
+      <button id="cart-btn" class="h_cb d-o y_" type="button">
+        <span class="y">
+          CART (<span id="cart-count" class="h_cb_count">{{- cart.item_count -}}</span>)
+        </span>
       </button>
+
       <button id="cart-btn" class="h_cb-m m-o">
         {{ 'i-bag.svg' | inline_asset_content }}
         <div id="cart-count">{{- cart.item_count -}}</div>

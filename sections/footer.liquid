@@ -13,41 +13,59 @@
 {% endcomment %}
 
 <footer id="f" class="f">
+  <img src="{{ 'im-footer.png' | asset_url  }}" width="auto" height="auto" alt="logo">
   <div class="f_t">
     <div class="l">
       <figure>
         <img src="{{ 'im-logo.png' | asset_url  }}" width="auto" height="auto" alt="logo">
       </figure>
-      <a href="mailto:info@rugaofficial.com">info@rugaofficial.com</a>
     </div>
 
-    <div class="m">
+    <div class="r">
       <ul>
+        <li>
+          {{ 'SHOP' | link_to: '/shop' }}
+        </li>
+        <li>
+          {{ 'ABOUT RUGA' | link_to: '/about' }}
+        </li>
+        <li>
+          {{ 'OUR PEOPLE' | link_to: '/our-people' }}
+        </li>
+      </ul>
+      <ul>
+        <li>{{ 'CONTACT US' | link_to: '/contact' }}</li>
         <li>
           {{ 'PRIVACY POLICY' | link_to: '/about' }}
         </li>
-        <li>{{ 'TERMS & CONDITIONS' | link_to: '/contact' }}</li>
-        <li>{{ 'CONTACT US' | link_to: ig_link }}</li>
+        <li>{{ 'TERMS & CONDITIONS' | link_to: '/terms-and-conditions' }}</li>
       </ul>
 
-      <div class="nl">
-        {% render 'newsletter' %}
-      </div>
-    </div>
-    <div class="r">
-      <a href="#"
-        >INSTAGRAM
-        {{ 'i-arr.svg' | inline_asset_content }}
-      </a>
-      <a href="#"
-        >SPOTIFY
-        {{ 'i-arr.svg' | inline_asset_content }}
-      </a>
+      <ul class="f_socials">
+        <li>
+          <a href="#"
+            >INSTAGRAM
+            {{ 'i-arr.svg' | inline_asset_content }}
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            >SPOTIFY
+            {{ 'i-arr.svg' | inline_asset_content }}
+          </a>
+        </li>
+      </ul>
+
+      {% comment %}
+      {% endcomment %}
     </div>
   </div>
 
   <div class="f_b">
-    <p>RUGA © 20{{ 'now' | date: '%y' }}</p>
+    <div class="nl">
+      {% render 'newsletter' %}
+    </div>
+    <p>ALL RIGHTS RESERVED © RUGA 20{{ 'now' | date: '%y' }}</p>
   </div>
 </footer>
 
