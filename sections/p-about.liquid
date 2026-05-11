@@ -1,33 +1,37 @@
 {{ 's-p-about.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'a-about.js' | asset_url }}" defer></script>
 
 <div class="p">
-  <section class="sab0">
-    <figure class="ban">
+  <div class="ban">
+    <figure>
       <picture>
-        <source srcset="{{'im-ab1.png' | asset_url}}" media="(min-width: 770px)">
-        <img src="{{ 'im-ab1-m.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+        <source srcset="{{'im-ban.png' | asset_url}}" media="(min-width: 770px)">
+        <img src="{{ 'im-ban-m.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+      </picture>
+    </figure>
+  </div>
+
+  <section class="s-ab0">
+    <figure>
+      <picture>
+        <source srcset="{{'im-ab0.png' | asset_url}}" media="(min-width: 770px)">
+        <img src="{{ 'im-ab0-m.png' | asset_url  }}" width="auto" height="auto" alt="logo">
       </picture>
     </figure>
 
-    <p>
-      Ruga was built on a simple idea: outdoor products should never be the weakest part of the adventure. They should
-      show up, hold their ground, and keep going long after the easy options give up. Whatever we create whether it’s
-      something that keeps things cold, carries essentials, or supports time spent outdoors it has to earn its place
-      outside, not just look good in a photo.
-    </p>
-    <figure class="ban">
-      <picture>
-        <source srcset="{{'im-ab2.png' | asset_url}}" media="(min-width: 770px)">
-        <img src="{{ 'im-ab2-m.png' | asset_url  }}" width="auto" height="auto" alt="logo">
-      </picture>
-    </figure>
-    <p>
-      We design for real use. Long days. Rough surfaces. Heat, water, impact, repetition. The kind of environments that
-      don’t respond to marketing claims, only to performance. Every Ruga product begins with function and is refined
-      with intention. Because serious gear can still be thoughtful. It can be engineered properly and designed with care
-      at the same time.
-    </p>
+    <div>
+      <h2>RUGA WAS BUILT ON A SIMPLE IDEA</h2>
 
+      <p>
+        Outdoor products should never be the weakest part of the adventure. They should show up, hold their ground, and
+        keep going long after the easy options give up. Whatever we create whether it’s something that keeps things
+        cold, carries essentials, or supports time spent outdoors it has to earn its place outside, not just look good
+        in a photo.
+      </p>
+    </div>
+  </section>
+
+  <section class="s-ab1">
     <ul>
       <li>
         <img src="{{ 'im-ls1.png' | asset_url  }}" width="auto" height="auto" alt="logo">
@@ -42,31 +46,42 @@
         <img src="{{ 'im-ls4.png' | asset_url  }}" width="auto" height="auto" alt="logo">
       </li>
     </ul>
+
+    <p>
+      We design for real use. Long days. Rough surfaces. Heat, water, impact, repetition. The kind of environments that
+      don’t respond to marketing claims, only to performance. Every Ruga product begins with function and is refined
+      with intention. Because serious gear can still be thoughtful. It can be engineered properly and designed with care
+      at the same time.
+    </p>
   </section>
-  <section class="sab1">
+
+  <section class="s-ab2">
     <h2>The name Ruga comes from tartaruga the Italian word for <span>TURTLE</span>.</h2>
     <p>
       A creature built with purpose. Protective. Enduring. Designed by nature to move steadily through demanding
       terrain. That mindset shapes everything we do. Strength without noise. Durability without drama. Built to last not
       to impress for a moment.
     </p>
-    <figure class="ban">
+    <figure>
       <picture>
-        <source srcset="{{'im-ab3.png' | asset_url}}" media="(min-width: 770px)">
-        <img src="{{ 'im-ab3-m.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+        <source srcset="{{'im-ab2.png' | asset_url}}" media="(min-width: 770px)">
+        <img src="{{ 'im-ab2-m.png' | asset_url  }}" width="auto" height="auto" alt="logo">
       </picture>
     </figure>
-    <h2>RUGA ISN'T ABOUT A SINGLE CATEGORY</h2>
-    <p>
-      It’s about building a standard across outdoor recreational products pieces that feel solid in your hands,
-      dependable in unpredictable conditions, and natural in the environments they’re made for.
-    </p>
 
-    <h2>We don’t believe in decorative equipment. We believe in gear that belongs outside.</h2>
+    <div>
+      <h2>RUGA ISN'T ABOUT A SINGLE CATEGORY</h2>
+      <p>
+        It’s about building a standard across outdoor recreational products pieces that feel solid in your hands,
+        dependable in unpredictable conditions, and natural in the environments they’re made for.
+      </p>
+    </div>
   </section>
-  <section class="sab2">
+
+  <section class="s-ab3">
+    <h2>We don’t believe in decorative equipment. We believe in gear that belongs outside.</h2>
     <figure>
-      <img src="{{ 'im-ab-f.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+      <img src="{{ 'im-ab3.png' | asset_url  }}" width="auto" height="auto" alt="logo">
     </figure>
   </section>
 </div>

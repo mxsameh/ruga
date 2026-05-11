@@ -1,0 +1,125 @@
+body {
+  background-color: #00628f;
+}
+#p {
+  padding-top: var(--h-h);
+  padding-bottom: 80rem;
+  padding-inline: var(--p-i);
+}
+.s-he {
+  padding-top: 80rem;
+  @media (width < 770px) {
+    padding-top: 40rem;
+  }
+}
+.title {
+  font-size: 128rem;
+  line-height: 100%;
+  color: #b4d9f3;
+  @media (width < 770px) {
+    font-size: 38rem;
+  }
+  /* width: fit-content; */
+}
+.title div:last-child {
+  margin-top: 40rem;
+  margin-left: 490rem;
+  @media (width < 770px) {
+    margin-top: 10rem;
+    margin-left: 128rem;
+  }
+}
+.title span {
+  display: block;
+}
+.title span:last-child {
+  margin-top: -20rem;
+  @media (width < 770px) {
+    margin-top: -4rem;
+  }
+}
+.s-he figure {
+  margin-top: 80rem;
+  border-radius: 48rem;
+  overflow: hidden;
+  aspect-ratio: 5/2;
+  @media (width<770px) {
+    margin-top: 40rem;
+    border-radius: none;
+    aspect-ratio: 20/16;
+  }
+}
+
+.s-war {
+  margin-top: 80rem;
+  @media (width < 770px) {
+    margin-top: 40rem;
+  }
+}
+.s-war p {
+  width: 800rem;
+  font-size: 60rem;
+  line-height: 120%;
+  font-family: "m";
+  font-weight: 150;
+  color: #b4d9f3;
+  @media (width < 770px) {
+    width: 100%;
+    font-size: 28rem;
+    line-height: 100%;
+  }
+}
+.s-war form {
+  width: 800rem;
+  margin-left: auto;
+  margin-top: 120rem;
+  @media (width < 770px) {
+    width: 100%;
+    margin-top: 48rem;
+  }
+}
+.s-war fieldset {
+  display: block;
+  margin-top: 40rem;
+  & last-of-type {
+    margin-top: 0;
+  }
+  @media (width < 770px) {
+    margin-top: 32rem;
+  }
+}
+.s-war label {
+  font-size: 24rem;
+  color: #b4d9f3;
+  @media (width < 770px) {
+    font-size: 16rem;
+  }
+}
+.s-war input {
+  width: 100%;
+  padding: 8rem;
+  margin-top: 16rem;
+  border-bottom: 1px solid #b4d9f3;
+  color: white;
+  font-size: 18rem;
+  @media (width < 770px) {
+    font-size: 14rem;
+  }
+}
+.s-war button {
+  margin-top: 80rem;
+  padding: 24rem 80rem;
+  background-color: #b4d9f3;
+  color: #00628f;
+  font-size: 24rem;
+  cursor: pointer;
+  border-radius: 12rem;
+  font-family: "m";
+  font-weight: 150;
+  @media (width < 770px) {
+    margin-top: 40rem;
+    padding: 10rem 32rem;
+    font-size: 12rem;
+    border-radius: 8rem;
+  }
+}

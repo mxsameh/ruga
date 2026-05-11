@@ -12,6 +12,10 @@
   align-items: flex-start;
   justify-content: center;
   padding-block: var(--h-h) 24rem;
+  @media (width < 770px) {
+    padding-inline: var(--p-i);
+    height: unset;
+  }
 }
 
 .s-hero figure {

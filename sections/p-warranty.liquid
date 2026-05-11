@@ -1,3 +1,41 @@
 {{ 's-p-warranty.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'a-warranty.js' | asset_url }}" defer></script>
 
-<h1>Register</h1>
+<div id="p">
+  <section class="s-he">
+    <h1 class="title">
+      <div>
+        <span>BUILT TO </span>
+        <span>PERFORM.</span>
+      </div>
+      <div>
+        <span>DESIGNED</span>
+        <span>TO LAST.</span>
+      </div>
+    </h1>
+    <figure>
+      <picture>
+        <source srcset="{{'im-ban.png' | asset_url}}" media="(min-width: 770px)">
+        <img src="{{ 'im-ban-m.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+      </picture>
+    </figure>
+  </section>
+  <section class="s-war">
+    <p>Your Ruga icebox comes with a 3-year warranty. Complete your registration below to activate your coverage.</p>
+    <form>
+      <fieldset>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </fieldset>
+      <fieldset>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </fieldset>
+      <fieldset>
+        <label for="code">Code</label>
+        <input type="text" id="code" name="code" required>
+      </fieldset>
+      <button type="submit">SUBMIT</button>
+    </form>
+  </section>
+</div>
