@@ -115,7 +115,7 @@ const lifeA = () => {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".s-life",
-      start: "top 80%",
+      start: "top 85%",
     },
   });
   tl.from(".s-life figure ", {
