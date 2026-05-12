@@ -5,6 +5,10 @@ body {
   opacity: 1 !important;
   visibility: visible !important;
 }
+#h{
+  background-color: var(--c-y);
+}
+
 .p {
   padding-top: var(--h-h);
   padding-bottom: 80rem;

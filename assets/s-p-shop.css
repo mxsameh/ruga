@@ -2,6 +2,9 @@
   opacity: 1 !important;
   visibility: visible !important;
 }
+#h {
+  background-color: white;
+}
 .p {
   padding-inline: var(--p-i);
   padding-bottom: 80rem;

@@ -5,6 +5,9 @@
 .h-ph {
   height: var(--h-h);
 }
+#h {
+  background-color: white;
+}
 .p {
   padding-bottom: 80rem;
 }
