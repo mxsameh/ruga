@@ -64,7 +64,9 @@
 }
 .s-amb li figure {
   flex: 1;
-  aspect-ratio: 1;
+  /* aspect-ratio: 1; */
+  max-width: 100%;
+  overflow: hidden;
 }
 .s-amb li img {
   height: 100%;
