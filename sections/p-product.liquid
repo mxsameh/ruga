@@ -37,15 +37,26 @@
 
         {% render 'product-form' %}
       </div>
-      <div class="product_data">
-        {% render 'accordion',
-          heading: 'Capacity: 5 Turles',
-          content: 'RUGA Turtle Scale (Capacity System)
+      {% if product.title contains 'Cooler' %}
+        <div class="product_data">
+          {% if product.metafields.custom.capacity %}
+            {% render 'accordion',
+              heading: 'Capacity: 5 Turles',
+              content: 'RUGA Turtle Scale (Capacity System)
           A simple way to measure capacity across RUGA products:
           1 Turtle ≈ 8 x 330L cans',
-          default: 'Regular size'
-        %}
-      </div>
+              default: 'Regular size'
+            %}
+          {% endif %}
+          {% render 'accordion',
+            heading: 'Dimensions',
+            content: 'Outside Dimensions: 622 × 432 mm
+            Inside Dimensions: 285 × 495 mm
+            Capacity: 5 turtles',
+            default: 'Regular size'
+          %}
+        </div>
+      {% endif %}
     </div>
   </div>
 

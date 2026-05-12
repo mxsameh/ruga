@@ -183,7 +183,7 @@
 
 .product_data {
   margin-top: 48rem;
-  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   @media (width < 770px) {
     padding-inline: var(--p-i);
   }
