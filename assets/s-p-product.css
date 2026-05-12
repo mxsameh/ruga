@@ -185,7 +185,7 @@
   margin-top: 48rem;
   border-bottom: 1px solid black;
   @media (width < 770px) {
-    padding-inline: var(--p-i);
+    margin-inline: var(--p-i);
   }
 }
 
