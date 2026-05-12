@@ -1,5 +1,6 @@
 .accordion {
-  padding-block: 10px;
+  /* padding-block: 10px; */
+  padding-block: 20px;
 }
 .accordion_h {
   display: flex;
@@ -7,15 +8,31 @@
   justify-content: space-between;
   cursor: pointer;
 }
-.accordion_h h2 {
-  font-size: 12px;
-  font-weight: 400;
+.accordion_h span {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
 }
-.accordion_h svg {
-  width: 10px;
+.accordion_h span svg {
+  width: 24px;
+  @media (width < 770px) {
+    font-size: 20px;
+  }
+}
+.accordion_h h2 {
+  font-size: 18px;
+  font-family: "m";
+  font-weight: 150;
+  @media (width < 770px) {
+    font-size: 16px;
+  }
+}
+.accordion_h > svg {
+  /* width: 10px; */
+  width: 16px;
   transition: transform 0.2s ease-in;
 }
-.accordion.active svg {
+.accordion.active .accordion_h > svg {
   transform: rotate(45deg);
 }
 .accordion_b_ {
@@ -25,8 +42,8 @@
 }
 
 .accordion_b {
-  padding-top: 16px;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #555;
+  /* padding-top: 16px; */
+  padding-top: 24px;
+  font-size: 16px;
+  line-height: 18px;
 }

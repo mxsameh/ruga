@@ -181,6 +181,14 @@
   background-color: #999;
 }
 
+.product_data {
+  margin-top: 48rem;
+  border-top: 1px solid black;
+  @media (width < 770px) {
+    padding-inline: var(--p-i);
+  }
+}
+
 .f {
   margin-top: 120rem;
   padding-inline: 10rem;
