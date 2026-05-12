@@ -80,8 +80,10 @@
   }
 }
 .swiper_ {
-  padding-inline: var(--p-i) !important;
-  height: fit-content;
+  @media (width < 770px) {
+    padding-inline: var(--p-i) !important;
+    height: fit-content;
+  }
 }
 .swiper a {
   padding-inline: 50rem;
@@ -126,6 +128,9 @@
     padding: 24rem 32rem;
     border-radius: 32rem;
   }
+}
+.s-colc figure {
+  aspect-ratio: 1;
 }
 .s-colc a h3 {
   text-align: center;

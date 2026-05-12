@@ -10,7 +10,7 @@
   }
 }
 #f > img {
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
 }
 .f_t {
   margin-top: 80rem;
