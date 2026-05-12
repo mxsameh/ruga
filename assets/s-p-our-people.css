@@ -1,3 +1,10 @@
+#_ {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.h-ph {
+  height: var(--h-h);
+}
 .p {
   padding-bottom: 80rem;
 }

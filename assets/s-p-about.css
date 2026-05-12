@@ -1,6 +1,10 @@
 body {
   background-color: var(--c-y);
 }
+#_ {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 .p {
   padding-top: var(--h-h);
   padding-bottom: 80rem;
@@ -19,7 +23,6 @@ body {
 
   @media (width < 770px) {
     margin-top: 24rem;
-
   }
 }
 .ban figure {

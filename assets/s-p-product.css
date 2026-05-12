@@ -1,3 +1,7 @@
+#_ {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 .h-ph {
   display: none;
 }

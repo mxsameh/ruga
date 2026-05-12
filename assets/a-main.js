@@ -123,16 +123,16 @@ const lifeA = () => {
     stagger: 0.2,
     duration: 1,
     ease: "sine.inOut",
-  })
-  
+  });
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
+  const isMobile = window.innerWidth < 770;
   await document.fonts.ready;
   init();
+  if (!isMobile) {
+    masterTl.add(loA()).add(heA()).add(hA());
+    colcA();
+  }
   lifeA();
-  //   heA();
-  //   hA();
-  //   masterTl.add(loA()).add(heA()).add(hA());
-  //   colcA();
 });

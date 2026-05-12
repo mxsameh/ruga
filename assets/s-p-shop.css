@@ -1,3 +1,7 @@
+#_ {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 .p {
   padding-inline: var(--p-i);
   padding-bottom: 80rem;

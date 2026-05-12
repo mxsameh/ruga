@@ -1,5 +1,8 @@
 {{ 's-p-main.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'a-main.js' | asset_url }}" defer></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+<script src="{{ 'j-main.js' | asset_url }}" defer></script>
 
 {% assign collection = collections.coolers %}
 
@@ -31,6 +34,36 @@
         <span class="y">COOLER</span>
       </span>
     </h2>
+    <div class="swiper_ m-o">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          {% for product in collection.products %}
+            {% liquid
+              assign bgc = product.metafields.custom.background_color
+            %}
+            <div class="swiper-slide">
+              <a href="{{ product.url }}" style="background-color: {{bgc}};">
+                <h3>
+                  <span>RUG<span>A</span></span>
+                  COOLER
+                </h3>
+                <figure>
+                  {{ product.featured_image | image_url: width: 800 | image_tag }}
+                </figure>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+        <nav>
+          <button id="swiper-b-prv">
+            {{ 'i-t-arr.svg' | inline_asset_content }}
+          </button>
+          <button id="swiper-b-nxt">
+            {{ 'i-t-arr.svg' | inline_asset_content }}
+          </button>
+        </nav>
+      </div>
+    </div>
     <ul class="h-s">
       {% for product in collection.products %}
         {% liquid
