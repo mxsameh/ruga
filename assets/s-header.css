@@ -6,7 +6,6 @@
   padding-inline: var(--p-i);
   padding-block: 16rem;
   width: 100%;
-  /* background: white; */
   position: fixed;
   top: 0;
   left: 0;
@@ -18,6 +17,7 @@
 
   @media (width < 770px) {
     justify-content: unset;
+    background: white;
   }
 }
 .h.active {

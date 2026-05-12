@@ -2,6 +2,7 @@
   /* padding-top: 24px; */
   padding-bottom: 80rem;
   @media (width < 770px) {
+    padding-top: var(--h-h);
     padding-bottom: 40rem;
   }
 }
@@ -13,6 +14,7 @@
   justify-content: center;
   padding-block: var(--h-h) 24rem;
   @media (width < 770px) {
+    padding-block: 24rem;
     padding-inline: var(--p-i);
     height: unset;
   }
