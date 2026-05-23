@@ -2,6 +2,9 @@
   opacity: 1 !important;
   visibility: visible !important;
 }
+body {
+  background-color: #00628f;
+}
 .p {
   padding-top: calc(var(--h-h) + 80rem);
   padding-bottom: 80rem;
@@ -11,8 +14,33 @@
 .p h1 {
   font-size: 128rem;
   line-height: 100%;
+  color: #b4d9f3;
   span {
     display: block;
     margin-top: -22rem;
   }
+}
+.p ul {
+  margin-top: 120rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+}
+.p li {
+  display: flex;
+  align-items: flex-start;
+  gap: 24rem;
+  color: white;
+}
+.p li .l {
+  flex: 4;
+  font-size: 18rem;
+  font-weight: 150;
+  line-height: 100%;
+  font-family: "m";
+}
+.p li .r {
+  flex: 8;
+  font-size: 16rem;
+  line-height: 140%;
 }
