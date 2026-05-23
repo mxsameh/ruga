@@ -1,0 +1,18 @@
+#_ {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.p {
+  padding-top: calc(var(--h-h) + 80rem);
+  padding-bottom: 80rem;
+  padding-inline: var(--p-i);
+}
+
+.p h1 {
+  font-size: 128rem;
+  line-height: 100%;
+  span {
+    display: block;
+    margin-top: -22rem;
+  }
+}
