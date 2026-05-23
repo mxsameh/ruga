@@ -31,7 +31,7 @@
       </span>
 
       <span class="y_">
-        <span class="y">COOLER</span>
+        <span class="y">SHELL 35 COOLER</span>
       </span>
     </h2>
     <div class="swiper_ m-o">
@@ -45,8 +45,10 @@
               <a href="{{ product.url }}" style="background-color: {{bgc}};">
                 <h3>
                   {{ product.title }}
-                  {% comment %} <span>RUG<span>A</span></span>
-                  COOLER {% endcomment %}
+                  {% comment %}
+                    <span>RUG<span>A</span></span>
+                    COOLER
+                  {% endcomment %}
                 </h3>
                 <figure>
                   {{ product.featured_image | image_url: width: 800 | image_tag }}

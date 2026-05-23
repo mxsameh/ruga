@@ -13,7 +13,10 @@
 {% endcomment %}
 
 <footer id="f" class="f">
-  <img class="d-o" src="{{ 'im-footer.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+  {% comment %} <img class="d-o" src="{{ 'im-footer.png' | asset_url  }}" width="auto" height="auto" alt="logo"> {% endcomment %}
+
+  {{ 'i-foot.svg' | inline_asset_content }}
+
   <div class="f_t">
     <div class="l">
       <figure>

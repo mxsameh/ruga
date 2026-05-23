@@ -99,7 +99,7 @@ const colcA = () => {
       start: "top 80%",
     },
   });
-  gsap.from(".s-colc ul li", {
+  gsap.from(".s-colc ul a", {
     yPercent: 100,
     duration: 0.8,
     ease: "power2.inOut",
@@ -126,13 +126,74 @@ const lifeA = () => {
   });
 };
 
+// document.addEventListener("DOMContentLoaded", async () => {
+//   const isMobile = window.innerWidth < 770;
+//   await document.fonts.ready;
+//   init();
+//   if (!isMobile) {
+//     masterTl.add(loA()).add(heA()).add(hA());
+//     colcA();
+//   }
+//   lifeA();
+// });
+
+// document.addEventListener("DOMContentLoaded", async () => {
+//   const isMobile = window.innerWidth < 770;
+//   await document.fonts.ready;
+//   init();
+
+//   const loaderPlayed = sessionStorage.getItem("loaderPlayed");
+
+//   if (!isMobile) {
+//     // play loader only once
+//     if (!loaderPlayed) {
+//       sessionStorage.setItem("loaderPlayed", "true");
+
+//       masterTl
+//         .add(loA()) // loader animation
+//         .add(heA())
+//         .add(hA());
+//     } else {
+//       // skip loader
+//       gsap.set("#lo", {
+//         autoAlpha: 0,
+//       });
+//       masterTl.add(heA()).add(hA());
+//     }
+
+//     colcA();
+//   }
+
+//   lifeA();
+// });
+
 document.addEventListener("DOMContentLoaded", async () => {
   const isMobile = window.innerWidth < 770;
   await document.fonts.ready;
   init();
+
+  const navEntry = performance.getEntriesByType("navigation")[0];
+  const isReload = navEntry?.type === "reload";
+
+  // was loader already shown in this tab session?
+  const hasPlayed = sessionStorage.getItem("loaderPlayed");
+
   if (!isMobile) {
-    masterTl.add(loA()).add(heA()).add(hA());
+    // play if:
+    // - first visit in tab
+    // - OR user refreshed page
+    if (!hasPlayed || isReload) {
+      sessionStorage.setItem("loaderPlayed", "true");
+      masterTl.add(loA()).add(heA()).add(hA());
+    } else {
+      // normal page-to-page navigation
+      gsap.set("#lo", {
+        autoAlpha: 0,
+      });
+    }
+
     colcA();
   }
+
   lifeA();
 });
