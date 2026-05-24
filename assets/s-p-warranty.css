@@ -22,8 +22,8 @@ body {
   /* width: fit-content; */
 }
 .title div:last-child {
-  margin-top: 40rem;
-  margin-left: 490rem;
+  /* margin-top: 40rem; */
+  margin-left: 520rem;
   @media (width < 770px) {
     margin-top: 10rem;
     margin-left: 128rem;
@@ -33,13 +33,13 @@ body {
   display: block;
 }
 .title span:last-child {
-  margin-top: -20rem;
+  margin-top: -22rem;
   @media (width < 770px) {
     margin-top: -4rem;
   }
 }
 .s-he figure {
-  margin-top: 80rem;
+  margin-top: 48rem;
   border-radius: 48rem;
   overflow: hidden;
   aspect-ratio: 5/2;
@@ -52,14 +52,16 @@ body {
 
 .s-war {
   margin-top: 80rem;
+  display: flex;
+  justify-content: space-between;
   @media (width < 770px) {
     margin-top: 40rem;
   }
 }
 .s-war p {
-  width: 800rem;
-  font-size: 60rem;
-  line-height: 120%;
+  width: 650rem;
+  font-size: 40rem;
+  line-height: 110%;
   font-family: "m";
   font-weight: 150;
   color: #b4d9f3;
@@ -70,9 +72,9 @@ body {
   }
 }
 .s-war form {
-  width: 800rem;
-  margin-left: auto;
-  margin-top: 120rem;
+  width: 550rem;
+  /* margin-left: auto; */
+  /* margin-top: 120rem; */
   @media (width < 770px) {
     width: 100%;
     margin-top: 48rem;
@@ -81,7 +83,7 @@ body {
 .s-war fieldset {
   display: block;
   margin-top: 40rem;
-  & last-of-type {
+  &:first-of-type {
     margin-top: 0;
   }
   @media (width < 770px) {
@@ -89,8 +91,9 @@ body {
   }
 }
 .s-war label {
-  font-size: 24rem;
+  font-size: 20rem;
   color: #b4d9f3;
+  color: white;
   @media (width < 770px) {
     font-size: 16rem;
   }
@@ -107,11 +110,11 @@ body {
   }
 }
 .s-war button {
-  margin-top: 80rem;
-  padding: 24rem 80rem;
+  margin-top: 48rem;
+  padding: 14rem 48rem;
   background-color: #b4d9f3;
   color: #00628f;
-  font-size: 24rem;
+  font-size: 14rem;
   cursor: pointer;
   border-radius: 12rem;
   font-family: "m";

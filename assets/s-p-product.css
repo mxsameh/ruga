@@ -74,7 +74,7 @@
 }
 
 .product_price {
-  font-size: 24rem;
+  font-size: 18rem;
   font-family: "m";
   font-weight: 150;
   display: flex;
@@ -86,72 +86,6 @@
 .product_price .compare-price {
   text-decoration: line-through;
   color: #aaa;
-}
-
-/* PRODUCT OPTIONS */
-.pf {
-  margin-top: 40px;
-  @media (width > 1000px) {
-    /* margin-top: 80px; */
-    margin-top: 48rem;
-  }
-}
-
-.option {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-
-  &:not(:first-of-type) {
-    margin-top: 24px;
-  }
-}
-.option_name {
-  width: 120px;
-  font-size: 14px;
-}
-
-.option_values {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-.value input[type="radio"] {
-  display: none;
-}
-.value label {
-  display: block;
-  cursor: pointer;
-}
-
-.value.not-swatch label {
-  padding-bottom: 2px;
-  border-bottom: 1px solid transparent;
-  font-size: 14px;
-}
-.value.not-swatch input[type="radio"]:checked + label {
-  border-color: black;
-}
-
-.value.is-swatch label {
-  padding: 4px;
-  width: 24px;
-  aspect-ratio: 1;
-  border: 1px solid transparent;
-  /* border-radius: 100%; */
-}
-.value.is-swatch input[type="radio"]:checked + label {
-  border-color: black;
-}
-.swatch {
-  display: block;
-  width: 14px;
-  aspect-ratio: 1 / 1;
-  background: var(--swatch--background);
-  background-position: var(--swatch-focal-point, initial);
-  background-size: cover;
-  background-origin: border-box;
-  /* border-radius: 100%; */
 }
 
 .product_atc_ {
@@ -167,7 +101,7 @@
   /* color: #f26648; */
   color: black;
   font-family: "m";
-  font-size: 18rem;
+  font-size: 14rem;
   font-weight: 150;
   text-transform: uppercase;
   border-radius: 14rem;
@@ -183,7 +117,7 @@
 
 .product_data {
   margin-top: 48rem;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   @media (width < 770px) {
     margin-inline: var(--p-i);
   }
@@ -199,16 +133,3 @@
 #f {
   display: none;
 }
-
-/* PRODUCT DATA */
-/* .product_data {
-  margin-top: 40px;
-} */
-/* .product_desc {
-  margin-bottom: 24px;
-} */
-/* .product_desc h2 {
-  font-size: 12px;
-  font-weight: 400;
-  margin-bottom: 16px;
-} */

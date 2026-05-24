@@ -1,3 +1,5 @@
+{{ 's-product-form.css' | asset_url | stylesheet_tag }}
+
 {% liquid
   assign current_variant = product.selected_or_first_available_variant
   assign available = current_variant.available

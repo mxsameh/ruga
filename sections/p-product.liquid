@@ -29,6 +29,7 @@
           {% comment %} <span>RUGA</span> {% endcomment %}
           {{ product.title | upcase }}
         </h1>
+
         <div class="product_desc">
           <p>
             {{ product.description | strip_html }}
@@ -37,21 +38,17 @@
 
         {% render 'product-form' %}
       </div>
+
       <div class="product_data">
-        {% render 'accordion',
-          heading: 'Dimensions',
-          content: 'Outside Dimensions: W 50.3 x D 24.4 x H 27.7 cm 
-            Inside Dimensions: W 66.2 x D 40.4 x H 39.4 cm
-            Capacity: 5 turtles / 40 cans',
-          default: 'Regular size'
-        %}
+        {% if product.metafields.custom.dimensions %}
+          {% render 'accordion', heading: 'Dimensions', content: product.metafields.custom.dimensions %}
+        {% endif %}
         {% if product.metafields.custom.capacity %}
           {% render 'accordion',
             heading: 'Capacity: 5 Turtles',
             content: 'RUGA Turtle Scale (Capacity System)
           A simple way to measure capacity across RUGA products:
-          1 Turtle ≈ 8 x 330L cans',
-            default: 'Regular size'
+          1 Turtle ≈ 8 x 330L cans'
           %}
         {% endif %}
       </div>
@@ -60,7 +57,7 @@
 
   {% render 'complementary-products' %}
 
-  {% render 'recommended-products' %}
+  {% render 'related-products' %}
 
   <footer class="f">
     <img src="{{ 'im-footer.png' | asset_url  }}" width="auto" height="auto" alt="logo">
