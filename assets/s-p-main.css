@@ -379,7 +379,8 @@
 }
 .vid-w{
   width: 100%;
-  height: calc(100);
+  height: calc(100vh - var(--h-h));
+  position: absolute;
 }
 
 
