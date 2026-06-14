@@ -380,6 +380,7 @@
 .vid-w {
   padding-top: var(--h-h);
   width: 100%;
+<<<<<<< HEAD
   /* height: calc(100vh - var(--h-h)); */
   height: 100vh;
   position: sticky;
@@ -409,6 +410,16 @@
 
 .s-vid video {
   width: unset !important;
+=======
+  height: calc(100vh - var(--h-h));
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.s-vid video {
+  width: 100%;
+>>>>>>> 636aee3400159877bfe7b94a3096155b2ba63a54
   height: 100%;
   object-fit: cover;
   object-position: center center;
