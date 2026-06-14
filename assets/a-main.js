@@ -138,8 +138,8 @@ const vidA = () => {
         ease: "none",
         scrollTrigger:{
           trigger:'.s-vid',
-          start:'top top'
-
+          start:'top top',
+          end:'bottom bottom'
         }
       });
   });
