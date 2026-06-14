@@ -133,10 +133,13 @@ const vidA = () => {
   const $vid = document.getElementById("anat-video");
 
   $vid.addEventListener("loadedmetadata", () => {
-    //   gsap.to($vid, {
-    //     currentTime: $vid.duration,
-    //     ease: "none",
-    //   });
+      gsap.to($vid, {
+        currentTime: $vid.duration,
+        ease: "none",
+        scrollTrigger:{
+
+        }
+      });
   });
 };
 
