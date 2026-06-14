@@ -371,12 +371,12 @@
     aspect-ratio: 3/4;
   }
 }
-/* .s-vid {
+.s-vid {
   height: 300vh;
   height: 300dvh;
   height: 300svh;
   position: relative;
-} */
+}
 .s-vid video {
   width: 100%;
   height: 100vh;
