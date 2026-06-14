@@ -380,7 +380,7 @@
 .vid-w {
   padding-top: var(--h-h);
   width: 100%;
-  height: calc(100vh - var(--h-h));
+  height: calc(100% - var(--h-h));
   position: sticky;
   top: 0;
   left: 0;
