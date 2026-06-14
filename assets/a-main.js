@@ -126,10 +126,23 @@ const lifeA = () => {
   });
 };
 
-const vidAnimation = () =>{
-  const $vid = document.getElementById('anat-video')
+const vidAnimation = () => {
+  const $vid = document.getElementById("anat-video");
 
-}
+  video.addEventListener("loadedmetadata", () => {
+    gsap.to(video, {
+      currentTime: video.duration,
+      ease: "none",
+      scrollTrigger: {
+        trigger: video,
+        start: "top top",
+        end: "+=3000",
+        scrub: true,
+        pin: true,
+      },
+    });
+  });
+};
 
 // document.addEventListener("DOMContentLoaded", async () => {
 //   const isMobile = window.innerWidth < 770;
