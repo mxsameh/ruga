@@ -146,7 +146,6 @@ const vidA = () => {
         video.currentTime = t;
         last = t;
       }
-      console.log("t", t);
     },
   });
 
