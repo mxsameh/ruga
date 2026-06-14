@@ -144,7 +144,6 @@ const vidA = () => {
         scrub: true,
         onUpdate: (self) => {
           targetTime = video.duration * self.progress;
-          console.log(targetTime);
         },
       },
     },
