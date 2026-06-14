@@ -130,20 +130,43 @@ const lifeA = () => {
 };
 
 const vidA = () => {
-  const $vid = document.getElementById("anat-video");
+  const video = document.getElementById("anat-video");
 
-  $vid.addEventListener("loadedmetadata", () => {
-    gsap.to($vid, {
-      currentTime: $vid.duration,
-      ease: "none",
+  let targetTime = 0;
+
+  gsap.to(
+    {},
+    {
       scrollTrigger: {
         trigger: ".s-vid",
         start: "top top",
         end: "bottom bottom",
-        scrub: 1,
+        scrub: true,
+        onUpdate: (self) => {
+          targetTime = video.duration * self.progress;
+        },
       },
-    });
+    },
+  );
+
+  gsap.ticker.add(() => {
+    if (!video.duration) return;
+    video.currentTime += (targetTime - video.currentTime) * 0.2;
   });
+  // const $vid = document.getElementById("anat-video");
+
+  // $vid.addEventListener("loadedmetadata", () => {
+  //   gsap.to($vid, {
+  //     currentTime: $vid.duration,
+  //     ease: "none",
+  //     scrollTrigger: {
+  //       trigger: ".s-vid",
+  //       start: "top top",
+  //       end: "bottom bottom",
+  //       scrub: 1,
+  //     },
+  //   });
+  // });
 };
 
 // document.addEventListener("DOMContentLoaded", async () => {
