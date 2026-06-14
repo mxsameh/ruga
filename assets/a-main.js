@@ -131,28 +131,24 @@ const lifeA = () => {
 
 const vidA = () => {
   const video = document.getElementById("anat-video");
+  let last = 0;
 
-  let targetTime = 0;
+  ScrollTrigger.create({
+    trigger: ".s-vid",
+    start: "top top",
+    end: "bottom bottom",
+    scrub: true,
+    onUpdate: (self) => {
+      const t = video.duration * self.progress;
 
-  gsap.to(
-    {},
-    {
-      scrollTrigger: {
-        trigger: ".s-vid",
-        start: "top top",
-        end: "bottom bottom",
-        scrub: true,
-        onUpdate: (self) => {
-          targetTime = video.duration * self.progress;
-        },
-      },
+      // throttle seeks
+      if (Math.abs(t - last) > 0.03) {
+        video.currentTime = t;
+        last = t;
+      }
     },
-  );
-
-  gsap.ticker.add(() => {
-    if (!video.duration) return;
-    video.currentTime += (targetTime - video.currentTime) * 0.2;
   });
+
   // const $vid = document.getElementById("anat-video");
 
   // $vid.addEventListener("loadedmetadata", () => {
