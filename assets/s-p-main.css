@@ -380,7 +380,7 @@
 .vid-w {
   width: 100%;
   height: calc(100vh - var(--h-h));
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 0;
 }
