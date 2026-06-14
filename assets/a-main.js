@@ -126,6 +126,10 @@ const lifeA = () => {
   });
 };
 
+const vidAnimation = () =>{
+
+}
+
 // document.addEventListener("DOMContentLoaded", async () => {
 //   const isMobile = window.innerWidth < 770;
 //   await document.fonts.ready;
