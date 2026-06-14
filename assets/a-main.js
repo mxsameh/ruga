@@ -32,6 +32,9 @@ const hA = () => {
 const loA = () => {
   const tl = gsap.timeline();
 
+  tl.set
+  return tl 
+
   tl.from("#lo .y", {
     yPercent: 100,
     duration: 1.2,
