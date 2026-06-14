@@ -32,6 +32,9 @@ const hA = () => {
 const loA = () => {
   const tl = gsap.timeline();
 
+  tl.set("#lo", { autoAlpha: 0 });
+  return tl;
+
   tl.from("#lo .y", {
     yPercent: 100,
     duration: 1.2,
@@ -126,6 +129,42 @@ const lifeA = () => {
   });
 };
 
+const vidA = () => {
+  const video = document.getElementById("anat-video");
+  let last = 0;
+
+  ScrollTrigger.create({
+    trigger: ".s-vid",
+    start: "top top",
+    end: "bottom bottom",
+    scrub: true,
+    onUpdate: (self) => {
+      const t = video.duration * self.progress;
+
+      // throttle seeks
+      if (Math.abs(t - last) > 0.03) {
+        video.currentTime = t;
+        last = t;
+      }
+    },
+  });
+
+  // const $vid = document.getElementById("anat-video");
+
+  // $vid.addEventListener("loadedmetadata", () => {
+  //   gsap.to($vid, {
+  //     currentTime: $vid.duration,
+  //     ease: "none",
+  //     scrollTrigger: {
+  //       trigger: ".s-vid",
+  //       start: "top top",
+  //       end: "bottom bottom",
+  //       scrub: 1,
+  //     },
+  //   });
+  // });
+};
+
 // document.addEventListener("DOMContentLoaded", async () => {
 //   const isMobile = window.innerWidth < 770;
 //   await document.fonts.ready;
@@ -196,4 +235,5 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   lifeA();
+  vidA();
 });
