@@ -137,6 +137,7 @@ const vidA = () => {
         currentTime: $vid.duration,
         ease: "none",
         scrollTrigger:{
+          trigger:''
 
         }
       });
