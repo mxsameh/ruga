@@ -137,7 +137,7 @@ const vidA = () => {
       currentTime: $vid.duration,
       ease: "none",
       scrollTrigger: {
-        trigger: video,
+        trigger: $vid,
         start: "top top",
         end: "+=3000",
         scrub: true,
