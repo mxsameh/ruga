@@ -127,7 +127,7 @@ const lifeA = () => {
 };
 
 const vidAnimation = () =>{
-  const $vid = document.getElementById('')
+  const $vid = document.getElementById('anat-video')
 
 }
 
