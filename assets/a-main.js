@@ -144,6 +144,7 @@ const vidA = () => {
         scrub: true,
         onUpdate: (self) => {
           targetTime = video.duration * self.progress;
+          console.log(targetTime);
         },
       },
     },
@@ -152,7 +153,6 @@ const vidA = () => {
   gsap.ticker.add(() => {
     if (!video.duration) return;
     video.currentTime += (targetTime - video.currentTime) * 0.2;
-    
   });
   // const $vid = document.getElementById("anat-video");
 
