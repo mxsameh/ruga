@@ -127,6 +127,7 @@ const lifeA = () => {
 };
 
 const vidAnimation = () =>{
+  const $vid = document.getElementById('')
 
 }
 
