@@ -132,9 +132,9 @@ const lifeA = () => {
 const vidA = () => {
   const $vid = document.getElementById("anat-video");
 
-  video.addEventListener("loadedmetadata", () => {
-    gsap.to(video, {
-      currentTime: video.duration,
+  $vid.addEventListener("loadedmetadata", () => {
+    gsap.to($vid, {
+      currentTime: $vid.duration,
       ease: "none",
       scrollTrigger: {
         trigger: video,
@@ -217,5 +217,5 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   lifeA();
-  vidAnimation()
+  vidA();
 });
