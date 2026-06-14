@@ -152,6 +152,7 @@ const vidA = () => {
   gsap.ticker.add(() => {
     if (!video.duration) return;
     video.currentTime += (targetTime - video.currentTime) * 0.2;
+    
   });
   // const $vid = document.getElementById("anat-video");
 
