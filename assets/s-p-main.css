@@ -372,9 +372,9 @@
   }
 }
 .s-vid {
-  height: 300vh;
-  height: 300dvh;
-  height: 300svh;
+  height: 200vh;
+  height: 200dvh;
+  height: 200svh;
   position: relative;
 }
 .vid-w {
