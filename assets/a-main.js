@@ -32,8 +32,8 @@ const hA = () => {
 const loA = () => {
   const tl = gsap.timeline();
 
-  tl.set
-  return tl 
+  tl.set("#lo", { autoAlpha: 0 });
+  return tl;
 
   tl.from("#lo .y", {
     yPercent: 100,
@@ -129,7 +129,7 @@ const lifeA = () => {
   });
 };
 
-const vidAnimation = () => {
+const vidA = () => {
   const $vid = document.getElementById("anat-video");
 
   video.addEventListener("loadedmetadata", () => {
@@ -217,4 +217,5 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   lifeA();
+  vidAnimation()
 });
