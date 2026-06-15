@@ -32,8 +32,8 @@ const hA = () => {
 const loA = () => {
   const tl = gsap.timeline();
 
-  tl.set("#lo", { autoAlpha: 0 });
-  return tl;
+  // tl.set("#lo", { autoAlpha: 0 });
+  // return tl;
 
   tl.from("#lo .y", {
     yPercent: 100,
@@ -145,6 +145,7 @@ const vidA = () => {
       if (Math.abs(t - last) > 0.03) {
         video.currentTime = t;
         last = t;
+        // console.log("t", t);
       }
     },
   });

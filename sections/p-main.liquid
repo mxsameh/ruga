@@ -121,7 +121,7 @@
 
   <section class="s-anat">
     <h2>THE ANATOMY OF RUGA</h2>
-    <div class="anat">
+    <div class="anat d-n">
       <figure>
         <img src="{{ 'im-anat.png' | asset_url  }}" width="auto" height="auto" alt="logo">
       </figure>
@@ -136,8 +136,9 @@
     <div class="vid-w">
       <h2>THE ANATOMY OF RUGA</h2>
       <video id="anat-video" preload="auto" muted playsinline>
-        <source src="{{ 'ruga-ant2.webm' | asset_url }}" type="video/webm">
-        <source src="{{ 'ruga-ant.mp4' | asset_url }}" type="video/mp4">
+        {% comment %} <source src="{{ 'ruga-ant2.webm' | asset_url }}" type="video/webm"> {% endcomment %}
+        {% comment %} <source src="{{ 'ruga-ant.mp4' | asset_url }}" type="video/mp4"> {% endcomment %}
+        <source src="{{ 'output2.mp4' | asset_url }}" type="video/mp4">
       </video>
     </div>
   </section>
