@@ -146,7 +146,7 @@ const vidA = () => {
         if (Math.abs(t - last) > 0.03) {
           video.currentTime = t;
           last = t;
-          console.log("t", t);
+          // console.log("t", t);
         }
       },
     });
