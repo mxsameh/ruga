@@ -134,17 +134,18 @@ const vidA = () => {
   let last = 0;
 
   ScrollTrigger.create({
-    trigger: ".s-vid",
+    trigger: ".vid-w",
     start: "top top",
-    end: "bottom bottom",
-    scrub: true,
+    end: "+=200vh",
+    pin: true,
+    scrub: 1,
     onUpdate: (self) => {
       const t = video.duration * self.progress;
-
       // throttle seeks
       if (Math.abs(t - last) > 0.03) {
         video.currentTime = t;
         last = t;
+        console.log("t", t);
       }
     },
   });
