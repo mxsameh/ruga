@@ -137,7 +137,7 @@ const vidA = () => {
     ScrollTrigger.create({
       trigger: ".vid-w",
       start: "top top",
-      end: "+=100vh",
+      end: "+=200svh",
       pin: true,
       scrub: 1,
       onUpdate: (self) => {
