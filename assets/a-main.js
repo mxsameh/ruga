@@ -32,8 +32,8 @@ const hA = () => {
 const loA = () => {
   const tl = gsap.timeline();
 
-  // tl.set("#lo", { autoAlpha: 0 });
-  // return tl;
+  tl.set("#lo", { autoAlpha: 0 });
+  return tl;
 
   tl.from("#lo .y", {
     yPercent: 100,
@@ -134,7 +134,7 @@ const vidA = () => {
   let last = 0;
 
   ScrollTrigger.create({
-    trigger: ".s-vid",
+    trigger: ".vid-w",
     start: "top top",
     end: "bottom bottom",
     scrub: true,
