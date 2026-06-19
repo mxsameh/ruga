@@ -236,5 +236,5 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   lifeA();
-  // vidA();
+  vidA();
 });
