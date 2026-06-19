@@ -137,7 +137,7 @@ const vidA = () => {
     ScrollTrigger.create({
       trigger: ".vid-w",
       start: "top top",
-      end: "+=200svh",
+      end: "+=100vh",
       pin: true,
       scrub: 1,
       onUpdate: (self) => {
@@ -146,7 +146,7 @@ const vidA = () => {
         if (Math.abs(t - last) > 0.03) {
           video.currentTime = t;
           last = t;
-          // console.log("t", t);
+          console.log("t", t);
         }
       },
     });
