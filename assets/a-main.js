@@ -141,12 +141,11 @@ const vidA = () => {
     scrub: 1,
     onUpdate: (self) => {
       const t = video.duration * self.progress;
-
       // throttle seeks
       if (Math.abs(t - last) > 0.03) {
         video.currentTime = t;
         last = t;
-        // console.log("t", t);
+        console.log("t", t);
       }
     },
   });
@@ -237,5 +236,5 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   lifeA();
-  vidA();
+  // vidA();
 });
