@@ -131,25 +131,26 @@ const lifeA = () => {
 
 const vidA = () => {
   const video = document.getElementById("anat-video");
-  let last = 0;
+  video.addEventListener("loadedmetadata", () => {
+    let last = 0;
 
-  ScrollTrigger.create({
-    trigger: ".vid-w",
-    start: "top top",
-    end: "+=200vh",
-    pin: true,
-    scrub: 1,
-    onUpdate: (self) => {
-      const t = video.duration * self.progress;
-      // throttle seeks
-      if (Math.abs(t - last) > 0.03) {
-        video.currentTime = t;
-        last = t;
-        console.log("t", t);
-      }
-    },
+    ScrollTrigger.create({
+      trigger: ".vid-w",
+      start: "top top",
+      end: "+=200vh",
+      pin: true,
+      scrub: 1,
+      onUpdate: (self) => {
+        const t = video.duration * self.progress;
+        // throttle seeks
+        if (Math.abs(t - last) > 0.03) {
+          video.currentTime = t;
+          last = t;
+          console.log("t", t);
+        }
+      },
+    });
   });
-
   // const $vid = document.getElementById("anat-video");
 
   // $vid.addEventListener("loadedmetadata", () => {
