@@ -47,7 +47,10 @@
 .s-amb ul {
   display: flex;
   flex-direction: column;
-  gap: 80rem;
+  gap: 120rem;
+  @media (width < 770px) {
+    gap: 80rem;
+  }
 }
 .s-amb li {
   display: flex;
