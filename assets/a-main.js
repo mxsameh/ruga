@@ -122,7 +122,8 @@ const lifeA = () => {
       start: "top 85%",
     },
   });
-  tl.from(".s-life figure ", {
+
+  gsap.from(".s-life figure ", {
     opacity: 0,
     stagger: 0.2,
     duration: 1,
