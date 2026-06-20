@@ -91,8 +91,13 @@
       <li>
         <a href="/pages/our-people#campers-climbers">
           <img src="{{ 'im-ls-i1.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+
           <figure>
-            <img src="{{ 'im-ls1.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+            <img
+              src="{{ section.settings.campers_img | image_url}}"
+              width="auto"
+              height="auto"
+            >
             <figcaption>OUR CAMPERS & CLIMBERS</figcaption>
           </figure>
         </a>
@@ -101,7 +106,12 @@
         <a href="/pages/our-people#wind-water">
           <img src="{{ 'im-ls-i2.png' | asset_url  }}" width="auto" height="auto" alt="logo">
           <figure>
-            <img src="{{ 'im-ls2.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+            {% comment %} <img src="{{ 'im-ls2.png' | asset_url  }}" width="auto" height="auto" alt="logo"> {% endcomment %}
+            <img
+              src="{{ section.settings.wind-img | image_url}}"
+              width="auto"
+              height="auto"
+            >
             <figcaption>OUR WIND & WATER PEOPLE</figcaption>
           </figure>
         </a>
@@ -110,7 +120,13 @@
         <a href="#">
           <img src="{{ 'im-ls-i3.png' | asset_url  }}" width="auto" height="auto" alt="logo">
           <figure>
-            <img src="{{ 'im-ls3.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+            {% comment %} <img src="{{ 'im-ls3.png' | asset_url  }}" width="auto" height="auto" alt="logo"> {% endcomment %}
+
+            <img
+              src="{{ section.settings.angelers-img | image_url}}"
+              width="auto"
+              height="auto"
+            >
             <figcaption>OUR ANGLERS</figcaption>
           </figure>
         </a>
@@ -119,7 +135,13 @@
         <a href="#">
           <img src="{{ 'im-ls-i4.png' | asset_url  }}" width="auto" height="auto" alt="logo">
           <figure>
-            <img src="{{ 'im-ls4.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+            {% comment %} <img src="{{ 'im-ls4.png' | asset_url  }}" width="auto" height="auto" alt="logo"> {% endcomment %}
+
+            <img
+              src="{{ section.settings.hosts-img | image_url}}"
+              width="auto"
+              height="auto"
+            >
             <figcaption>OUR HOSTS</figcaption>
           </figure>
         </a>
@@ -158,9 +180,22 @@
 
   <section class="s-ban">
     <figure>
+      {% comment %}
+        <picture>
+          <source srcset="{{'im-ban2.png' | asset_url}}" media="(min-width: 770px)">
+          <img src="{{ 'im-ban2-m.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+        </picture>
+      {% endcomment %}
       <picture>
-        <source srcset="{{'im-ban2.png' | asset_url}}" media="(min-width: 770px)">
-        <img src="{{ 'im-ban2-m.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+        <source
+          srcset="{{ section.settings.lower_banner_d | image_url: width: 2000 }}"
+          media="(min-width: 770px)"
+        >
+        <img
+          src="{{ section.settings.lower_banner_m | image_url: width: 770 }}"
+          width="auto"
+          height="auto"
+        >
       </picture>
     </figure>
   </section>
@@ -181,28 +216,33 @@
       "type": "video"
     },
     {
-      "id": "campers-img",
+      "id": "campers_img",
       "label": "Campers",
       "type": "image_picker"
     },
     {
-      "id": "wind-img",
+      "id": "wind_img",
       "label": "Wind People",
       "type": "image_picker"
     },
     {
-      "id": "angelers-img",
+      "id": "angelers_img",
       "label": "Angelers",
       "type": "image_picker"
     },
     {
-      "id": "hosts-img",
+      "id": "hosts_img",
       "label": "Hosts",
       "type": "image_picker"
     },
     {
-      "id": "lower_banner",
-      "label": "Lower Banner",
+      "id": "lower_banner_d",
+      "label": "Lower Banner Desktop",
+      "type": "image_picker"
+    },
+    {
+      "id": "lower_banner_m",
+      "label": "Lower Banner Mobile",
       "type": "image_picker"
     }
   ]
