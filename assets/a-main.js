@@ -126,7 +126,7 @@ const lifeA = () => {
   gsap.from(".s-life figure ", {
     opacity: 0,
     stagger: 0.2,
-    duration: 1,
+    duration: 0.8,
     ease: "sine.inOut",
   })
   .from(".s-life li > img", {
