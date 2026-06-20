@@ -26,13 +26,10 @@
               {{ block.settings.bio }}
             </p>
           </div>
-          <figure></figure>
-          {% comment %}
-            <figure>
-              <h3 class="m-o">{{ block.settings.title }}</h3>
-              {{ block.settings.image | image_url: width: 1200 | image_tag }}
-            </figure>
-          {% endcomment %}
+          <figure>
+            {% comment %} <h3 class="m-o">{{ block.settings.title }}</h3> {% endcomment %}
+            {{ block.settings.image | image_url: width: 1200 | image_tag }}
+          </figure>
         </li>
       {% endfor %}
     </ul>
