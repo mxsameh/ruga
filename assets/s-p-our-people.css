@@ -80,6 +80,7 @@
   border-radius: 32rem;
   overflow: hidden;
   @media (width < 770px) {
+    position: unset;
     height: auto;
   }
 }
