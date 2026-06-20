@@ -128,7 +128,11 @@ const lifeA = () => {
     duration: 1,
     ease: "sine.inOut",
   })
-  .from('.s-life > img')
+  .from('.s-life > img',{
+    opacity:0,
+    
+
+  })
   ;
 };
 
