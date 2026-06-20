@@ -13,8 +13,10 @@
       "type": "p-main",
       "settings": {
         "d_video": "shopify://files/videos/out.mp4",
-        "collection_url": "",
-        "title": ""
+        "campers-img": "shopify://shop_images/im-ls1.png",
+        "wind-img": "shopify://shop_images/im-ls2.png",
+        "angelers-img": "shopify://shop_images/im-ls3.png",
+        "hosts-img": "shopify://shop_images/im-ls4.png"
       }
     }
   },
