@@ -63,6 +63,7 @@
   }
 }
 .s-amb li figure {
+  width: 545rem;
   flex: 1;
   /* aspect-ratio: 1; */
   max-width: 100%;
