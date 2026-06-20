@@ -64,7 +64,6 @@
 }
 .s-amb li figure {
   width: 545rem;
-  flex: 1;
   /* aspect-ratio: 1; */
   max-width: 100%;
   overflow: hidden;
@@ -78,9 +77,12 @@
   }
 }
 .s-amb li div {
-  flex: 1;
+  width: 545rem;
+
   display: flex;
   flex-direction: column;
+
+  @media (width < 770px) {
 }
 .s-amb li h3 {
   font-family: "m";
