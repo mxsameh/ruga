@@ -73,7 +73,7 @@
           assign bgc = product.metafields.custom.background_color
         %}
         <li>
-          <a class="cp" href="{{ product.url }}" style="background-color: {{bgc}};">
+          <a class="cp" href="{{ product.url }}">
             <h3 class="m-o">
               <span>RUG<span>A</span></span>
               COOLER
@@ -124,9 +124,9 @@
     <h2>THE ANATOMY OF RUGA</h2>
     <div class="vid-w">
       <video id="anat-video" preload="auto" muted playsinline>
-        <source src="{{ 'ruga-ant.webm' | asset_url }}" type="video/webm">
+        {% comment %} <source src="{{ 'ruga-ant.webm' | asset_url }}" type="video/webm"> {% endcomment %}
         {% comment %} <source src="{{ 'ruga-ant.mp4' | asset_url }}" type="video/mp4"> {% endcomment %}
-        {% comment %} <source src="{{ 'output2.mp4' | asset_url }}" type="video/mp4"> {% endcomment %}
+        <source src="{{ 'outputs.mp4' | asset_url }}" type="video/mp4">
       </video>
     </div>
   </section>

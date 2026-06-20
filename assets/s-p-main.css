@@ -119,14 +119,15 @@
 }
 
 .s-colc li {
+  overflow: hidden;
   @media (width < 770px) {
     flex-shrink: 0;
     width: 80%;
   }
 }
 .s-colc a {
+  display: block;
   @media (width < 770px) {
-    display: block;
     padding: 24rem 32rem;
     border-radius: 32rem;
   }

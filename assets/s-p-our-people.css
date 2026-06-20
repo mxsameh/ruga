@@ -28,7 +28,7 @@
 
 .s-he p {
   margin-top: 64rem;
-  font-size: 24rem;
+  font-size: 20rem;
   line-height: 32rem;
   @media (width < 770px) {
     font-size: 14rem;
@@ -47,11 +47,14 @@
 .s-amb ul {
   display: flex;
   flex-direction: column;
-  gap: 80rem;
+  gap: 120rem;
+  @media (width < 770px) {
+    gap: 80rem;
+  }
 }
 .s-amb li {
   display: flex;
-  gap: 80rem;
+  justify-content: space-between;
   &:nth-child(2n) {
     flex-direction: row-reverse;
   }
@@ -63,38 +66,52 @@
   }
 }
 .s-amb li figure {
-  flex: 1;
+  width: 545rem;
   /* aspect-ratio: 1; */
   max-width: 100%;
   overflow: hidden;
+  position: relative;
+
+  @media (width < 770px) {
+    width: unset;
+  }
 }
 .s-amb li img {
+  position: absolute;
+  width: 100%;
   height: 100%;
   border-radius: 32rem;
   overflow: hidden;
   @media (width < 770px) {
-    height: auto;
+    position: unset;
+    height: 300rem;
   }
 }
 .s-amb li div {
-  flex: 1;
+  width: 660rem;
   display: flex;
   flex-direction: column;
+  gap: 80rem;
+
+  @media (width < 770px) {
+    width: unset;
+  }
 }
 .s-amb li h3 {
   font-family: "m";
   font-size: 40rem;
-  font-weight: 200;
-
+  font-weight: 150;
+  text-transform: uppercase;
   @media (width < 770px) {
-    font-size: 32rem;
-    margin-bottom: 8rem;
+    font-size: 30rem;
+    margin-bottom: 32rem;
   }
 }
 .s-amb li p {
   margin-top: auto;
-  font-size: 24rem;
-  line-height: 32rem;
+  font-size: 20rem;
+  line-height: 140%;
+  text-align: justify;
   @media (width < 770px) {
     font-size: 14rem;
     line-height: 16rem;

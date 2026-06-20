@@ -67,23 +67,24 @@ const heA = () => {
   // const vh = wh - 72 - 40;
   const tl = gsap.timeline();
 
-  tl.from("#he-ban", {
-    opacity: 0,
-    duration: 0.6,
-    ease: "power3.inOut",
-  })
+  tl
+    // .from("#he-ban", {
+    //   opacity: 0,
+    //   duration: 0.6,
+    //   ease: "power3.inOut",
+    // })
     .from(".s-hero", {
-      duration: 1.2,
+      duration: 1,
       padding: 0,
       ease: "power3.inOut",
     })
     .from(
       "#he-ban",
       {
+        duration: 1,
         width: "100%",
         height: "100%",
         borderRadius: "0",
-        duration: 1.2,
         ease: "power3.inOut",
       },
       "<",
@@ -121,35 +122,49 @@ const lifeA = () => {
       start: "top 85%",
     },
   });
+
   tl.from(".s-life figure ", {
     opacity: 0,
     stagger: 0.2,
     duration: 1,
     ease: "sine.inOut",
   });
+  tl.from(
+    ".s-life li > img",
+    {
+      scale: 0.5,
+      opacity: 0,
+      stagger: 0.2,
+      duration: 0.8,
+      ease: "sine.inOut",
+    },
+    "<",
+  );
 };
 
 const vidA = () => {
   const video = document.getElementById("anat-video");
-  let last = 0;
+  video.addEventListener("loadedmetadata", () => {
+    let last = 0;
+    console.log("duration:", video.duration);
 
-  ScrollTrigger.create({
-    trigger: ".vid-w",
-    start: "top top",
-    end: "bottom bottom",
-    scrub: true,
-    onUpdate: (self) => {
-      const t = video.duration * self.progress;
-
-      // throttle seeks
-      if (Math.abs(t - last) > 0.03) {
-        video.currentTime = t;
-        last = t;
-        // console.log("t", t);
-      }
-    },
+    ScrollTrigger.create({
+      trigger: ".vid-w",
+      start: "top top",
+      end: "+=200svh",
+      pin: true,
+      scrub: 1,
+      onUpdate: (self) => {
+        const t = video.duration * self.progress;
+        // throttle seeks
+        if (Math.abs(t - last) > 0.03) {
+          video.currentTime = t;
+          last = t;
+          // console.log("t", t);
+        }
+      },
+    });
   });
-
   // const $vid = document.getElementById("anat-video");
 
   // $vid.addEventListener("loadedmetadata", () => {
