@@ -12,25 +12,28 @@
     "main": {
       "type": "p-our-people",
       "blocks": {
-        "ambassador_xfJYki": {
-          "type": "ambassador",
-          "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2026-06-12_at_12.16.45.jpg",
-            "title": "Karim El Helw",
-            "bio": "Karim El Helw is a lifelong angler with more than three decades of experience fishing across Egypt, the Middle East, and Europe. Driven by a passion for the sport and a commitment to passing knowledge on to future generations, he founded Bluefin, a community dedicated to angling education, conservation, and responsible fishing practices. Through both Bluefin and his work as an IGFA representative, Karim continues to promote a deeper connection to the outdoors and the waters that make these experiences possible."
-          }
-        },
         "ambassador_E46p7T": {
           "type": "ambassador",
           "settings": {
+            "id": "campers-climbers",
             "image": "shopify://shop_images/WhatsApp_Image_2026-06-09_at_12.45.42.jpg",
             "title": "Omar Safar",
             "bio": "Omar Safar is the co-founder of Ascent, Egypt's leading indoor climbing gym. A passionate climber and off-road enthusiast, he spends much of his time exploring remote landscapes and seeking new adventures outdoors. Through both his work and personal pursuits, he is driven by a belief that the best experiences are shared and that great communities are built around a common passion for exploration."
           }
         },
+        "ambassador_xfJYki": {
+          "type": "ambassador",
+          "settings": {
+            "id": "wind-water",
+            "image": "shopify://shop_images/WhatsApp_Image_2026-06-12_at_12.16.45.jpg",
+            "title": "Karim El Helw",
+            "bio": "Karim El Helw is a lifelong angler with more than three decades of experience fishing across Egypt, the Middle East, and Europe. Driven by a passion for the sport and a commitment to passing knowledge on to future generations, he founded Bluefin, a community dedicated to angling education, conservation, and responsible fishing practices. Through both Bluefin and his work as an IGFA representative, Karim continues to promote a deeper connection to the outdoors and the waters that make these experiences possible."
+          }
+        },
         "ambassador_WhdN6r": {
           "type": "ambassador",
           "settings": {
+            "id": "",
             "image": "shopify://shop_images/f.png",
             "title": "NAME NAME",
             "bio": "Ruga was built on a simple idea: outdoor products should never be the weakest part of the adventure. They should show up, hold their ground, and keep going long after the easy options give up. Whatever we create whether it’s something that keeps things cold, carries essentials, or supports time spent outdoors it has to earn its place outside, not just look good in a photo."
@@ -39,6 +42,7 @@
         "ambassador_XYff9W": {
           "type": "ambassador",
           "settings": {
+            "id": "",
             "image": "shopify://shop_images/f.png",
             "title": "NAME NAME",
             "bio": "Ruga was built on a simple idea: outdoor products should never be the weakest part of the adventure. They should show up, hold their ground, and keep going long after the easy options give up. Whatever we create whether it’s something that keeps things cold, carries essentials, or supports time spent outdoors it has to earn its place outside, not just look good in a photo."
@@ -46,8 +50,8 @@
         }
       },
       "block_order": [
-        "ambassador_xfJYki",
         "ambassador_E46p7T",
+        "ambassador_xfJYki",
         "ambassador_WhdN6r",
         "ambassador_XYff9W"
       ],
