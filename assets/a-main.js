@@ -117,17 +117,8 @@ const colcA = () => {
 
 const lifeA = () => {
   const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".s-life",
-      start: "top 85%",
-    },
   });
-  tl.from(".s-life figure ", {
-    opacity: 0,
-    stagger: 0.2,
-    duration: 1,
-    ease: "sine.inOut",
-  }).from(".s-life li > img", {
+  gsap.from(".s-life li > img", {
     scale: 0.5,
     opacity: 0,
     stagger: 0.2,
