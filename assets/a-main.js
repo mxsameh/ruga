@@ -127,7 +127,7 @@ const lifeA = () => {
     stagger: 0.2,
     duration: 1,
     ease: "sine.inOut",
-  }).from(".s-life > img", {
+  }).from(".s-life li > img", {
     scale: 0.5,
     opacity: 0,
     stagger: 0.2,
