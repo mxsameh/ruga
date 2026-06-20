@@ -31,36 +31,13 @@
     /* aspect-ratio: 16/9; */
   }
 }
+.s-hero video {
+  height: 100%;
+}
 
 .s-hero img {
   height: 100%;
 }
-
-.s-hero video:first-child {
-  display: none;
-  @media (width>768px) {
-    display: block;
-  }
-}
-
-.s-hero video:last-child {
-  @media (width>768px) {
-    display: none;
-  }
-}
-
-/* .s-hero h3 {
-  font-size: 128rem;
-  color: var(--c-y);
-  position: absolute;
-  top: 250rem;
-  left: 120rem;
-  & span {
-    display: block;
-    margin-left: 376rem;
-    margin-top: -80rem;
-  }
-} */
 
 .s-colc {
   margin-top: 120rem;
