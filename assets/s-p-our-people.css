@@ -67,8 +67,15 @@
   /* aspect-ratio: 1; */
   max-width: 100%;
   overflow: hidden;
+  position: relative;
+
+  @media (width < 770px) {
+    width: unset;
+  }
 }
 .s-amb li img {
+  position: absolute;
+  width: 100%;
   height: 100%;
   border-radius: 32rem;
   overflow: hidden;
