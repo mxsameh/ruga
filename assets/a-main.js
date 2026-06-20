@@ -127,7 +127,9 @@ const lifeA = () => {
     stagger: 0.2,
     duration: 1,
     ease: "sine.inOut",
-  });
+  })
+  .from('.s-life > img')
+  ;
 };
 
 const vidA = () => {
