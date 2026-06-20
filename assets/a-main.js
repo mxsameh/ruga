@@ -133,6 +133,7 @@ const vidA = () => {
   const video = document.getElementById("anat-video");
   video.addEventListener("loadedmetadata", () => {
     let last = 0;
+    console.log("duration:", video.duration);
 
     ScrollTrigger.create({
       trigger: ".vid-w",
