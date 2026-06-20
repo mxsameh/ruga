@@ -130,7 +130,6 @@ const lifeA = () => {
   });
   gsap.from(".s-life li > img", {
     scale: 0.5,
-    opacity: 0,
     ease: "sine.inOut",
     scrollTrigger: {
       trigger: ".s-life",
