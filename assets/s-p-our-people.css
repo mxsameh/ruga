@@ -37,7 +37,7 @@
 }
 
 .s-amb {
-  margin-top: 120rem;
+  /* margin-top: 120rem; */
   padding-inline: var(--p-i);
 
   @media (width < 770px) {
@@ -47,12 +47,9 @@
 .s-amb ul {
   display: flex;
   flex-direction: column;
-  gap: 120rem;
-  @media (width < 770px) {
-    gap: 80rem;
-  }
 }
 .s-amb li {
+  padding-top: 120rem;
   display: flex;
   justify-content: space-between;
   &:nth-child(2n) {
@@ -60,6 +57,7 @@
   }
 
   @media (width < 770px) {
+    padding-top: 80rem;
     gap: 64rem;
     flex-direction: column-reverse !important;
     gap: 24rem;

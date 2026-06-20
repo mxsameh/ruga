@@ -19,7 +19,7 @@
   <section class="s-amb">
     <ul>
       {% for block in section.blocks %}
-        <li>
+        <li id="{{ block.settings.id }}">
           <div>
             <h3 class="d-o">{{ block.settings.title }}</h3>
             <p>
@@ -45,6 +45,11 @@
       "name": "Ambassador",
       "type": "ambassador",
       "settings": [
+        {
+          "type": "text",
+          "id": "id",
+          "label": "ID"
+        },
         {
           "type": "image_picker",
           "id": "image",
