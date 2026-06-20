@@ -184,12 +184,16 @@
     flex-basis: calc((100% - 16rem) / 2);
   }
 }
+.s-life li a {
+  display: block;
+  position: relative;
+}
 .s-life li {
-  & > img {
+  & a > img {
     position: absolute;
     z-index: 1;
   }
-  &:nth-child(1) > img {
+  &:nth-child(1) a > img {
     width: 120rem;
     left: 48rem;
     bottom: -32rem;
@@ -200,7 +204,7 @@
       top: unset;
     }
   }
-  &:nth-child(2) > img {
+  &:nth-child(2) a > img {
     width: 120rem;
     right: -24rem;
     top: -48rem;
@@ -210,7 +214,7 @@
       width: 85rem;
     }
   }
-  &:nth-child(3) > img {
+  &:nth-child(3) a > img {
     width: 130rem;
     left: 120rem;
     bottom: -28rem;
@@ -220,7 +224,7 @@
       bottom: -20rem;
     }
   }
-  &:nth-child(4) > img {
+  &:nth-child(4) a > img {
     width: 100rem;
     right: 32rem;
     top: -40rem;
