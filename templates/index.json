@@ -13,10 +13,12 @@
       "type": "p-main",
       "settings": {
         "d_video": "shopify://files/videos/out.mp4",
-        "campers-img": "shopify://shop_images/im-ls1.png",
-        "wind-img": "shopify://shop_images/im-ls2.png",
-        "angelers-img": "shopify://shop_images/im-ls3.png",
-        "hosts-img": "shopify://shop_images/im-ls4.png"
+        "campers_img": "shopify://shop_images/im-ls1.png",
+        "wind_img": "shopify://shop_images/im-ls2.png",
+        "angelers_img": "shopify://shop_images/im-ls3.png",
+        "hosts_img": "shopify://shop_images/im-ls4.png",
+        "lower_banner_d": "shopify://shop_images/jtn068zkpksbgu9l4obz.webp",
+        "lower_banner_m": "shopify://shop_images/jtn068zkpksbgu9l4obz.webp"
       }
     }
   },
