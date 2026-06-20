@@ -11,15 +11,14 @@
 <div id="p">
   <section class="s-hero">
     <figure id="he-ban">
-      {% comment %} {{ settings.banner | image_url: width: 2000 | image_tag }} {% endcomment %}
+      {{ section.settings.d_video | video_tag: autoplay: true, muted: true, loop: true, class: 'd-video' }}
 
-      <picture>
-        <source srcset="{{'im-ban1.png' | asset_url}}" media="(min-width: 770px)">
-        <img src="{{ 'im-ban1-m.png' | asset_url  }}" width="auto" height="auto" alt="logo">
-      </picture>
       {% comment %}
-        {{ section.settings.d_video | video_tag: autoplay: true, muted: true, loop: true, class: 'd-video' }}
-        {{ section.settings.m_video | video_tag: autoplay: true, muted: true, loop: true, class: 'm-video' }}
+        <picture>
+          <source srcset="{{'im-ban1.png' | asset_url}}" media="(min-width: 770px)">
+          <img src="{{ 'im-ban1-m.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+        </picture>
+          {{ section.settings.m_video | video_tag: autoplay: true, muted: true, loop: true, class: 'm-video' }}
       {% endcomment %}
     </figure>
   </section>
