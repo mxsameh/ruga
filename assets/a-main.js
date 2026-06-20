@@ -130,8 +130,9 @@ const lifeA = () => {
   })
   .from('.s-life > img',{
     opacity:0,
-    
-
+    stagger:0.2,
+    duration:0.8,
+    ease:'sine.inOut'
   })
   ;
 };
