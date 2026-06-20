@@ -77,12 +77,13 @@
   }
 }
 .s-amb li div {
-  width: 545rem;
-
+  width: 660rem;
   display: flex;
   flex-direction: column;
 
   @media (width < 770px) {
+    width: unset;
+  }
 }
 .s-amb li h3 {
   font-family: "m";
