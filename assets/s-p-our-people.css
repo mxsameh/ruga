@@ -103,8 +103,8 @@
   font-weight: 150;
   text-transform: uppercase;
   @media (width < 770px) {
-    font-size: 32rem;
-    margin-bottom: 8rem;
+    font-size: 30rem;
+    margin-bottom: 32rem;
   }
 }
 .s-amb li p {
