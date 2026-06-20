@@ -51,7 +51,7 @@
 }
 .s-amb li {
   display: flex;
-  gap: 80rem;
+  gap: 250rem;
   &:nth-child(2n) {
     flex-direction: row-reverse;
   }
