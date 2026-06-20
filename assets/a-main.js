@@ -123,12 +123,12 @@ const lifeA = () => {
     },
   });
 
-  gsap.from(".s-life figure ", {
+  tl.from(".s-life figure ", {
     opacity: 0,
     stagger: 0.2,
     duration: 1,
     ease: "sine.inOut",
-  })
+  });
   tl.from(".s-life li > img", {
     scale: 0.5,
     opacity: 0,
