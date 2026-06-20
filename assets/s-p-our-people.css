@@ -107,6 +107,7 @@
   margin-top: auto;
   font-size: 20rem;
   line-height: 140%;
+  text-align: justify;
   @media (width < 770px) {
     font-size: 14rem;
     line-height: 16rem;
