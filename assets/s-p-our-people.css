@@ -84,7 +84,7 @@
   overflow: hidden;
   @media (width < 770px) {
     position: unset;
-    height: auto;
+    height: 300rem;
   }
 }
 .s-amb li div {
