@@ -67,11 +67,12 @@ const heA = () => {
   // const vh = wh - 72 - 40;
   const tl = gsap.timeline();
 
-  tl.from("#he-ban", {
-    opacity: 0,
-    duration: 0.6,
-    ease: "power3.inOut",
-  })
+  tl
+    // .from("#he-ban", {
+    //   opacity: 0,
+    //   duration: 0.6,
+    //   ease: "power3.inOut",
+    // })
     .from(".s-hero", {
       duration: 1.2,
       padding: 0,
