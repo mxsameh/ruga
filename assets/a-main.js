@@ -74,17 +74,17 @@ const heA = () => {
     //   ease: "power3.inOut",
     // })
     .from(".s-hero", {
-      duration: 1.2,
+      duration: 1,
       padding: 0,
       ease: "power3.inOut",
     })
     .from(
       "#he-ban",
       {
+        duration: 1,
         width: "100%",
         height: "100%",
         borderRadius: "0",
-        duration: 1.2,
         ease: "power3.inOut",
       },
       "<",
