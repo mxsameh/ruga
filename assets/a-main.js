@@ -127,14 +127,13 @@ const lifeA = () => {
     stagger: 0.2,
     duration: 1,
     ease: "sine.inOut",
-  })
-  .from('.s-life > img',{
-    opacity:0,
-    stagger:0.2,
-    duration:0.8,
-    ease:'sine.inOut'
-  })
-  ;
+  }).from(".s-life > img", {
+    scale: 0.5,
+    opacity: 0,
+    stagger: 0.2,
+    duration: 0.8,
+    ease: "sine.inOut",
+  });
 };
 
 const vidA = () => {
