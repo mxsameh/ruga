@@ -41,7 +41,7 @@
 .s-colc {
   margin-top: 120rem;
   @media (width < 770px) {
-    margin-top: 40rem;
+    margin-top: 64rem;
   }
 }
 
@@ -81,17 +81,17 @@
     width: 80%;
   }
 }
-.s-colc a {
+.s-colc li a {
   display: block;
   @media (width < 770px) {
     padding: 24rem 32rem;
     border-radius: 32rem;
   }
 }
-.s-colc figure {
+.s-colc li figure {
   aspect-ratio: 1;
 }
-.s-colc a h3 {
+.s-colc li h3 {
   text-align: center;
   font-size: 24rem;
   font-family: "m";
@@ -121,22 +121,32 @@
   }
 }
 .swiper a {
-  padding-inline: 50rem;
+  padding-inline: 30rem;
   display: block;
+  position: relative;
+}
+.swiper a h3 {
+  font-family: "m";
+  font-size: 20rem;
+  text-align: center;
+  font-weight: 150;
+  text-transform: uppercase;
 }
 
 .swiper figure {
   aspect-ratio: 3/2;
+  & img {
+    height: 100%;
+  }
 }
 
 .swiper nav {
   width: 100%;
   position: absolute;
-  bottom: 16rem;
+  bottom: 0;
   display: flex;
-  gap: 24rem;
   z-index: 1;
-  justify-content: center;
+  justify-content: space-between;
 }
 .swiper svg {
   width: 24rem;
@@ -150,7 +160,7 @@
   margin-top: 80rem;
   padding-inline: var(--p-i);
   @media (width < 770px) {
-    margin-top: 80rem;
+    margin-top: 100rem;
   }
 }
 .s-life ul {
@@ -183,10 +193,10 @@
     left: 48rem;
     bottom: -32rem;
     @media (width < 770px) {
-      width: 90rem;
-      left: -10rem;
-      bottom: -5rem;
-      top: unset;
+      width: 50rem;
+      left: 8rem;
+      bottom: unset;
+      top: -16rem;
     }
   }
   &:nth-child(2) a > img {
@@ -194,9 +204,9 @@
     right: -24rem;
     top: -48rem;
     @media (width < 770px) {
-      top: -20rem;
-      right: -15rem;
-      width: 85rem;
+      top: -24rem;
+      right: 4rem;
+      width: 50rem;
     }
   }
   &:nth-child(3) a > img {
@@ -204,9 +214,9 @@
     left: 120rem;
     bottom: -28rem;
     @media (width < 770px) {
-      width: 110rem;
-      right: 0;
-      bottom: -20rem;
+      width: 60rem;
+      left: 8;
+      bottom: -16rem;
     }
   }
   &:nth-child(4) a > img {
@@ -215,9 +225,10 @@
     top: -40rem;
 
     @media (width < 770px) {
-      width: 60rem;
-      top: -6rem;
-      left: 16rem;
+      width: 40rem;
+      right: 8;
+      bottom: -16rem;
+      top: unset;
     }
   }
 }
@@ -238,7 +249,7 @@
   color: var(--c-y);
   @media (width < 770px) {
     font-size: 14rem;
-    width: unset;
+    width: 100%;
   }
 }
 
@@ -250,18 +261,22 @@
   }
 }
 .s-anat h2 {
-  width: 800rem;
   position: relative;
   z-index: 2;
   text-align: center;
-  margin-inline: auto;
   font-size: 128rem;
-  line-height: 98rem;
+  line-height: 100%;
   font-weight: 800;
+  & .y_:not(:first-of-type) {
+    margin-top: -26rem;
+    @media (width < 770px) {
+      margin-top: -4rem;
+    }
+  }
   @media (width < 770px) {
     width: unset;
-    font-size: 62rem;
-    line-height: 50rem;
+    font-size: 50rem;
+    line-height: 100%;
   }
 }
 .anat {
@@ -303,20 +318,14 @@
   align-items: center;
   justify-content: center;
   @media (width < 770px) {
-    gap: 10rem;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16rem;
+    /* gap: 10rem;
+    flex-wrap: wrap; */
   }
 }
 .s-usp li {
-  @media (width < 770px) {
-    width: calc((100% - 10rem) / 2) !important;
-    background-color: var(--c-y);
-    border-radius: 20rem;
-    aspect-ratio: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   &:nth-of-type(1) img {
     width: 120rem;
     @media (width < 770px) {
@@ -340,6 +349,14 @@
     @media (width < 770px) {
       width: 92rem;
     }
+  }
+  @media (width < 770px) {
+    background-color: var(--c-y);
+    border-radius: 20rem;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 .s-ban {

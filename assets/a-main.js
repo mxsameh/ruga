@@ -145,8 +145,8 @@ const lifeA = () => {
 const vidA = () => {
   const video = document.getElementById("anat-video");
 
-  video.play();
-  video.pause();
+  video?.play();
+  video?.pause();
   video.currentTime = 0;
 
   const initVideo = () => {

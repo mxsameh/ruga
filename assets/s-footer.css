@@ -5,7 +5,7 @@
   color: white;
   border-radius: 45rem 45rem 0 0;
   @media (width < 770px) {
-    border-radius: 35rem 35rem 0 0;
+    border-radius: 30rem 30rem 0 0;
     padding-top: 40rem;
   }
 }
@@ -27,7 +27,7 @@
   figure {
     width: 120rem;
     @media (width < 770px) {
-      width: 100rem;
+      width: 80rem;
     }
   }
 }
