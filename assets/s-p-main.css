@@ -230,6 +230,7 @@
   color: var(--c-y);
   @media (width < 770px) {
     font-size: 14rem;
+    width: unset;
   }
 }
 
