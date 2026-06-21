@@ -128,9 +128,6 @@
     }
   }
 }
-.s-colc .cp_info {
-  /* margin-top: 16rem; */
-}
 .s-colc .cp_info h4 {
   text-align: center;
   font-size: 20rem;
@@ -141,6 +138,7 @@
 }
 
 .s-life {
+  margin-top: 120rem;
   margin-top: 120rem;
   padding-inline: var(--p-i);
   @media (width < 770px) {
