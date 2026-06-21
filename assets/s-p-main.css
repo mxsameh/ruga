@@ -56,7 +56,6 @@
   }
 
   @media (width < 770px) {
-    display: none;
   }
 }
 .swiper_ {
