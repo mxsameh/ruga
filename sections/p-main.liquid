@@ -30,13 +30,9 @@
         <div class="swiper-wrapper">
           {% for product in collection.products %}
             <div class="swiper-slide">
-              <a href="{{ product.url }}" style="background-color: {{bgc}};">
+              <a href="{{ product.url }}">
                 <h3>
                   {{ product.title }}
-                  {% comment %}
-                    <span>RUG<span>A</span></span>
-                    COOLER
-                  {% endcomment %}
                 </h3>
                 <figure>
                   {{ product.featured_image | image_url: width: 800 | image_tag }}
