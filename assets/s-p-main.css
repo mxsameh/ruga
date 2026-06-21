@@ -235,7 +235,8 @@
 }
 
 .s-anat {
-  margin-top: 120rem;
+  /* margin-top: 120rem; */
+  margin-top: 160rem;
   @media (width < 770px) {
     margin-top: 80rem;
   }
