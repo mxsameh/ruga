@@ -144,26 +144,21 @@ const lifeA = () => {
 
 const vidA = () => {
   const video = document.getElementById("anat-video");
+
   video.play();
   video.pause();
   video.currentTime = 0;
 
   const initVideo = () => {
-    let last = 0;
-    ScrollTrigger.create({
-      trigger: ".vid-w",
-      start: "top top",
-      end: "+=200svh",
-      pin: true,
-      scrub: 1,
-      onUpdate: (self) => {
-        const t = video.duration * self.progress;
-        // throttle seeks
-        if (Math.abs(t - last) > 0.03) {
-          video.currentTime = t;
-          last = t;
-          // console.log("t", t);
-        }
+    gsap.to(video, {
+      currentTime: video.duration,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".vid-w",
+        start: "top top",
+        end: "+=200svh",
+        pin: true,
+        scrub: true,
       },
     });
   };
@@ -173,7 +168,6 @@ const vidA = () => {
   } else {
     video.addEventListener("loadedmetadata", initVideo);
   }
-
 };
 
 // document.addEventListener("DOMContentLoaded", async () => {
