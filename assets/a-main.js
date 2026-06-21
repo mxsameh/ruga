@@ -130,7 +130,7 @@ const lifeA = () => {
     ease: "sine.inOut",
   });
   tl.from(
-    ".s-life li > img",
+    ".s-life li a > img",
     {
       scale: 0.5,
       opacity: 0,
