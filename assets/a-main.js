@@ -158,7 +158,7 @@ const vidA = () => {
         start: "top top",
         end: "+=200svh",
         pin: true,
-        scrub: true,
+        scrub: 1,
       },
     });
   };
