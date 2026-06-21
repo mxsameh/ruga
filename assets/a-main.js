@@ -149,6 +149,7 @@ const vidA = () => {
   video.currentTime = 0;
 
   const initVideo = () => {
+    let last = 0;
     ScrollTrigger.create({
       trigger: ".vid-w",
       start: "top top",
