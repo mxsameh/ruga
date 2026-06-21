@@ -145,6 +145,8 @@ const lifeA = () => {
 const vidA = () => {
   const video = document.getElementById("anat-video");
   video.addEventListener("loadedmetadata", () => {
+    console.log("ss");
+
     let last = 0;
     video.play();
     video.pause();
