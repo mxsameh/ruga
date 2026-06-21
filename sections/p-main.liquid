@@ -29,9 +29,6 @@
       <div class="swiper">
         <div class="swiper-wrapper">
           {% for product in collection.products %}
-            {% liquid
-              assign bgc = product.metafields.custom.background_color
-            %}
             <div class="swiper-slide">
               <a href="{{ product.url }}" style="background-color: {{bgc}};">
                 <h3>
@@ -58,6 +55,7 @@
         </nav>
       </div>
     </div>
+
     <ul>
       {% for product in collection.products %}
         {% liquid
