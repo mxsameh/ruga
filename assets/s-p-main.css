@@ -138,8 +138,8 @@
 }
 
 .s-life {
-  margin-top: 120rem;
-  margin-top: 120rem;
+  /* margin-top: 120rem; */
+  margin-top: 80rem;
   padding-inline: var(--p-i);
   @media (width < 770px) {
     margin-top: 80rem;
