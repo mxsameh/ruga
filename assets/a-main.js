@@ -156,7 +156,7 @@ const vidA = () => {
       scrollTrigger: {
         trigger: ".vid-w",
         start: "top top",
-        end: "+=200svh",
+        end: "+=300svh",
         pin: true,
         scrub: 1,
       },
