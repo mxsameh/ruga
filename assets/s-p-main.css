@@ -57,11 +57,11 @@
       margin-top: -6rem;
     }
   }
-
   @media (width < 770px) {
     font-size: 35rem;
   }
 }
+
 .swiper_ {
   @media (width < 770px) {
     padding-inline: var(--p-i) !important;
@@ -72,10 +72,11 @@
   padding-inline: 50rem;
   display: block;
 }
-.swiper figure{
+
+.swiper figure {
   aspect-ratio: 3/2;
-  
 }
+
 .swiper nav {
   width: 100%;
   position: absolute;
