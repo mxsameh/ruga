@@ -144,15 +144,7 @@ const lifeA = () => {
 
 const vidA = () => {
   const video = document.getElementById("anat-video");
-
-  video.addEventListener("loadedmetadata", () => {
-    console.log("ss");
-
-    let last = 0;
-    video.play();
-    video.pause();
-    video.currentTime = 0;
-
+  const initVideo = () => {
     ScrollTrigger.create({
       trigger: ".vid-w",
       start: "top top",
@@ -169,6 +161,15 @@ const vidA = () => {
         }
       },
     });
+  };
+
+  video.addEventListener("loadedmetadata", () => {
+    console.log("ss");
+
+    let last = 0;
+    video.play();
+    video.pause();
+    video.currentTime = 0;
   });
   // const $vid = document.getElementById("anat-video");
 
