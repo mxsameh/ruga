@@ -144,6 +144,8 @@ const lifeA = () => {
 
 const vidA = () => {
   const video = document.getElementById("anat-video");
+  console.log(video);
+
   video.addEventListener("loadedmetadata", () => {
     console.log("ss");
 
