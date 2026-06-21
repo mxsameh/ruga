@@ -10,7 +10,7 @@
       {% render 'menu-icon' %}
       <a href="/" class="d-o y_">
         {% if settings.logo %}
-          <figure class='y'>
+          <figure class="y">
             {{ settings.logo | image_url: width: 200 | image_tag }}
           </figure>
         {% else %}
@@ -55,7 +55,7 @@
       </button>
 
       <button id="cart-btn" class="h_cb-m m-o">
-        {{ 'i-bag.svg' | inline_asset_content }}
+        {{ 'i-basket.svg' | inline_asset_content }}
         <div id="cart-count">{{- cart.item_count -}}</div>
       </button>
     </div>

@@ -1,6 +1,6 @@
 #p {
   /* padding-top: 24px; */
-  padding-bottom: 80rem;
+  padding-bottom: 120rem;
   @media (width < 770px) {
     padding-top: var(--h-h);
     padding-bottom: 40rem;
@@ -14,7 +14,7 @@
   justify-content: center;
   padding-block: var(--h-h) 24rem;
   @media (width < 770px) {
-    padding-block: 24rem;
+    padding-block: 16rem 0;
     padding-inline: var(--p-i);
     height: unset;
   }
@@ -22,13 +22,12 @@
 
 .s-hero figure {
   width: 1340rem;
-  /* aspect-ratio: 16/9; */
   border-radius: 40rem;
   overflow: hidden;
   background-color: #e5e5e5;
   @media (width<770px) {
     aspect-ratio: 3/4;
-    /* aspect-ratio: 16/9; */
+    border-radius: 30rem;
   }
 }
 .s-hero video {
@@ -54,42 +53,22 @@
   letter-spacing: -5%;
   & > span:last-child {
     margin-top: -10rem;
+    @media (width < 770px) {
+      margin-top: -6rem;
+    }
   }
+  @media (width < 770px) {
+    font-size: 35rem;
+  }
+}
 
-  @media (width < 770px) {
-    display: none;
-  }
-}
-.swiper_ {
-  @media (width < 770px) {
-    padding-inline: var(--p-i) !important;
-    height: fit-content;
-  }
-}
-.swiper a {
-  padding-inline: 50rem;
-  display: block;
-}
-.swiper nav {
-  width: 100%;
-  position: absolute;
-  bottom: 16rem;
-  display: flex;
-  gap: 24rem;
-  z-index: 1;
-  justify-content: center;
-}
-.swiper svg {
-  width: 24rem;
-}
-.swiper button:first-child svg {
-  transform: scaleX(-1);
-}
 .s-colc ul {
+  margin-top: -40rem;
   display: flex;
   padding-inline: var(--p-i);
   gap: 40rem;
   @media (width < 770px) {
+    margin-top: 0;
     display: none;
     gap: var(--p-i);
   }
@@ -126,9 +105,6 @@
     }
   }
 }
-.s-colc .cp_info {
-  /* margin-top: 16rem; */
-}
 .s-colc .cp_info h4 {
   text-align: center;
   font-size: 20rem;
@@ -138,8 +114,40 @@
   }
 }
 
+.swiper_ {
+  @media (width < 770px) {
+    padding-inline: var(--p-i) !important;
+    height: fit-content;
+  }
+}
+.swiper a {
+  padding-inline: 50rem;
+  display: block;
+}
+
+.swiper figure {
+  aspect-ratio: 3/2;
+}
+
+.swiper nav {
+  width: 100%;
+  position: absolute;
+  bottom: 16rem;
+  display: flex;
+  gap: 24rem;
+  z-index: 1;
+  justify-content: center;
+}
+.swiper svg {
+  width: 24rem;
+}
+.swiper button:first-child svg {
+  transform: scaleX(-1);
+}
+
 .s-life {
-  margin-top: 120rem;
+  /* margin-top: 120rem; */
+  margin-top: 80rem;
   padding-inline: var(--p-i);
   @media (width < 770px) {
     margin-top: 80rem;
@@ -230,11 +238,13 @@
   color: var(--c-y);
   @media (width < 770px) {
     font-size: 14rem;
+    width: unset;
   }
 }
 
 .s-anat {
-  margin-top: 120rem;
+  /* margin-top: 120rem; */
+  margin-top: 160rem;
   @media (width < 770px) {
     margin-top: 80rem;
   }
@@ -271,10 +281,13 @@
 }
 
 .s-anat video {
-  width: unset !important;
+  width: unset;
   height: 100%;
   object-fit: cover;
   object-position: center center;
+  @media (width < 770px) {
+    width: 100%;
+  }
 }
 
 .s-usp {
@@ -330,7 +343,7 @@
   }
 }
 .s-ban {
-  margin-top: 80rem;
+  margin-top: 120rem;
   padding-inline: var(--p-i);
   @media (width < 770px) {
     margin-top: 40rem;

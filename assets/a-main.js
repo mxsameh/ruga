@@ -130,7 +130,7 @@ const lifeA = () => {
     ease: "sine.inOut",
   });
   tl.from(
-    ".s-life li > img",
+    ".s-life li a > img",
     {
       scale: 0.5,
       opacity: 0,
@@ -144,41 +144,30 @@ const lifeA = () => {
 
 const vidA = () => {
   const video = document.getElementById("anat-video");
-  video.addEventListener("loadedmetadata", () => {
-    let last = 0;
-    console.log("duration:", video.duration);
 
-    ScrollTrigger.create({
-      trigger: ".vid-w",
-      start: "top top",
-      end: "+=200svh",
-      pin: true,
-      scrub: 1,
-      onUpdate: (self) => {
-        const t = video.duration * self.progress;
-        // throttle seeks
-        if (Math.abs(t - last) > 0.03) {
-          video.currentTime = t;
-          last = t;
-          // console.log("t", t);
-        }
+  video.play();
+  video.pause();
+  video.currentTime = 0;
+
+  const initVideo = () => {
+    gsap.to(video, {
+      currentTime: video.duration,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".vid-w",
+        start: "top top",
+        end: "+=300svh",
+        pin: true,
+        scrub: 1,
       },
     });
-  });
-  // const $vid = document.getElementById("anat-video");
+  };
 
-  // $vid.addEventListener("loadedmetadata", () => {
-  //   gsap.to($vid, {
-  //     currentTime: $vid.duration,
-  //     ease: "none",
-  //     scrollTrigger: {
-  //       trigger: ".s-vid",
-  //       start: "top top",
-  //       end: "bottom bottom",
-  //       scrub: 1,
-  //     },
-  //   });
-  // });
+  if (video.readyState >= 1) {
+    initVideo();
+  } else {
+    video.addEventListener("loadedmetadata", initVideo);
+  }
 };
 
 // document.addEventListener("DOMContentLoaded", async () => {

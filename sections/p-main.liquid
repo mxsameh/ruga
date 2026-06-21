@@ -12,14 +12,6 @@
   <section class="s-hero">
     <figure id="he-ban">
       {{ section.settings.d_video | video_tag: autoplay: true, muted: true, loop: true, class: 'd-video' }}
-
-      {% comment %}
-        <picture>
-          <source srcset="{{'im-ban1.png' | asset_url}}" media="(min-width: 770px)">
-          <img src="{{ 'im-ban1-m.png' | asset_url  }}" width="auto" height="auto" alt="logo">
-        </picture>
-          {{ section.settings.m_video | video_tag: autoplay: true, muted: true, loop: true, class: 'm-video' }}
-      {% endcomment %}
     </figure>
   </section>
 
@@ -37,21 +29,14 @@
       <div class="swiper">
         <div class="swiper-wrapper">
           {% for product in collection.products %}
-            {% liquid
-              assign bgc = product.metafields.custom.background_color
-            %}
             <div class="swiper-slide">
-              <a href="{{ product.url }}" style="background-color: {{bgc}};">
-                <h3>
-                  {{ product.title }}
-                  {% comment %}
-                    <span>RUG<span>A</span></span>
-                    COOLER
-                  {% endcomment %}
-                </h3>
+              <a href="{{ product.url }}">
                 <figure>
                   {{ product.featured_image | image_url: width: 800 | image_tag }}
                 </figure>
+                <h3>
+                  {{ product.title }}
+                </h3>
               </a>
             </div>
           {% endfor %}
@@ -66,6 +51,7 @@
         </nav>
       </div>
     </div>
+
     <ul>
       {% for product in collection.products %}
         {% liquid
