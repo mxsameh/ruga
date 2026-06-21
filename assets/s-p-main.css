@@ -1,6 +1,6 @@
 #p {
   /* padding-top: 24px; */
-  padding-bottom: 80rem;
+  padding-bottom: 120rem;
   @media (width < 770px) {
     padding-top: var(--h-h);
     padding-bottom: 40rem;
@@ -332,7 +332,7 @@
   }
 }
 .s-ban {
-  margin-top: 80rem;
+  margin-top: 120rem;
   padding-inline: var(--p-i);
   @media (width < 770px) {
     margin-top: 40rem;
