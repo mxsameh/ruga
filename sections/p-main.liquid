@@ -12,14 +12,6 @@
   <section class="s-hero">
     <figure id="he-ban">
       {{ section.settings.d_video | video_tag: autoplay: true, muted: true, loop: true, class: 'd-video' }}
-
-      {% comment %}
-        <picture>
-          <source srcset="{{'im-ban1.png' | asset_url}}" media="(min-width: 770px)">
-          <img src="{{ 'im-ban1-m.png' | asset_url  }}" width="auto" height="auto" alt="logo">
-        </picture>
-          {{ section.settings.m_video | video_tag: autoplay: true, muted: true, loop: true, class: 'm-video' }}
-      {% endcomment %}
     </figure>
   </section>
 
