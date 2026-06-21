@@ -59,6 +59,7 @@
   }
 
   @media (width < 770px) {
+    font-size: 35rem;
   }
 }
 .swiper_ {
