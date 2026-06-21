@@ -53,6 +53,9 @@
   letter-spacing: -5%;
   & > span:last-child {
     margin-top: -10rem;
+    @media (width < 770px) {
+      margin-top: -6rem;
+    }
   }
 
   @media (width < 770px) {
