@@ -155,15 +155,6 @@ const vidA = () => {
       end: "+=200svh",
       pin: true,
       scrub: 1,
-      onUpdate: (self) => {
-        const t = video.duration * self.progress;
-        // throttle seeks
-        if (Math.abs(t - last) > 0.03) {
-          video.currentTime = t;
-          last = t;
-          // console.log("t", t);
-        }
-      },
     });
   };
 
