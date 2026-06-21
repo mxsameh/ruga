@@ -86,10 +86,12 @@
   transform: scaleX(-1);
 }
 .s-colc ul {
+  margin-top: -40rem;
   display: flex;
   padding-inline: var(--p-i);
   gap: 40rem;
   @media (width < 770px) {
+    margin-top: 0;
     display: none;
     gap: var(--p-i);
   }
