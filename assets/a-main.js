@@ -146,9 +146,9 @@ const vidA = () => {
   const video = document.getElementById("anat-video");
   video.addEventListener("loadedmetadata", () => {
     let last = 0;
-    video.play()
-    video.pause()
-
+    video.play();
+    video.pause();
+    video.currentTime = 0;
 
     ScrollTrigger.create({
       trigger: ".vid-w",
