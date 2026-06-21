@@ -168,11 +168,12 @@ const vidA = () => {
     });
   };
 
-  //       end: "bottom bottom",
-  //       scrub: 1,
-  //     },
-  //   });
-  // });
+  if (video.readyState >= 1) {
+    initVideo();
+  } else {
+    video.addEventListener("loadedmetadata", initVideo);
+  }
+
 };
 
 // document.addEventListener("DOMContentLoaded", async () => {
