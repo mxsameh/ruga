@@ -1,10 +1,13 @@
 .accordion {
-  /* padding-block: 10px; */
   padding-block: 20rem;
   padding-inline: 4rem;
   border-top: 1px solid black;
   &:last-of-type {
     border-bottom: 1px solid black;
+  }
+
+  @media (width < 770px) {
+    padding-block: 16rem;
   }
 }
 .accordion_h {
@@ -21,20 +24,24 @@
 .accordion_h span svg {
   width: 24rem;
   @media (width < 770px) {
-    width: 20px;
+    width: 20rem;
   }
 }
 .accordion_h h2 {
-  font-size: 18px;
+  font-size: 16rem;
+  text-transform: uppercase;
   font-family: "m";
   font-weight: 150;
   @media (width < 770px) {
-    font-size: 16px;
+    font-size: 14rem;
   }
 }
 .accordion_h > svg {
   width: 14rem;
   transition: transform 0.2s ease-in;
+  @media (width < 770px) {
+    width: 12rem;
+  }
 }
 .accordion.active .accordion_h > svg {
   transform: rotate(45deg);
@@ -48,5 +55,9 @@
 .accordion_b {
   padding-top: 24rem;
   font-size: 16rem;
-  line-height: 18rem;
+  line-height: 140%;
+
+  @media (width < 770px) {
+    font-size: 14rem;
+  }
 }

@@ -6,20 +6,24 @@
   }
 }
 .s-rel h2 {
-  font-size: 50rem;
-  letter-spacing: 7%;
+  font-size: 40rem;
   font-family: "m";
-  font-weight: 300;
-  text-transform: uppercase;
+  font-weight: 150;
   color: var(--c-y);
   @media (width < 770px) {
-    font-size: 28rem;
+    font-size: 26rem;
   }
 }
 .s-rel .p-s_ {
-  margin-top: 40rem;
-
+  margin-top: 24rem;
   @media (width< 770px) {
-    margin-top: 24rem;
+    margin-top: 16rem;
+    margin-inline: calc(-1 * var(--p-i));
+  }
+}
+
+.s-rel ul {
+  @media (width < 770px) {
+    padding-inline: var(--p-i);
   }
 }

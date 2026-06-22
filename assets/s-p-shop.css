@@ -16,13 +16,15 @@
   align-items: flex-start;
   padding-top: 80rem;
   @media (width < 770px) {
+    padding-top: 48rem;
     flex-direction: column;
   }
 }
 
 .s-he h1 {
-  font-size: 140rem;
+  font-size: 128rem;
   line-height: 1;
+  letter-spacing: -0.05em;
   & span {
     display: block;
     margin-left: 260rem;
@@ -39,7 +41,8 @@
 .s-he figure {
   width: 500rem;
   @media (width < 770px) {
-    width: 100%;
+    width: 300rem;
+    margin-left: auto;
   }
 }
 .s-col {
@@ -49,28 +52,31 @@
     margin-top: 48rem;
   }
 }
+.s-col:last-of-type {
+  @media (width < 770px) {
+    margin-top: 64rem;
+  }
+}
 .s-col h2 {
   font-family: "m";
   font-size: 50rem;
   font-weight: 300;
   color: var(--c-y);
-  /* text-align: center; */
   & span {
     font-weight: 200;
   }
   @media (width < 770px) {
-    font-size: 35rem;
-    text-align: center;
-    color: black;
+    font-size: 26rem;
+    /* color: black; */
   }
 }
 .s-col ul {
-  margin-top: 48rem;
+  margin-top: 24rem;
   display: flex;
   gap: 24rem;
   flex-wrap: wrap;
   @media (width < 770px) {
-    margin-top: 40rem;
+    margin-top: 16rem;
     flex-direction: column;
   }
 }
@@ -83,7 +89,18 @@
 
 .s-ban {
   margin-top: 80rem;
+  @media (width < 770px) {
+    margin-top: 64rem;
+  }
 }
 .s-ban figure {
   aspect-ratio: 10/4;
+  overflow: hidden;
+  @media (width < 770px) {
+    aspect-ratio: 4/3;
+    border-radius: 20rem;
+  }
+}
+.s-ban img {
+  height: auto;
 }

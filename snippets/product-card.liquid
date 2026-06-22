@@ -4,6 +4,9 @@
   </figure>
   <div class="pc_info">
     <h3>{{ product.title }}</h3>
-    <p class="price">{{ product.price | money }}</p>
+    <p class="price">
+      <span>{{ product.price | money_without_currency | remove: '.00' }}</span>
+      {{ shop.currency }}
+    </p>
   </div>
 </a>

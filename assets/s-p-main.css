@@ -270,7 +270,7 @@
   & .y_:not(:first-of-type) {
     margin-top: -26rem;
     @media (width < 770px) {
-      margin-top: -4rem;
+      margin-top: -5rem;
     }
   }
   @media (width < 770px) {

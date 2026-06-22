@@ -1,10 +1,6 @@
 /* PRODUCT OPTIONS */
 .pf {
-  margin-top: 40px;
-  @media (width > 1000px) {
-    /* margin-top: 80px; */
-    margin-top: 48rem;
-  }
+  margin-top: 48rem;
 }
 
 .option {
@@ -64,3 +60,32 @@
   /* border-radius: 100%; */
 }
 
+/* 
+ADD TO CART BUTTON 
+*/
+.product_atc_ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product_atc button {
+  width: 100%;
+  padding: 14rem 40rem;
+  text-align: center;
+  background-color: var(--c-y);
+  color: black;
+  font-family: "m";
+  font-size: 14rem;
+  letter-spacing: 0.04em;
+  font-weight: 200;
+  text-transform: uppercase;
+  border-radius: 14rem;
+  @media (width < 770px) {
+    padding: 12rem 24rem;
+    font-size: 12rem;
+    border-radius: 10rem;
+  }
+}
+.product_atc button:disabled {
+  background-color: #999;
+}

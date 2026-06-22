@@ -9,10 +9,10 @@
   justify-content: space-between;
   align-items: center;
   gap: 24rem;
-  @media (width < 770px) {
+  /* @media (width < 770px) {
     flex-direction: column;
     gap: 8rem;
-  }
+  } */
 }
 .pc_info h3 {
   font-family: "t";
@@ -22,8 +22,14 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  @media (width < 770px) {
+    font-size: 14rem;
+  }
 }
 .pc_info p {
   flex-shrink: 0;
   font-size: 16rem;
+  @media (width < 770px) {
+    font-size: 14rem;
+  }
 }
