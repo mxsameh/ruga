@@ -32,8 +32,8 @@ const hA = () => {
 const loA = () => {
   const tl = gsap.timeline();
 
-  tl.set("#lo", { autoAlpha: 0 });
-  return tl;
+  // tl.set("#lo", { autoAlpha: 0 });
+  // return tl;
 
   tl.from("#lo .y", {
     yPercent: 100,
@@ -90,6 +90,19 @@ const heA = () => {
       "<",
     );
   return tl;
+};
+
+const anatA = () => {
+  gsap.from(".s-anat h2 .y", {
+    yPercent: 100,
+    duration: 0.8,
+    ease: "sine.inOut",
+    stagger: 0.2,
+    scrollTrigger: {
+      trigger: ".s-anat",
+      start: "top 80%",
+    },
+  });
 };
 
 const colcA = () => {
@@ -170,47 +183,6 @@ const vidA = () => {
   }
 };
 
-// document.addEventListener("DOMContentLoaded", async () => {
-//   const isMobile = window.innerWidth < 770;
-//   await document.fonts.ready;
-//   init();
-//   if (!isMobile) {
-//     masterTl.add(loA()).add(heA()).add(hA());
-//     colcA();
-//   }
-//   lifeA();
-// });
-
-// document.addEventListener("DOMContentLoaded", async () => {
-//   const isMobile = window.innerWidth < 770;
-//   await document.fonts.ready;
-//   init();
-
-//   const loaderPlayed = sessionStorage.getItem("loaderPlayed");
-
-//   if (!isMobile) {
-//     // play loader only once
-//     if (!loaderPlayed) {
-//       sessionStorage.setItem("loaderPlayed", "true");
-
-//       masterTl
-//         .add(loA()) // loader animation
-//         .add(heA())
-//         .add(hA());
-//     } else {
-//       // skip loader
-//       gsap.set("#lo", {
-//         autoAlpha: 0,
-//       });
-//       masterTl.add(heA()).add(hA());
-//     }
-
-//     colcA();
-//   }
-
-//   lifeA();
-// });
-
 document.addEventListener("DOMContentLoaded", async () => {
   const isMobile = window.innerWidth < 770;
   await document.fonts.ready;
@@ -240,5 +212,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   lifeA();
+  anatA();
   vidA();
 });
