@@ -234,6 +234,8 @@
 }
 .s-life li figure {
   position: relative;
+  border-radius: 20rem;
+  overflow: hidden;
 }
 .s-life li figcaption {
   width: 250rem;
