@@ -31,12 +31,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40rem;
+  @media (width < 770px) {
+    margin-top: 48rem;
+  }
 }
 .p li {
   display: flex;
   align-items: flex-start;
   gap: 24rem;
   color: white;
+
 }
 .p li .l {
   flex: 4;
