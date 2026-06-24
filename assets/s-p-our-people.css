@@ -50,6 +50,10 @@
 .s-amb ul {
   display: flex;
   flex-direction: column;
+  @media (width < 770px) {
+    gap: ;
+
+  }
 }
 .s-amb li {
   padding-top: 120rem;
