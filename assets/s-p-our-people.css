@@ -86,7 +86,7 @@
   overflow: hidden;
   @media (width < 770px) {
     position: unset;
-    height: 300rem;
+    height: 100%;
   }
 }
 
