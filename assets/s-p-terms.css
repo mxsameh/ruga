@@ -15,7 +15,7 @@ body {
 }
 
 .p h1 {
-  padding-top: ;
+  padding-top: 80rem;
   font-size: 128rem;
   line-height: 100%;
   color: #b4d9f3;
@@ -61,5 +61,6 @@ body {
   line-height: 140%;
   @media (width < 770px) {
     flex-direction: column;
+    font-size: 14rem;
   }
 }
