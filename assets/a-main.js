@@ -84,7 +84,7 @@ const heA = () => {
       "<",
     )
     .from("#he-ban h1 .y", {
-      yPercent: -100,
+      yPercent: 100,
       duration: 0.6,
       ease: "power2.inOut",
     });
