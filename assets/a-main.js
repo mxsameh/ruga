@@ -83,7 +83,6 @@ const heA = () => {
     "<",
   ).from(
     '#he-ban',{
-      
     }
 
   );
