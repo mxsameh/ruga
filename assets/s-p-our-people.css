@@ -41,11 +41,10 @@
 }
 
 .s-amb {
-  /* margin-top: 120rem; */
   padding-inline: var(--p-i);
 
   @media (width < 770px) {
-    margin-top: 60rem;
+    margin-top: 64rem;
   }
 }
 .s-amb ul {
