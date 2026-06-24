@@ -94,7 +94,6 @@
   gap: 80rem;
 
   @media (width < 770px) {
-    gap: 16rem;
     width: unset;
   }
 }
@@ -114,6 +113,7 @@
   line-height: 140%;
   text-align: justify;
   @media (width < 770px) {
+    margin-top: 16rem;
     font-size: 14rem;
     line-height: 16rem;
   }
