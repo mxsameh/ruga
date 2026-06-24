@@ -81,6 +81,9 @@ const heA = () => {
       ease: "power3.inOut",
     },
     "<",
+  ).from(
+    '#he-ban'
+
   );
   return tl;
 };
