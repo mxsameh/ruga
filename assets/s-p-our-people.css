@@ -60,7 +60,7 @@
   }
 
   @media (width < 770px) {
-    padding-top: 80rem;
+    padding-top: ;
     gap: 64rem;
     flex-direction: column-reverse !important;
     gap: 24rem;
