@@ -21,10 +21,6 @@
   }
 }
 
-.s-hero h1{
-  position: absolute;
-
-}
 
 .s-hero figure {
   width: 1340rem;
@@ -38,6 +34,11 @@
 }
 .s-hero video {
   height: 100%;
+}
+
+.s-hero h1{
+  position: absolute;
+
 }
 
 .s-hero img {
