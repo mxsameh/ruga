@@ -62,7 +62,7 @@
     flex-direction: column-reverse !important;
     padding-top: unset;
     /* gap: 64rem;*/
-    gap: 32rem;
+    gap: 24rem; 
   }
 }
 .s-amb li figure {
@@ -113,7 +113,6 @@
   line-height: 140%;
   text-align: justify;
   @media (width < 770px) {
-    margin-top: 16rem;
     font-size: 14rem;
     line-height: 16rem;
   }
