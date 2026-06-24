@@ -24,6 +24,7 @@ body {
     margin-top: -22rem;
   }
   @media (width < 770px) {
+    padding-top: 64rem;
     font-size: 40rem;
   }
 }
