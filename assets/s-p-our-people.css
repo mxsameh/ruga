@@ -58,12 +58,11 @@
   &:nth-child(2n) {
     flex-direction: row-reverse;
   }
-
   @media (width < 770px) {
-    padding-top: unset;
-    gap: 64rem;
     flex-direction: column-reverse !important;
-    gap: 24rem;
+    padding-top: unset;
+    /* gap: 64rem;
+    gap: 24rem; */
   }
 }
 .s-amb li figure {
