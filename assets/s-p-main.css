@@ -13,11 +13,17 @@
   align-items: flex-start;
   justify-content: center;
   padding-block: var(--h-h) 24rem;
+  position: relative;
   @media (width < 770px) {
     padding-block: 16rem 0;
     padding-inline: var(--p-i);
     height: unset;
   }
+}
+
+.s-hero h1{
+  position: absolute;
+
 }
 
 .s-hero figure {
