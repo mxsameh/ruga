@@ -21,13 +21,12 @@
       {% for block in section.blocks %}
         <li id="{{ block.settings.id }}">
           <div>
-            <h3 class="d-o">{{ block.settings.title }}</h3>
+            <h3>{{ block.settings.title }}</h3>
             <p>
               {{ block.settings.bio }}
             </p>
           </div>
           <figure>
-            <h3 class="m-o">{{ block.settings.title }}</h3>
             {{ block.settings.image | image_url: width: 1200 | image_tag }}
           </figure>
         </li>
