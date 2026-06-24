@@ -9,7 +9,7 @@
   background-color: white;
 }
 .p {
-  padding-top: var(--h-h);
+  /* padding-top: var(--h-h); */
   padding-bottom: 80rem;
 }
 
