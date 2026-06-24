@@ -70,11 +70,9 @@
 }
 .s-amb li figure {
   width: 545rem;
-  /* aspect-ratio: 1; */
   max-width: 100%;
   overflow: hidden;
   position: relative;
-
   @media (width < 770px) {
     width: unset;
   }
@@ -90,6 +88,7 @@
     height: 300rem;
   }
 }
+
 .s-amb li div {
   width: 660rem;
   display: flex;
