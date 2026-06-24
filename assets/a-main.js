@@ -71,24 +71,23 @@ const heA = () => {
     duration: 1,
     padding: 0,
     ease: "power3.inOut",
-  }).from(
-    "#he-ban",
-    {
-      duration: 1,
-      width: "100%",
-      height: "100%",
-      borderRadius: "0",
-      ease: "power3.inOut",
-    },
-    "<",
-  ).from(
-    '#he-ban h1 .y',{
-      duration:1,
-
-
-    }
-
-  );
+  })
+    .from(
+      "#he-ban",
+      {
+        duration: 1,
+        width: "100%",
+        height: "100%",
+        borderRadius: "0",
+        ease: "power3.inOut",
+      },
+      "<",
+    )
+    .from("#he-ban h1 .y", {
+      yPercent: -100,
+      duration: 0.6,
+      ease: "power2.inOut",
+    });
   return tl;
 };
 
