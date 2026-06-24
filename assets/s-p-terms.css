@@ -40,6 +40,10 @@ body {
   align-items: flex-start;
   gap: 24rem;
   color: white;
+  @media (width < 770px) {
+    flex-direction: column;
+  gap: 24rem;
+  }
 
 }
 .p li .l {
