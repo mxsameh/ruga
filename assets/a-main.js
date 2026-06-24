@@ -32,8 +32,8 @@ const hA = () => {
 const loA = () => {
   const tl = gsap.timeline();
 
-  // tl.set("#lo", { autoAlpha: 0 });
-  // return tl;
+  tl.set("#lo", { autoAlpha: 0 });
+  return tl;
 
   tl.from("#lo .y", {
     yPercent: 100,
@@ -158,9 +158,10 @@ const lifeA = () => {
 const vidA = () => {
   const video = document.getElementById("anat-video");
 
-  video?.play();
-  video?.pause();
-  video.currentTime = 0;
+  video.play().then(() => {
+    video.pause();
+    video.currentTime = 0;
+  });
 
   const initVideo = () => {
     gsap.to(video, {
