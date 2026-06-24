@@ -82,7 +82,9 @@ const heA = () => {
     },
     "<",
   ).from(
-    '#he-ban',{
+    '#he-ban h1',{
+      duration:1,
+
     }
 
   );
