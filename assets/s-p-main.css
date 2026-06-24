@@ -43,8 +43,8 @@
   color: var(--c-y);
   font-size: 160rem;
   line-height: 100%;
-  & .y_:last-child{
-    margin-left:
+  & .y_:last-child {
+    margin-left: 290rem;
   }
 }
 
