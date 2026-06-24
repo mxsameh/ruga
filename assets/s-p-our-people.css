@@ -9,10 +9,12 @@
   background-color: white;
 }
 .p {
+  padding-top: var(--h-h);
   padding-bottom: 80rem;
 }
 
 .s-he {
+  padding-top: 40rem;
   padding-inline: var(--p-i);
 }
 
