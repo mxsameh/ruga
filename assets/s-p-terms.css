@@ -19,6 +19,10 @@ body {
     display: block;
     margin-top: -22rem;
   }
+
+  @media (width < 770px) {
+    padding-bottom: 24rem;
+  }
 }
 .p ul {
   margin-top: 120rem;
