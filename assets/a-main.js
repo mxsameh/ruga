@@ -67,28 +67,21 @@ const heA = () => {
   // const vh = wh - 72 - 40;
   const tl = gsap.timeline();
 
-  tl
-    // .from("#he-ban", {
-    //   opacity: 0,
-    //   duration: 0.6,
-    //   ease: "power3.inOut",
-    // })
-    .from(".s-hero", {
+  tl.from(".s-hero", {
+    duration: 1,
+    padding: 0,
+    ease: "power3.inOut",
+  }).from(
+    "#he-ban",
+    {
       duration: 1,
-      padding: 0,
+      width: "100%",
+      height: "100%",
+      borderRadius: "0",
       ease: "power3.inOut",
-    })
-    .from(
-      "#he-ban",
-      {
-        duration: 1,
-        width: "100%",
-        height: "100%",
-        borderRadius: "0",
-        ease: "power3.inOut",
-      },
-      "<",
-    );
+    },
+    "<",
+  );
   return tl;
 };
 
