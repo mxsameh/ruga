@@ -61,8 +61,8 @@
   @media (width < 770px) {
     flex-direction: column-reverse !important;
     padding-top: unset;
-    /* gap: 64rem;
-    gap: 24rem; */
+    /* gap: 64rem;*/
+    gap: 32rem;
   }
 }
 .s-amb li figure {
