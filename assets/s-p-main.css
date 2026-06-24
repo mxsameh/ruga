@@ -43,7 +43,9 @@
   color: var(--c-y);
   font-size: 160rem;
   line-height: 100%;
-  letter-spacing: -0.05em;
+  & .y_:last-child{
+    
+  }
 }
 
 .s-colc {
