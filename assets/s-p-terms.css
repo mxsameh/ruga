@@ -9,7 +9,7 @@ body {
   background-color: transparent;
 }
 .p {
-  padding-top: calc(var(--h-h) + 80rem);
+  padding-top: calc(var(--h-h) + rem);
   padding-bottom: 80rem;
   padding-inline: var(--p-i);
 }
