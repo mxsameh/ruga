@@ -21,7 +21,6 @@
   }
 }
 
-
 .s-hero figure {
   width: 1340rem;
   border-radius: 40rem;
@@ -36,13 +35,11 @@
   height: 100%;
 }
 
-.s-hero h1{
+.s-hero h1 {
   position: absolute;
-
-}
-
-.s-hero img {
-  height: 100%;
+  bottom: 0;
+  left: 48rem;
+  color: var(--c-y);
 }
 
 .s-colc {
