@@ -24,7 +24,7 @@
   background-color: #ededed;
   overflow: hidden;
   @media (width < 770px) {
-  border-radius: 30rem;
+    border-radius: 30rem;
     aspect-ratio: 3/4;
   }
 }
@@ -34,8 +34,9 @@
   font-size: 20rem;
   line-height: 32rem;
   @media (width < 770px) {
+    margin-top: 40rem;
     font-size: 14rem;
-    line-height: 16rem;
+    line-height: 140%;
   }
 }
 
