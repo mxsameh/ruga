@@ -21,7 +21,7 @@ body {
   line-height: 100%;
   color: #b4d9f3;
   @media (width < 770px) {
-    font-size: 40rem;
+    font-size: 64rem;
   }
   /* width: fit-content; */
 }
