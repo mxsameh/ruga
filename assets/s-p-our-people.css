@@ -24,6 +24,7 @@
   background-color: #ededed;
   overflow: hidden;
   @media (width < 770px) {
+  border-radius: 30rem;
     aspect-ratio: 3/4;
   }
 }
