@@ -107,7 +107,7 @@
   font-weight: 150;
   text-transform: uppercase;
   @media (width < 770px) {
-    font-size: 30rem;
+    font-size: 26rem;
   }
 }
 .s-amb li p {
