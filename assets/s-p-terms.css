@@ -53,10 +53,12 @@ body {
   @media (width < 770px) {
     flex-direction: column;
   }
-
 }
 .p li .r {
   flex: 8;
   font-size: 16rem;
   line-height: 140%;
+  @media (width < 770px) {
+    flex-direction: column;
+  }
 }
