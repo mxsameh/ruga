@@ -62,9 +62,6 @@ const loA = () => {
 };
 
 const heA = () => {
-  // const wh = window.innerHeight  ;
-  // const hh = 72;
-  // const vh = wh - 72 - 40;
   const tl = gsap.timeline();
 
   tl.from(".s-hero", {
