@@ -45,6 +45,7 @@
   line-height: 100%;
   & .y_:last-child {
     margin-left: 290rem;
+    margin-top: -30rem;
   }
 }
 
