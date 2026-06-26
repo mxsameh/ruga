@@ -12,6 +12,14 @@
   <section class="s-hero">
     <figure id="he-ban">
       {{ section.settings.d_video | video_tag: autoplay: true, muted: true, loop: true, class: 'd-video' }}
+      <h1>
+        <span class="y_">
+          <span class="y">THIS IS</span>
+        </span>
+        <span class="y_">
+          <span class="y">RUGA</span>
+        </span>
+      </h1>
     </figure>
   </section>
 
@@ -141,7 +149,7 @@
         <span class="y">OF RUGA</span>
       </span>
     </h2>
-    <div class="vid-w">
+    <div class="vid-w d-o">
       <video id="anat-video" preload="auto" muted playsinline>
         <source src="{{ 'outputs.mp4' | asset_url }}" type="video/mp4">
       </video>

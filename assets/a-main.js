@@ -32,8 +32,8 @@ const hA = () => {
 const loA = () => {
   const tl = gsap.timeline();
 
-  tl.set("#lo", { autoAlpha: 0 });
-  return tl;
+  // tl.set("#lo", { autoAlpha: 0 });
+  // return tl;
 
   tl.from("#lo .y", {
     yPercent: 100,
@@ -62,22 +62,13 @@ const loA = () => {
 };
 
 const heA = () => {
-  // const wh = window.innerHeight  ;
-  // const hh = 72;
-  // const vh = wh - 72 - 40;
   const tl = gsap.timeline();
 
-  tl
-    // .from("#he-ban", {
-    //   opacity: 0,
-    //   duration: 0.6,
-    //   ease: "power3.inOut",
-    // })
-    .from(".s-hero", {
-      duration: 1,
-      padding: 0,
-      ease: "power3.inOut",
-    })
+  tl.from(".s-hero", {
+    duration: 1,
+    padding: 0,
+    ease: "power3.inOut",
+  })
     .from(
       "#he-ban",
       {
@@ -88,7 +79,12 @@ const heA = () => {
         ease: "power3.inOut",
       },
       "<",
-    );
+    )
+    .from("#he-ban h1 .y", {
+      yPercent: 100,
+      duration: 0.6,
+      ease: "power2.inOut",
+    });
   return tl;
 };
 

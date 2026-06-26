@@ -16,7 +16,7 @@
   display: block;
 }
 .y_ {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 .pi {
   opacity: 0;

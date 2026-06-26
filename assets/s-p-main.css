@@ -13,6 +13,7 @@
   align-items: flex-start;
   justify-content: center;
   padding-block: var(--h-h) 24rem;
+  position: relative;
   @media (width < 770px) {
     padding-block: 16rem 0;
     padding-inline: var(--p-i);
@@ -25,6 +26,7 @@
   border-radius: 40rem;
   overflow: hidden;
   background-color: #e5e5e5;
+  position: relative;
   @media (width<770px) {
     aspect-ratio: 3/4;
     border-radius: 30rem;
@@ -34,8 +36,27 @@
   height: 100%;
 }
 
-.s-hero img {
-  height: 100%;
+.s-hero h1 {
+  position: absolute;
+  bottom: 0;
+  left: 48rem;
+  color: var(--c-y);
+  font-size: 160rem;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  & .y_:last-child {
+    margin-left: 290rem;
+    margin-top: -30rem;
+    @media (width < 770px) {
+      margin-left: 105rem;
+      margin-top: -10rem;
+    }
+  }
+  @media (width < 770px) {
+    left: 24rem;
+    bottom: 8rem;
+    font-size: 60rem;
+  }
 }
 
 .s-colc {
