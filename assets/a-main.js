@@ -240,6 +240,7 @@ const animation = async () => {
     colcA();
   }
   if (isMobile) {
+    heAM()
   }
 
   lifeA();
