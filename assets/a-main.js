@@ -146,6 +146,8 @@ const lifeA = () => {
       scrollTrigger: {
         trigger: ".s-life",
         start: "top 80%",
+        end: "top 50%",
+        scrub: 1,
       },
     },
     "<",
