@@ -156,7 +156,7 @@ const colcAM = () => {
     stagger: 0.2,
     scrollTrigger: {
       trigger: ".s-colc",
-      start: "top 80%",
+      start: "top 90%",
     },
   });
   gsap.from(".s-colc .swiper a", {
