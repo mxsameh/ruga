@@ -11,7 +11,7 @@ const init = () => {
     immediate: true,
   });
   document.body.classList.add("no-scroll");
-  document.html.classList.add("no-scroll");
+  document.documentElement.classList.add("no-scroll");
 
   gsap.set("#_", {
     autoAlpha: 1,
@@ -76,7 +76,7 @@ const loA = () => {
 const heA = () => {
   const tl = gsap.timeline({
     onComplete: () => {
-      document.html.classList.remove("no-scroll");
+      document.documentElement.classList.remove("no-scroll");
       document.body.classList.remove("no-scroll");
     },
   });
