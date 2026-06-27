@@ -1,4 +1,8 @@
-const masterTl = gsap.timeline();
+const masterTl = gsap.timeline({
+  onComplete: () => {
+    lensi
+  };
+});
 
 const init = () => {
   gsap.set("#_", {
