@@ -37,6 +37,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (width < 770px) {
+    flex-direction: column;
+  }
 }
 .p ul div {
   flex: 2;
