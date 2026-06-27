@@ -1,9 +1,10 @@
 const masterTl = gsap.timeline();
 
 const init = () => {
-  lenis.scrollTo(0, {
-    immediate: true,
-  });
+  leniss.pause()
+  // lenis.scrollTo(0, {
+  //   immediate: true,
+  // });
   gsap.set("#_", {
     autoAlpha: 1,
   });
