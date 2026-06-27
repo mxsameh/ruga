@@ -9,7 +9,7 @@ const init = () => {
 const hA = () => {
   const tl = gsap.timeline();
 
-  tl.set("#h", { background: "white" })
+  tl.set("#h", { background: "white" }, "<")
     .from("#h .h_l .y", {
       yPercent: 100,
       duration: 0.8,
