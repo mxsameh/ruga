@@ -191,6 +191,7 @@ const vidA = () => {
 document.addEventListener("DOMContentLoaded", async () => {
   const isMobile = window.innerWidth < 770;
   await document.fonts.ready;
+  window.lenis.scrollTo();
   window.lenis.stop();
   init();
 
