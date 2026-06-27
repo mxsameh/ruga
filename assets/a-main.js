@@ -139,7 +139,7 @@ const colcA = () => {
   });
   gsap.from(".s-colc ul a", {
     yPercent: 100,
-    duration: 0.8,
+    duration: 1,
     ease: "power2.inOut",
     stagger: 0.2,
     scrollTrigger: {
