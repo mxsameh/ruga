@@ -166,7 +166,6 @@ const colcAM = () => {
     yPercent: 100,
     duration: 0.8,
     ease: "power2.inOut",
-    stagger: 0.2,
     scrollTrigger: {
       trigger: ".s-colc ul",
       start: "top 80%",
@@ -262,7 +261,7 @@ const animation = async () => {
     colcA();
   }
   if (isMobile) {
-    heAM()
+    heAM();
   }
 
   lifeA();
