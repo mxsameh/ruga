@@ -167,7 +167,7 @@ const colcAM = () => {
     duration: 0.8,
     ease: "power2.inOut",
     scrollTrigger: {
-      trigger: ".s-colc ",
+      trigger: ".s-colc .swiper",
       start: "top 80%",
     },
   });
