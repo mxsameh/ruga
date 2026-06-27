@@ -222,6 +222,22 @@ const animation = async () => {
     colcA();
   }
   if(isMobile){
+        tl.from("#h .h_l .y", {
+          yPercent: 100,
+          duration: 0.8,
+          ease: "power2.inOut",
+        })
+        .from(
+          "#h .h_r .y",
+          {
+            yPercent: 100,
+            duration: 0.8,
+            ease: "sine.inOut",
+            stagger: 0.2,
+          },
+          "<",
+        );
+
 
   }
 
