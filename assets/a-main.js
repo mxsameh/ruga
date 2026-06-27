@@ -73,7 +73,7 @@ const loA = () => {
 };
 
 const heA = () => {
-  const tl = gsap.timeline();
+  const tl = gsap.timeline({on});
 
   tl.from(".s-hero", {
     duration: 1,
