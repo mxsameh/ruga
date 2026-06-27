@@ -221,6 +221,9 @@ const animation = async () => {
 
     colcA();
   }
+  if(isMobile){
+
+  }
 
   lifeA();
   anatA();
