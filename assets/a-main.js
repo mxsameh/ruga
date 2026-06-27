@@ -2,43 +2,19 @@ const masterTl = gsap.timeline();
 const lenis = new Lenis({
   autoRaf: false,
 });
-
 gsap.ticker.add((time) => {
   lenis.raf(time * 1000);
 });
 
 const init = () => {
-  window.addEventListener("load", () => {
-    // Disable browser scroll restoration
-
-    if ("scrollRestoration" in history) {
-      history.scrollRestoration = "manual";
-    }
-
-    requestAnimationFrame(() => {
-      lenis.scrollTo(0, {
-        immediate: true,
-        force: true,
-      });
-
-      lenis.stop();
-
-      gsap.set("#_", {
-        autoAlpha: 1,
-      });
-    });
+  lenis.scrollTo(0, {
+    immediate: true,
+  });
+  lenis.stop();
+  gsap.set("#_", {
+    autoAlpha: 1,
   });
 };
-
-// const init = () => {
-//   lenis.scrollTo(0, {
-//     immediate: true,
-//   });
-//   lenis.stop();
-//   gsap.set("#_", {
-//     autoAlpha: 1,
-//   });
-// };
 
 const hA = () => {
   const tl = gsap.timeline();
