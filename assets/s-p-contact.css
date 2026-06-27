@@ -23,11 +23,10 @@ body {
     display: block;
     margin-top: -40rem;
     margin-left: 485rem;
-  @media (width < 770px) {
-    margin-top: -12rem;
-    margin-left: ;
-
-  }
+    @media (width < 770px) {
+      margin-top: -12rem;
+      margin-left: 145rem;
+    }
   }
   @media (width < 770px) {
     font-size: 60rem;
