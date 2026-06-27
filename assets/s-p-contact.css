@@ -25,14 +25,20 @@ body {
     margin-left: 485rem;
   }
 }
-.p ul{
+.p ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.p ul div{
-  
+.p ul div {
+  flex: 2;
 }
 .p li {
   flex: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p li h3{
+
 }
