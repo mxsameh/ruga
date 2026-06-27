@@ -10,6 +10,7 @@ const init = () => {
   lenis.scrollTo(0, {
     immediate: true,
   });
+  document.body.classList.add('no-scroll')
 
   gsap.set("#_", {
     autoAlpha: 1,
