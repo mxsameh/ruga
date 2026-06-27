@@ -196,7 +196,6 @@ const animation = async () => {
   const isMobile = window.innerWidth < 770;
   await document.fonts.ready;
 
-  window.lenis.stop();
   init();
 
   const navEntry = performance.getEntriesByType("navigation")[0];
@@ -206,6 +205,7 @@ const animation = async () => {
   const hasPlayed = sessionStorage.getItem("loaderPlayed");
 
   if (!isMobile) {
+    window.lenis.stop();
     // play if:
     // - first visit in tab
     // - OR user refreshed page
