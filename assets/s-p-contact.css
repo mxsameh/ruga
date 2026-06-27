@@ -9,7 +9,7 @@ body {
   background-color: transparent;
 }
 .p {
-  min-height: calc(100vh - );
+  min-height: calc(100vh - 400rem);
   padding-top: var(--h-h);
   padding-bottom: 80rem;
   padding-inline: var(--p-i);
