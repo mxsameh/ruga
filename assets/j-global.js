@@ -1,5 +1,5 @@
 // Disable browser's automatic scroll restoration
-history.scrollRestoration = "manual";
+window.history.scrollRestoration = "manual";
 
 gsap.registerPlugin(ScrollTrigger);
 
