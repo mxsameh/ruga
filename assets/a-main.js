@@ -151,6 +151,28 @@ const colcA = () => {
     },
   });
 };
+const colcAM = () => {
+  gsap.from(".s-colc h2 .y", {
+    yPercent: 100,
+    duration: 1,
+    ease: "sine.inOut",
+    stagger: 0.2,
+    scrollTrigger: {
+      trigger: ".s-colc",
+      start: "top 80%",
+    },
+  });
+  gsap.from(".s-colc ul a", {
+    yPercent: 100,
+    duration: 0.8,
+    ease: "power2.inOut",
+    stagger: 0.2,
+    scrollTrigger: {
+      trigger: ".s-colc ul",
+      start: "top 80%",
+    },
+  });
+};
 
 const lifeA = () => {
   gsap.from(".s-life figure ", {
