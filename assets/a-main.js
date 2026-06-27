@@ -1,7 +1,8 @@
 const masterTl = gsap.timeline();
 
+const lenis= new Lenis()
 const init = () => {
-  leniss.pause()
+  lenis.stop();
   // lenis.scrollTo(0, {
   //   immediate: true,
   // });
