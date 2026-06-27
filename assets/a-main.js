@@ -94,7 +94,7 @@ const anatA = () => {
     yPercent: 100,
     duration: 0.8,
     ease: "power3.inOut",
-    stagger: 0.2,
+    stagger: 0.1,
     scrollTrigger: {
       trigger: ".s-anat",
       start: "top 80%",
