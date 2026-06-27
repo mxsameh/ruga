@@ -101,12 +101,16 @@ const heAM = () => {
     opacity: 0,
     borderRadius: "0",
     ease: "power3.inOut",
-  }).from("#he-ban h1 .y", {
-    yPercent: 100,
-    duration: 0.8,
-    stagger: 0.2,
-    ease: "power2.inOut",
-  },"");
+  }).from(
+    "#he-ban h1 .y",
+    {
+      yPercent: 100,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "power2.inOut",
+    },
+    "-=0.4",
+  );
 };
 
 const anatA = () => {
