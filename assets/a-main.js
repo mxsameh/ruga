@@ -145,7 +145,7 @@ const lifeA = () => {
       ease: "sine.inOut",
       scrollTrigger: {
         trigger: ".s-life",
-        start: "top center",
+        start: "top 60%",
       },
     },
     "<",
