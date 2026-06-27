@@ -109,7 +109,7 @@ const heAM = () => {
       stagger: 0.2,
       ease: "power2.inOut",
     },
-    ">-.8",
+    ">-0.8",
   );
 };
 
