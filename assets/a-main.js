@@ -1,6 +1,11 @@
 const masterTl = gsap.timeline();
 
-const lenis= new Lenis()
+const lenis = new Lenis();
+
+gsap.ticker.add((time) => {
+  lenis.raf(time * 1000);
+});
+
 const init = () => {
   lenis.scrollTo(0, {
     immediate: true,
