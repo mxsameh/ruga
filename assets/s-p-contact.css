@@ -3,7 +3,7 @@
   visibility: visible !important;
 }
 body {
-  background-color: #00628f;
+  background-color: var(--c-yellow);
 }
 #h {
   background-color: transparent;
