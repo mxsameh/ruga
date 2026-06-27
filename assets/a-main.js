@@ -228,16 +228,20 @@ const animation = async () => {
       duration: 1,
       opacity: 0,
     })
-    .from('#he-ban',{
-      borderRadius: "0",
-      ease: "power3.inOut",
-    })
-    .from("#he-ban h1 .y", {
-      yPercent: 100,
-      duration: 0.8,
-      stagger: 0.2,
-      ease: "power2.inOut",
-    });
+      .from("#he-ban", {
+        borderRadius: "0",
+        ease: "power3.inOut",
+      })
+      .from(
+        "#he-ban h1 .y",
+        {
+          yPercent: 100,
+          duration: 0.8,
+          stagger: 0.2,
+          ease: "power2.inOut",
+        },
+        "<",
+      );
   }
 
   lifeA();
