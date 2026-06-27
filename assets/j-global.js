@@ -1,3 +1,6 @@
+// Disable browser's automatic scroll restoration
+history.scrollRestoration = "manual";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const lenis = new Lenis({
