@@ -10,7 +10,7 @@ const init = () => {
   lenis.scrollTo(0, {
     immediate: true,
   });
-  document.body.classList.add('no-scroll')
+  document.body.classList.add("no-scroll");
 
   gsap.set("#_", {
     autoAlpha: 1,
@@ -74,9 +74,9 @@ const loA = () => {
 
 const heA = () => {
   const tl = gsap.timeline({
-    onComplete:()=>{
-
-    }
+    onComplete: () => {
+      document.body.classList.remove("no-scroll");
+    },
   });
 
   tl.from(".s-hero", {
@@ -216,8 +216,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (!hasPlayed || isReload) {
       sessionStorage.setItem("loaderPlayed", "true");
       masterTl.add(loA()).add(heA()).add(hA(), "-=0.8");
-
-
     } else {
       // normal page-to-page navigation
       gsap.set("#lo", {
