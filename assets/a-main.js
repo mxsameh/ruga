@@ -189,6 +189,8 @@ const vidA = () => {
 };
 
 const animation = async () => {
+  console.log("runn");
+
   const isMobile = window.innerWidth < 770;
   await document.fonts.ready;
   window.lenis.scrollTo(0, {
