@@ -162,8 +162,8 @@ const colcAM = () => {
       start: "top 80%",
     },
   });
-  gsap.from(".s-colc ul a", {
-    yPercent: 100,
+  gsap.from(".s-colc .swiper a", {
+    opacity:0,
     duration: 0.8,
     ease: "power2.inOut",
     scrollTrigger: {
