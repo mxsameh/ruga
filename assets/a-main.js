@@ -1,15 +1,6 @@
 const masterTl = gsap.timeline();
-const lenis = new Lenis({
-  autoRaf: false,
-});
-gsap.ticker.add((time) => {
-  lenis.raf(time * 1000);
-});
 
 const init = () => {
-  lenis.scrollTo(0, {
-    immediate: true,
-  });
   document.body.classList.add("no-scroll");
   document.documentElement.classList.add("no-scroll");
 
