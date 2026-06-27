@@ -32,6 +32,7 @@ body {
 }
 .p ul div {
   flex: 2;
+  & 
 }
 .p li {
   flex: 5;
