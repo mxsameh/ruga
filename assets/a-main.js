@@ -189,6 +189,8 @@ const vidA = () => {
 };
 
 const animation = async () => {
+  console.log("runn");
+
   const isMobile = window.innerWidth < 770;
   await document.fonts.ready;
   window.lenis.scrollTo(0, {
@@ -226,5 +228,4 @@ const animation = async () => {
   vidA();
 };
 
-// Wait for lenis to be ready before running
-document.addEventListener("lenis:ready", animation);
+animation();

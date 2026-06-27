@@ -16,6 +16,3 @@ gsap.ticker.add((time) => {
 gsap.ticker.lagSmoothing(0);
 
 window.lenis = lenis;
-
-// Signal that lenis is ready
-document.dispatchEvent(new Event("lenis:ready"));
