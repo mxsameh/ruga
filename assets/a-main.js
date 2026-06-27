@@ -226,3 +226,6 @@ const animation = () =>{
   anatA();
   vidA();
 }
+
+// Wait for lenis to be ready before running
+document.addEventListener("lenis:ready", animation);
