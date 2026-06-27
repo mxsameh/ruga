@@ -15,8 +15,4 @@ gsap.ticker.add((time) => {
 
 gsap.ticker.lagSmoothing(0);
 
-lenis.scrollTo(0, {
-  immediate: true,
-});
-
 window.lenis = lenis;
