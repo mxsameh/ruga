@@ -10,7 +10,6 @@ gsap.ticker.add((time) => {
 const init = () => {
   window.addEventListener("load", () => {
     // Disable browser scroll restoration
-    console.log("ss");
 
     if ("scrollRestoration" in history) {
       history.scrollRestoration = "manual";
