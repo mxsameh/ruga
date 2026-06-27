@@ -310,9 +310,9 @@
 }
 
 .vid-w {
-  margin-top: -120rem;
+  margin-top: 40rem;
+  /* margin-top: -120rem; */
   width: 100%;
-  /* height: calc(100vh - var(--h-h)); */
   height: 100vh;
   /* top: 0;
   left: 0; */
