@@ -212,6 +212,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (!hasPlayed || isReload) {
       sessionStorage.setItem("loaderPlayed", "true");
       masterTl.add(loA()).add(heA()).add(hA(), "-=0.8");
+
+
     } else {
       // normal page-to-page navigation
       gsap.set("#lo", {
