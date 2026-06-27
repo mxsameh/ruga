@@ -192,6 +192,11 @@ const animation = async () => {
   const isMobile = window.innerWidth < 770;
   await document.fonts.ready;
 
+  // Give Lenis one RAF tick to initialize before calling scrollTo
+  requestAnimationFrame(() => {
+    window.lenis.scrollTo(0, { immediate: true });
+  });
+
   //  window.lenis.stop();
   init();
 
