@@ -97,23 +97,16 @@ const heAM = () => {
   const tl = gsap.timeline({});
 
   tl.from("#he-ban", {
-    duration: 1,
+    duration: 1.4,
     opacity: 0,
-  })
-    .from("#he-ban", {
-      borderRadius: "0",
-      ease: "power3.inOut",
-    })
-    .from(
-      "#he-ban h1 .y",
-      {
-        yPercent: 100,
-        duration: 0.8,
-        stagger: 0.2,
-        ease: "power2.inOut",
-      },
-      "<",
-    );
+    borderRadius: "0",
+    ease: "power3.inOut",
+  }).from("#he-ban h1 .y", {
+    yPercent: 100,
+    duration: 0.8,
+    stagger: 0.2,
+    ease: "power2.inOut",
+  },"");
 };
 
 const anatA = () => {
@@ -163,7 +156,7 @@ const colcAM = () => {
     },
   });
   gsap.from(".s-colc .swiper a", {
-    opacity:0,
+    opacity: 0,
     duration: 0.8,
     ease: "power2.inOut",
     scrollTrigger: {
@@ -267,7 +260,7 @@ const animation = async () => {
 
   lifeA();
   anatA();
-  vidA();
+  if (!isMobile) vidA();
 };
 
 animation();
