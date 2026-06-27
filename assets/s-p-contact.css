@@ -29,6 +29,7 @@ body {
     }
   }
   @media (width < 770px) {
+    
     font-size: 60rem;
   }
 }
@@ -64,6 +65,7 @@ body {
   font-weight: 150;
   font-family: "m";
   @media (width < 770px) {
+    font-size: 20rem;
     flex: 100%;
     align-items: unset;
     flex-direction: column;
