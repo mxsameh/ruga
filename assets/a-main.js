@@ -221,10 +221,31 @@ const animation = async () => {
 
     colcA();
   }
-  if(isMobile){
+  if (isMobile) {
+    const tl = gsap.timeline({});
 
-
-
+    tl.from(".s-hero", {
+      duration: 1,
+      padding: 0,
+      ease: "power3.inOut",
+    })
+      .from(
+        "#he-ban",
+        {
+          duration: 1,
+          width: "100%",
+          height: "100%",
+          borderRadius: "0",
+          ease: "power3.inOut",
+        },
+        "<",
+      )
+      .from("#he-ban h1 .y", {
+        yPercent: 100,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: "power2.inOut",
+      });
   }
 
   lifeA();
