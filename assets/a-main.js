@@ -191,9 +191,9 @@ const vidA = () => {
 document.addEventListener("DOMContentLoaded", async () => {
   const isMobile = window.innerWidth < 770;
   await document.fonts.ready;
-  window.lenis.scrollTo(0, {
-    immediate: true,
-  });
+  // window.lenis.scrollTo(0, {
+  //   immediate: true,
+  // });
   window.lenis.stop();
   init();
 
@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     colcA();
   }
-  window.lenis.start();
+  // window.lenis.start();
 
   lifeA();
   anatA();
