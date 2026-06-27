@@ -98,6 +98,10 @@ const heA = () => {
   return tl;
 };
 
+const heAM = () => {
+
+}
+
 const anatA = () => {
   gsap.from(".s-anat h2 .y", {
     yPercent: 100,
