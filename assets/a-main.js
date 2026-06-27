@@ -192,8 +192,7 @@ const animation = async () => {
   const isMobile = window.innerWidth < 770;
   await document.fonts.ready;
 
-
-  //  window.lenis.stop();
+  window.lenis.stop();
   init();
 
   const navEntry = performance.getEntriesByType("navigation")[0];
@@ -218,7 +217,7 @@ const animation = async () => {
 
     colcA();
   }
-  // window.lenis.start();
+  window.lenis.start();
 
   lifeA();
   anatA();
