@@ -217,7 +217,7 @@ const animation = async () => {
 
     colcA();
   }
-  window.lenis.start();
+  // window.lenis.start();
 
   lifeA();
   anatA();
