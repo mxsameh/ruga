@@ -66,12 +66,7 @@ const loA = () => {
 };
 
 const heA = () => {
-  const tl = gsap.timeline({
-    onComplete: () => {
-      // document.documentElement.classList.remove("no-scroll");
-      // document.body.classList.remove("no-scroll");
-    },
-  });
+  const tl = gsap.timeline();
 
   tl.from(".s-hero", {
     duration: 1,
