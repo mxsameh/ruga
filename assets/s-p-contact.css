@@ -40,5 +40,9 @@ body {
   align-items: center;
   font-size: 24rem;
   line-height: 1;
-  font-weight: ;
+  font-weight: 150;
+  font-family: "m";
+}
+.p h3{
+  font-weight: inherit;
 }
