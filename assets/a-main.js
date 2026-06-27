@@ -1,7 +1,7 @@
 const masterTl = gsap.timeline({
   onComplete: () => {
-    lensi
-  };
+    window.lenis.start();
+  },
 });
 
 const init = () => {
