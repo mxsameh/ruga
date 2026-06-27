@@ -188,13 +188,12 @@ const vidA = () => {
   }
 };
 
-document.addEventListener("DOMContentLoaded", async () => {
   const isMobile = window.innerWidth < 770;
   await document.fonts.ready;
   window.lenis.scrollTo(0, {
     immediate: true,
   });
-  await window.lenis.stop();
+  //  window.lenis.stop();
   init();
 
   const navEntry = performance.getEntriesByType("navigation")[0];
@@ -224,4 +223,3 @@ document.addEventListener("DOMContentLoaded", async () => {
   lifeA();
   anatA();
   vidA();
-});
