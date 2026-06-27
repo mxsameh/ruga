@@ -38,7 +38,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.p li h3{
-
+  font-size: 24rem;
+  line-height: 1;
+  font-weight: ;
 }
