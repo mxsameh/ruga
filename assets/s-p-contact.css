@@ -32,7 +32,12 @@ body {
 }
 .p ul div {
   flex: 2;
-  & 
+  & span{
+    display: block;
+    height: 4rem;
+    width: 60rem;
+    background-color: black;
+  }
 }
 .p li {
   flex: 5;
