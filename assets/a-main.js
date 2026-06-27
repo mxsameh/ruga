@@ -1,7 +1,7 @@
 const masterTl = gsap.timeline();
 
 const init = () => {
-  console.log("dff");
+  console.log("dffx");
 
   gsap.set("#_", {
     autoAlpha: 1,
