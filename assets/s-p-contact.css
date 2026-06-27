@@ -24,6 +24,9 @@ body {
     margin-top: -40rem;
     margin-left: 485rem;
   }
+  @media (width < 770px) {
+    font-size: 60rem;
+  }
 }
 .p ul {
   margin-top: 160rem;
