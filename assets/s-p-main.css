@@ -37,6 +37,7 @@
 }
 
 .s-hero h1 {
+  width: 793rem;
   position: absolute;
   bottom: 0;
   left: 48rem;
@@ -53,6 +54,7 @@
     }
   }
   @media (width < 770px) {
+    width: 294rem;
     left: 24rem;
     bottom: 8rem;
     font-size: 60rem;
@@ -102,6 +104,7 @@
     width: 80%;
   }
 }
+
 .s-colc li a {
   display: block;
   @media (width < 770px) {
@@ -307,12 +310,10 @@
 }
 
 .vid-w {
+  /* margin-top: 40rem; */
   margin-top: -120rem;
   width: 100%;
-  /* height: calc(100vh - var(--h-h)); */
   height: 100vh;
-  /* top: 0;
-  left: 0; */
   display: flex;
   align-items: center;
   justify-content: center;

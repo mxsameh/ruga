@@ -1,4 +1,8 @@
-const masterTl = gsap.timeline();
+const masterTl = gsap.timeline({
+  onComplete: () => {
+    window.lenis.start();
+  },
+});
 
 const init = () => {
   gsap.set("#_", {
@@ -82,18 +86,39 @@ const heA = () => {
     )
     .from("#he-ban h1 .y", {
       yPercent: 100,
-      duration: 0.6,
+      duration: 0.8,
+      stagger: 0.2,
       ease: "power2.inOut",
     });
   return tl;
+};
+
+const heAM = () => {
+  const tl = gsap.timeline({});
+
+  tl.from("#he-ban", {
+    duration: 1.4,
+    opacity: 0,
+    borderRadius: "0",
+    ease: "power3.inOut",
+  }).from(
+    "#he-ban h1 .y",
+    {
+      yPercent: 100,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "power2.inOut",
+    },
+    ">-0.8",
+  );
 };
 
 const anatA = () => {
   gsap.from(".s-anat h2 .y", {
     yPercent: 100,
     duration: 0.8,
-    ease: "sine.inOut",
-    stagger: 0.2,
+    ease: "power3.inOut",
+    stagger: 0.1,
     scrollTrigger: {
       trigger: ".s-anat",
       start: "top 80%",
@@ -114,7 +139,7 @@ const colcA = () => {
   });
   gsap.from(".s-colc ul a", {
     yPercent: 100,
-    duration: 0.8,
+    duration: 1,
     ease: "power2.inOut",
     stagger: 0.2,
     scrollTrigger: {
@@ -123,29 +148,52 @@ const colcA = () => {
     },
   });
 };
+const colcAM = () => {
+  gsap.from(".s-colc h2 .y", {
+    yPercent: 100,
+    duration: 1,
+    ease: "sine.inOut",
+    stagger: 0.2,
+    scrollTrigger: {
+      trigger: ".s-colc",
+      start: "top 90%",
+    },
+  });
+  gsap.from(".s-colc .swiper a", {
+    opacity: 0,
+    duration: 0.8,
+    ease: "power2.inOut",
+    scrollTrigger: {
+      trigger: ".s-colc .swiper",
+      start: "top 80%",
+    },
+  });
+};
 
 const lifeA = () => {
-  const tl = gsap.timeline({
+  gsap.from(".s-life figure ", {
+    opacity: 0,
+    stagger: 0.2,
+    duration: 1,
+    ease: "sine.inOut",
     scrollTrigger: {
       trigger: ".s-life",
       start: "top 85%",
     },
   });
-
-  tl.from(".s-life figure ", {
-    opacity: 0,
-    stagger: 0.2,
-    duration: 1,
-    ease: "sine.inOut",
-  });
-  tl.from(
+  gsap.from(
     ".s-life li a > img",
     {
       scale: 0.5,
       opacity: 0,
-      stagger: 0.2,
-      duration: 0.8,
+      // stagger: 0.2,
       ease: "sine.inOut",
+      scrollTrigger: {
+        trigger: ".s-life",
+        start: "top 80%",
+        end: "top 50%",
+        scrub: 1,
+      },
     },
     "<",
   );
@@ -180,9 +228,10 @@ const vidA = () => {
   }
 };
 
-document.addEventListener("DOMContentLoaded", async () => {
+const animation = async () => {
   const isMobile = window.innerWidth < 770;
   await document.fonts.ready;
+
   init();
 
   const navEntry = performance.getEntriesByType("navigation")[0];
@@ -192,12 +241,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   const hasPlayed = sessionStorage.getItem("loaderPlayed");
 
   if (!isMobile) {
+    window.lenis.stop();
     // play if:
     // - first visit in tab
     // - OR user refreshed page
     if (!hasPlayed || isReload) {
       sessionStorage.setItem("loaderPlayed", "true");
-      masterTl.add(loA()).add(heA()).add(hA());
+      masterTl.add(loA()).add(heA()).add(hA(), "-=0.8");
     } else {
       // normal page-to-page navigation
       gsap.set("#lo", {
@@ -207,8 +257,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     colcA();
   }
+  if (isMobile) {
+    heAM();
+    colcAM();
+  }
 
   lifeA();
   anatA();
-  vidA();
-});
+  if (!isMobile) vidA();
+};
+
+animation();
