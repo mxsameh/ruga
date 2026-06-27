@@ -1,8 +1,9 @@
 const masterTl = gsap.timeline();
 
 const init = () => {
-  console.log("dffx");
-
+  lenis.scrollTo(0, {
+    immediate: true,
+  });
   gsap.set("#_", {
     autoAlpha: 1,
   });
