@@ -99,35 +99,26 @@ const heA = () => {
 };
 
 const heAM = () => {
-  const tl = gsap.timeline({
-    onComplete: () => {
-      // document.documentElement.classList.remove("no-scroll");
-      // document.body.classList.remove("no-scroll");
-    },
-  });
+  const tl = gsap.timeline({});
 
-  tl.from(".s-hero", {
+  tl.from("#he-ban", {
     duration: 1,
-    padding: 0,
-    ease: "power3.inOut",
+    opacity: 0,
   })
+    .from("#he-ban", {
+      borderRadius: "0",
+      ease: "power3.inOut",
+    })
     .from(
-      "#he-ban",
+      "#he-ban h1 .y",
       {
-        duration: 1,
-        width: "100%",
-        height: "100%",
-        borderRadius: "0",
-        ease: "power3.inOut",
+        yPercent: 100,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: "power2.inOut",
       },
       "<",
-    )
-    .from("#he-ban h1 .y", {
-      yPercent: 100,
-      duration: 0.8,
-      stagger: 0.2,
-      ease: "power2.inOut",
-    });
+    );
 };
 
 const anatA = () => {
