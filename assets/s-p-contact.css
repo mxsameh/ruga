@@ -30,6 +30,9 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.p li {
+.p ul div{
   
+}
+.p li {
+  flex: 5;
 }
