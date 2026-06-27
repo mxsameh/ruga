@@ -10,6 +10,7 @@ const init = () => {
   lenis.scrollTo(0, {
     immediate: true,
   });
+  lenis.stop();
   gsap.set("#_", {
     autoAlpha: 1,
   });
