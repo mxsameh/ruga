@@ -82,8 +82,8 @@ const heA = () => {
     )
     .from("#he-ban h1 .y", {
       yPercent: 100,
-      duration: 0.6,
-      stagger:0.2
+      duration: 0.8,
+      stagger: 0.2,
       ease: "power2.inOut",
     });
   return tl;
