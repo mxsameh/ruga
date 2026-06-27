@@ -71,9 +71,10 @@ body {
     align-items: unset;
     flex-direction: column;
     gap: 24rem;
-    order:0;
+    order: -1;
   }
 }
 .p h3 {
+  font-size: inherit;
   font-weight: inherit;
 }
