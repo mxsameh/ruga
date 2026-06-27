@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   window.lenis.scrollTo(0, {
     immediate: true,
   });
-  window.lenis.stop();
+  await window.lenis.stop();
   init();
 
   const navEntry = performance.getEntriesByType("navigation")[0];
