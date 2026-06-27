@@ -102,6 +102,7 @@
     width: 80%;
   }
 }
+
 .s-colc li a {
   display: block;
   @media (width < 770px) {
