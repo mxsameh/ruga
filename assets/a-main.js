@@ -74,7 +74,9 @@ const loA = () => {
 
 const heA = () => {
   const tl = gsap.timeline({
-    af
+    onComplete:()=>{
+
+    }
   });
 
   tl.from(".s-hero", {
