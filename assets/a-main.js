@@ -163,7 +163,7 @@ const colcAM = () => {
     },
   });
   gsap.from(".s-colc .swiper a", {
-    opacity:0,
+    opacity: 0,
     duration: 0.8,
     ease: "power2.inOut",
     scrollTrigger: {
@@ -267,7 +267,7 @@ const animation = async () => {
 
   lifeA();
   anatA();
-  vidA();
+  if (!isMobile) vidA();
 };
 
 animation();
