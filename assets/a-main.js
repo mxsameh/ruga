@@ -7,28 +7,27 @@ gsap.ticker.add((time) => {
   lenis.raf(time * 1000);
 });
 
-const 
-window.addEventListener("load", () => {
-  // Disable browser scroll restoration
-  if ("scrollRestoration" in history) {
-    history.scrollRestoration = "manual";
-  }
+const init = () => {
+  window.addEventListener("load", () => {
+    // Disable browser scroll restoration
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
 
-  requestAnimationFrame(() => {
-    lenis.scrollTo(0, {
-      immediate: true,
-      force: true,
-    });
+    requestAnimationFrame(() => {
+      lenis.scrollTo(0, {
+        immediate: true,
+        force: true,
+      });
 
-    lenis.stop();
+      lenis.stop();
 
-    gsap.set("#_", {
-      autoAlpha: 1,
+      gsap.set("#_", {
+        autoAlpha: 1,
+      });
     });
   });
-});
-
-
+};
 
 // const init = () => {
 //   lenis.scrollTo(0, {
