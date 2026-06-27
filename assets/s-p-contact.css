@@ -28,5 +28,8 @@ body {
 .p ul{
   display: flex;
   align-items: center;
-  flex-
+  justify-content: space-between;
+}
+.p li {
+  
 }
