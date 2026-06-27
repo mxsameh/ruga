@@ -99,8 +99,36 @@ const heA = () => {
 };
 
 const heAM = () => {
+  const tl = gsap.timeline({
+    onComplete: () => {
+      // document.documentElement.classList.remove("no-scroll");
+      // document.body.classList.remove("no-scroll");
+    },
+  });
 
-}
+  tl.from(".s-hero", {
+    duration: 1,
+    padding: 0,
+    ease: "power3.inOut",
+  })
+    .from(
+      "#he-ban",
+      {
+        duration: 1,
+        width: "100%",
+        height: "100%",
+        borderRadius: "0",
+        ease: "power3.inOut",
+      },
+      "<",
+    )
+    .from("#he-ban h1 .y", {
+      yPercent: 100,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "power2.inOut",
+    });
+};
 
 const anatA = () => {
   gsap.from(".s-anat h2 .y", {
@@ -226,26 +254,6 @@ const animation = async () => {
     colcA();
   }
   if (isMobile) {
-    const tl = gsap.timeline({});
-
-    tl.from("#he-ban", {
-      duration: 1,
-      opacity: 0,
-    })
-      .from("#he-ban", {
-        borderRadius: "0",
-        ease: "power3.inOut",
-      })
-      .from(
-        "#he-ban h1 .y",
-        {
-          yPercent: 100,
-          duration: 0.8,
-          stagger: 0.2,
-          ease: "power2.inOut",
-        },
-        "<",
-      );
   }
 
   lifeA();
