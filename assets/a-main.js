@@ -188,6 +188,8 @@ const vidA = () => {
   }
 };
 
+const animation = () =>{
+
   const isMobile = window.innerWidth < 770;
   await document.fonts.ready;
   window.lenis.scrollTo(0, {
@@ -223,3 +225,4 @@ const vidA = () => {
   lifeA();
   anatA();
   vidA();
+}
