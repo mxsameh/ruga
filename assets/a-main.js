@@ -224,11 +224,7 @@ const animation = async () => {
   if (isMobile) {
     const tl = gsap.timeline({});
 
-    tl.from(".s-hero", {
-      duration: 1,
-      padding: 0,
-      ease: "power3.inOut",
-    })
+    tl
       .from(
         "#he-ban",
         {
