@@ -29,7 +29,7 @@ body {
     }
   }
   @media (width < 770px) {
-    padding-top: 4;
+    padding-top: 48rem;
     font-size: 60rem;
   }
 }
@@ -39,6 +39,7 @@ body {
   align-items: center;
   justify-content: space-between;
   @media (width < 770px) {
+    margin-top: 80rem;
     align-items: unset;
     flex-direction: column;
     gap: 80rem;
@@ -70,6 +71,7 @@ body {
     align-items: unset;
     flex-direction: column;
     gap: 24rem;
+    order:0;
   }
 }
 .p h3 {
