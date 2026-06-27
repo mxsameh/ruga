@@ -216,6 +216,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     colcA();
   }
+  window.lenis.start();
 
   lifeA();
   anatA();
