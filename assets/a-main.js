@@ -93,7 +93,7 @@ const anatA = () => {
   gsap.from(".s-anat h2 .y", {
     yPercent: 100,
     duration: 0.8,
-    ease: "sine.inOut",
+    ease: "power3.inOut",
     stagger: 0.2,
     scrollTrigger: {
       trigger: ".s-anat",
