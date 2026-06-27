@@ -141,7 +141,7 @@ const lifeA = () => {
     {
       scale: 0.5,
       opacity: 0,
-      stagger: 0.2,
+      // stagger: 0.2,
       ease: "sine.inOut",
       scrollTrigger: {
         trigger: ".s-life",
