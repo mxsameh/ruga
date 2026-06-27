@@ -7,6 +7,7 @@ gsap.ticker.add((time) => {
   lenis.raf(time * 1000);
 });
 
+const 
 window.addEventListener("load", () => {
   // Disable browser scroll restoration
   if ("scrollRestoration" in history) {
@@ -29,15 +30,15 @@ window.addEventListener("load", () => {
 
 
 
-const init = () => {
-  lenis.scrollTo(0, {
-    immediate: true,
-  });
-  lenis.stop();
-  gsap.set("#_", {
-    autoAlpha: 1,
-  });
-};
+// const init = () => {
+//   lenis.scrollTo(0, {
+//     immediate: true,
+//   });
+//   lenis.stop();
+//   gsap.set("#_", {
+//     autoAlpha: 1,
+//   });
+// };
 
 const hA = () => {
   const tl = gsap.timeline();
