@@ -1,9 +1,6 @@
 const masterTl = gsap.timeline();
 
 const init = () => {
-  // document.body.classList.add("no-scroll");
-  // document.documentElement.classList.add("no-scroll");
-
   gsap.set("#_", {
     autoAlpha: 1,
   });
