@@ -40,6 +40,7 @@ body {
   @media (width < 770px) {
     align-items: unset;
     flex-direction: column;
+    gap: 80rem;
   }
 }
 .p ul div {
@@ -66,6 +67,7 @@ body {
     flex: 100%;
     align-items: unset;
     flex-direction: column;
+    gap: 24rem;
   }
 }
 .p h3 {
