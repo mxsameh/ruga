@@ -227,11 +227,10 @@ const animation = async () => {
     tl.from("#he-ban", {
       duration: 1,
       opacity: 0,
-      borderRadius: "0",
-      ease: "power3.inOut",
     })
     .from('#he-ban',{
-
+      borderRadius: "0",
+      ease: "power3.inOut",
     })
     .from("#he-ban h1 .y", {
       yPercent: 100,
