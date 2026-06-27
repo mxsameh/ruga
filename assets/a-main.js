@@ -99,14 +99,21 @@ const heAM = () => {
   tl.from("#he-ban", {
     duration: 1,
     opacity: 0,
-    borderRadius: "0",
-    ease: "power3.inOut",
-  }).from("#he-ban h1 .y", {
-    yPercent: 100,
-    duration: 0.8,
-    stagger: 0.2,
-    ease: "power2.inOut",
-  });
+  })
+    .from("#he-ban", {
+      borderRadius: "0",
+      ease: "power3.inOut",
+    })
+    .from(
+      "#he-ban h1 .y",
+      {
+        yPercent: 100,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: "power2.inOut",
+      },
+      "<",
+    );
 };
 
 const anatA = () => {
@@ -156,7 +163,7 @@ const colcAM = () => {
     },
   });
   gsap.from(".s-colc .swiper a", {
-    opacity: 0,
+    opacity:0,
     duration: 0.8,
     ease: "power2.inOut",
     scrollTrigger: {
@@ -260,7 +267,7 @@ const animation = async () => {
 
   lifeA();
   anatA();
-  if (!isMobile) vidA();
+  vidA();
 };
 
 animation();

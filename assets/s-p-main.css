@@ -54,7 +54,7 @@
     }
   }
   @media (width < 770px) {
-    width: unset;
+    width: 294rem;
     left: 24rem;
     bottom: 8rem;
     font-size: 60rem;
