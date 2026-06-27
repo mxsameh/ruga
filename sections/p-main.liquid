@@ -151,7 +151,8 @@
     </h2>
     <div class="vid-w d-o">
       <video id="anat-video" preload="auto" muted playsinline>
-        <source src="{{ 'anat.mp4' | asset_url }}" type="video/mp4">
+        {% comment %} <source src="{{ 'anat.mp4' | asset_url }}" type="video/mp4"> {% endcomment %}
+        <source src="{{ 'rugg.mp4' | asset_url }}" type="video/mp4">
       </video>
     </div>
   </section>
