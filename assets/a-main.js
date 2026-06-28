@@ -199,9 +199,18 @@ const lifeA = () => {
   );
 };
 
-const uspAM = () =>{
-
-}
+const uspAM = () => {
+  gsap.from(".s-usp ", {
+    opacity: 0,
+    stagger: 0.2,
+    duration: 1,
+    ease: "sine.inOut",
+    scrollTrigger: {
+      trigger: ".s-life",
+      start: "top 85%",
+    },
+  });
+};
 
 const vidA = () => {
   const video = document.getElementById("anat-video");
