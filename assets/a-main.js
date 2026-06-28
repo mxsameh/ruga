@@ -206,7 +206,7 @@ const uspAM = () => {
     duration: 1,
     ease: "sine.inOut",
     scrollTrigger: {
-      trigger: ".s-usp",
+      trigger: ".s-usp ul",
       start: "top 85%",
       markers: true,
     },
