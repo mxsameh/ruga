@@ -223,7 +223,8 @@ const vidA = () => {
 
   const initVideo = () => {
     gsap.to(video, {
-      currentTime: video.duration,
+      // currentTime: video.duration,
+      currentTime: Math.min(video.duration, 6.7),
       ease: "none",
       scrollTrigger: {
         trigger: ".vid-w",
