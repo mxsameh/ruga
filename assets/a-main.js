@@ -232,6 +232,7 @@ const vidA = () => {
         end: "+=300svh",
         pin: true,
         scrub: 1,
+
       },
     });
   };
