@@ -279,7 +279,7 @@ const animation = async () => {
   lifeA();
   anatA();
   vidA();
-  if (isMobile) uspAM();
+  // if (isMobile) uspAM();
 };
 
 animation();
