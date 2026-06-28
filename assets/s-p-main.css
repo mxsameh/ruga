@@ -171,16 +171,16 @@
   position: absolute;
   bottom: 0;
   display: flex;
-  z-index: 9;
+  z-index: 99;
   justify-content: space-between;
 }
 
 .swiper svg {
   width: 24rem;
 }
-.swiper button:first-child svg {
-  /* transform: scaleX(-1); */
-}
+/* .swiper button:first-child svg {
+  transform: scaleX(-1);
+} */
 
 .s-life {
   /* margin-top: 120rem; */
