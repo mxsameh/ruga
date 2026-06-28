@@ -199,6 +199,20 @@ const lifeA = () => {
   );
 };
 
+const uspAM = () => {
+  gsap.from(".s-usp li", {
+    scale: 0.5,
+    stagger: 0.2,
+    duration: 1,
+    ease: "sine.inOut",
+    scrollTrigger: {
+      trigger: ".s-usp ul",
+      start: "top 85%",
+      markers: true,
+    },
+  });
+};
+
 const vidA = () => {
   const video = document.getElementById("anat-video");
 
@@ -264,7 +278,8 @@ const animation = async () => {
 
   lifeA();
   anatA();
-  if (!isMobile) vidA();
+  vidA();
+  if (isMobile) uspAM();
 };
 
 animation();

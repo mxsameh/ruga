@@ -62,9 +62,6 @@
 
     <ul>
       {% for product in collection.products %}
-        {% liquid
-          assign bgc = product.metafields.custom.background_color
-        %}
         <li>
           <a class="cp" href="{{ product.url }}">
             <h3 class="m-o">
@@ -149,8 +146,13 @@
         <span class="y">OF RUGA</span>
       </span>
     </h2>
-    <div class="vid-w d-o">
+    <div class="vid-w">
       <video id="anat-video" preload="auto" muted playsinline>
+        <source
+          media="(max-width: 770px)"
+          src="{{ 'rum.mp4' | asset_url }}"
+          type="video/mp4"
+        >
         <source src="{{ 'anat.mp4' | asset_url }}" type="video/mp4">
       </video>
     </div>
