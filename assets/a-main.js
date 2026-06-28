@@ -222,9 +222,11 @@ const vidA = () => {
   });
 
   const initVideo = () => {
+    const maxTime = Math.floor(video.duration * 10) / 10;
+
     gsap.to(video, {
       // currentTime: video.duration,
-      currentTime: Math.min(video.duration, 6.),
+      currentTime: Math.min(video.duration, 6.6),
       ease: "none",
       scrollTrigger: {
         trigger: ".vid-w",
