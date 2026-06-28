@@ -200,8 +200,8 @@ const lifeA = () => {
 };
 
 const uspAM = () => {
-  gsap.from(".s-usp ", {
-    opacity: 0,
+  gsap.from(".s-usp li", {
+    scale: 0.5,
     stagger: 0.2,
     duration: 1,
     ease: "sine.inOut",
