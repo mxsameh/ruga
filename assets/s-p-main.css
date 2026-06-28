@@ -171,15 +171,16 @@
   position: absolute;
   bottom: 0;
   display: flex;
-  z-index: 1;
+  z-index: 99;
   justify-content: space-between;
 }
+
 .swiper svg {
   width: 24rem;
 }
-.swiper button:first-child svg {
+/* .swiper button:first-child svg {
   transform: scaleX(-1);
-}
+} */
 
 .s-life {
   /* margin-top: 120rem; */
@@ -329,9 +330,16 @@
   height: 100%;
   object-fit: cover;
   object-position: center center;
+
   @media (width < 770px) {
     width: 100%;
   }
+}
+#anat-video {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .s-usp {
