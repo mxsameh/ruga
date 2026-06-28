@@ -235,9 +235,6 @@ const vidA = () => {
         pin: true,
         scrub: 1,
       },
-      onComplete: () => {
-        video.currentTime = maxTime;
-      },
     });
   };
 
