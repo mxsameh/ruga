@@ -208,6 +208,7 @@ const uspAM = () => {
     scrollTrigger: {
       trigger: ".s-usp",
       start: "top 85%",
+      markers: true,
     },
   });
 };
