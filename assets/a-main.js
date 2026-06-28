@@ -199,6 +199,10 @@ const lifeA = () => {
   );
 };
 
+const uspAM = () =>{
+
+}
+
 const vidA = () => {
   const video = document.getElementById("anat-video");
 
