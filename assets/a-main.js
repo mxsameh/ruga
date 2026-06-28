@@ -264,7 +264,8 @@ const animation = async () => {
 
   lifeA();
   anatA();
-  if (!isMobile) vidA();
+  // if (!isMobile) vidA();
+  vidA();
 };
 
 animation();
