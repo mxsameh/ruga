@@ -319,6 +319,7 @@
   align-items: center;
   justify-content: center;
   @media (width < 770px) {
+    margin-top: 0;
     padding-top: var(--h-h);
   }
 }
