@@ -232,9 +232,9 @@ const vidA = () => {
         end: "+=300svh",
         pin: true,
         scrub: 1,
-        jsonLeaveBack: () => {
+        onLeave: () => {
           const t = video.currentTime;
-          video.currentTime = t + 0.001;
+          video.currentTime = t - 0.001;
           requestAnimationFrame(() => {
             video.currentTime = t;
           });
