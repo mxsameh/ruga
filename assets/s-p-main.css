@@ -174,11 +174,12 @@
   z-index: 9;
   justify-content: space-between;
 }
+
 .swiper svg {
   width: 24rem;
 }
 .swiper button:first-child svg {
-  transform: scaleX(-1);
+  /* transform: scaleX(-1); */
 }
 
 .s-life {
