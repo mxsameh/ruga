@@ -233,7 +233,9 @@ const vidA = () => {
         pin: true,
         scrub: 1,
       },
-      onComplete:()
+      onComplete: () => {
+        video.currentTime = 
+      },
     });
   };
 
