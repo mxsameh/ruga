@@ -196,6 +196,7 @@
   @media (width < 770px) {
     gap: 16rem;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .s-life li {
