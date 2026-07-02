@@ -141,7 +141,7 @@
 }
 
 .swiper_ {
-  postion: relative;
+  position: relative;
   @media (width < 770px) {
     padding-inline: var(--p-i) !important;
     height: fit-content;
