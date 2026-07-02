@@ -186,7 +186,7 @@
   transform: scaleX(-1);
 }
 .sw-nav button:last-child{
-  margin-righ
+  margin-right: 40px !important;
 
 }
 
