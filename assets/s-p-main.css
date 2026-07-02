@@ -195,8 +195,7 @@
   gap: 24rem;
   @media (width < 770px) {
     gap: 16rem;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-dierection: column;
   }
 }
 .s-life li {
