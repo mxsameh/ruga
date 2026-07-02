@@ -50,15 +50,16 @@
           {% endfor %}
         </div>
       </div>
-      <nav class="sw-nav">
-        <button id="swiper-b-prv">
-          {{ 'i-t-arr.svg' | inline_asset_content }}
-        </button>
-        <div id="swiper-b-nxt">
-          {{ 'i-t-arr.svg' | inline_asset_content }}
-        </div>
-      </nav>
     </div>
+
+    <nav class="sw-nav">
+      <button id="swiper-b-prv">
+        {{ 'i-t-arr.svg' | inline_asset_content }}
+      </button>
+      <div id="swiper-b-nxt">
+        {{ 'i-t-arr.svg' | inline_asset_content }}
+      </div>
+    </nav>
 
     <ul>
       {% for product in collection.products %}
