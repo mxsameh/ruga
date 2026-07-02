@@ -180,7 +180,8 @@
 }
 
 .sw-nav svg {
-  width: 24rem;
+  width: 30px;
+  /* width: 24rem; */
 }
 .sw-nav button:first-child svg {
   transform: scaleX(-1);
