@@ -179,10 +179,10 @@
   justify-content: space-between;
 }
 
-.swiper svg {
+.sw-nav svg {
   width: 24rem;
 }
-.swiper button:first-child svg {
+.sw-nav button:first-child svg {
   transform: scaleX(-1);
 }
 
