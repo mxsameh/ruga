@@ -179,7 +179,10 @@
   justify-content: space-between;
 }
 
-#
+#_ {
+  opacity: 1;
+  visibility: visible;
+}
 .sw-nav svg {
   width: 24rem;
 }
