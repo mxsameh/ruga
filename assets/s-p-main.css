@@ -141,6 +141,7 @@
 }
 
 .swiper_ {
+  position: relative;
   @media (width < 770px) {
     padding-inline: var(--p-i) !important;
     height: fit-content;
@@ -166,21 +167,24 @@
   }
 }
 
-.swiper nav {
-  width: 100%;
+.sw-nav {
+  display: none;
+  padding-inline: var(--p-i);
   position: absolute;
+  left: 0;
+  right: 0;
   bottom: 0;
-  display: flex;
   z-index: 99;
+  display: flex;
   justify-content: space-between;
 }
 
-.swiper svg {
+.sw-nav svg {
   width: 24rem;
 }
-/* .swiper button:first-child svg {
+.sw-nav button:first-child svg {
   transform: scaleX(-1);
-} */
+}
 
 .s-life {
   /* margin-top: 120rem; */
@@ -194,9 +198,10 @@
   display: flex;
   gap: 24rem;
   @media (width < 770px) {
-    gap: 16rem;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 24rem;
+    flex-direction: column;
+    width: 250rem;
+    margin-inline: auto;
   }
 }
 .s-life li {
@@ -221,7 +226,7 @@
     left: 48rem;
     bottom: -32rem;
     @media (width < 770px) {
-      width: 50rem;
+      width: 60rem;
       left: 8rem;
       bottom: unset;
       top: -16rem;
@@ -234,7 +239,7 @@
     @media (width < 770px) {
       top: -24rem;
       right: 4rem;
-      width: 50rem;
+      width: 60rem;
     }
   }
   &:nth-child(3) a > img {
@@ -242,7 +247,7 @@
     left: 120rem;
     bottom: -28rem;
     @media (width < 770px) {
-      width: 60rem;
+      width: 70rem;
       left: 8;
       bottom: -16rem;
     }
@@ -253,7 +258,7 @@
     top: -40rem;
 
     @media (width < 770px) {
-      width: 40rem;
+      width: 50rem;
       right: 8;
       bottom: -16rem;
       top: unset;

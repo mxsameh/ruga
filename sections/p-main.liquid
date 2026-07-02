@@ -49,16 +49,17 @@
             </div>
           {% endfor %}
         </div>
-        <nav>
-          <button id="swiper-b-prv">
-            {{ 'i-t-arr.svg' | inline_asset_content }}
-          </button>
-          <button id="swiper-b-nxt">
-            {{ 'i-t-arr.svg' | inline_asset_content }}
-          </button>
-        </nav>
       </div>
     </div>
+
+    <nav class="sw-nav d-n">
+      <button id="swiper-b-prv">
+        {{ 'i-t-arr.svg' | inline_asset_content }}
+      </button>
+      <div id="swiper-b-nxt">
+        {{ 'i-t-arr.svg' | inline_asset_content }}
+      </div>
+    </nav>
 
     <ul>
       {% for product in collection.products %}
@@ -178,12 +179,6 @@
 
   <section class="s-ban">
     <figure>
-      {% comment %}
-        <picture>
-          <source srcset="{{'im-ban2.png' | asset_url}}" media="(min-width: 770px)">
-          <img src="{{ 'im-ban2-m.png' | asset_url  }}" width="auto" height="auto" alt="logo">
-        </picture>
-      {% endcomment %}
       <picture>
         <source
           srcset="{{ section.settings.lower_banner_d | image_url: width: 2000 }}"
