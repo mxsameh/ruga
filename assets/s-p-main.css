@@ -168,6 +168,7 @@
 }
 
 .sw-nav {
+  
   padding-inline: var(--p-i);
   position: absolute;
   left: 0;
