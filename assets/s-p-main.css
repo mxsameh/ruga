@@ -188,6 +188,7 @@
 .sw-nav div {
   margin-right: 40px !important;
   background-color: red;
+  width: 30px;
 }
 
 .s-life {
