@@ -191,12 +191,6 @@
 .sw-nav button:first-child svg {
   transform: scaleX(-1);
 }
-.sw-nav div {
-  & svg {
-    margin-right: 1px;
-    margin-left: -1px;
-  }
-}
 
 .s-life {
   /* margin-top: 120rem; */
