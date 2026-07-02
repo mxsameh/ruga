@@ -179,6 +179,7 @@
   justify-content: space-between;
 }
 
+#
 .sw-nav svg {
   width: 24rem;
 }
@@ -188,7 +189,7 @@
 .sw-nav div {
   margin-right: 40px !important;
   background-color: red;
-  width: 30px;
+  width: 100px;
 }
 
 .s-life {
