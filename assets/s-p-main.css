@@ -166,8 +166,9 @@
   }
 }
 
-.swiper nav {
-  /* width: 100%; */
+.sw-nav {
+  width: 100%;
+  padding-inline: var(--p-i);
   position: absolute;
   left: 0;
   right: 0;
