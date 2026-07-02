@@ -185,6 +185,10 @@
 .sw-nav button:first-child svg {
   transform: scaleX(-1);
 }
+.sw-nav button:last-child{
+  margin-righ
+
+}
 
 .s-life {
   /* margin-top: 120rem; */
