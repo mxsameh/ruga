@@ -182,6 +182,9 @@
 .sw-nav svg {
   width: 24rem;
 }
+.sw-nav button:last-child svg {
+  transform: scaleX(1);
+}
 .sw-nav button:first-child svg {
   transform: scaleX(-1);
 }
