@@ -185,9 +185,9 @@
 .sw-nav button:first-child svg {
   transform: scaleX(-1);
 }
-.sw-nav button:last-child{
+.sw-nav div {
   margin-right: 40px !important;
-
+  background-color: red;
 }
 
 .s-life {
