@@ -1,9 +1,3 @@
-{{ 's-p-main.css' | asset_url | stylesheet_tag }}
-{% comment %} <script src="{{ 'a-main.js' | asset_url }}" defer></script> {% endcomment %}
-{% comment %} <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> {% endcomment %}
-{% comment %} <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script> {% endcomment %}
-<script src="{{ 'j-main.js' | asset_url }}" defer></script>
-
 {% assign collection = collections.coolers %}
 
 {% render 'loader' %}
@@ -194,6 +188,12 @@
     </section>
   {% endcomment %}
 </div>
+
+{{ 's-p-main.css' | asset_url | stylesheet_tag }}
+{% comment %} <script src="{{ 'a-main.js' | asset_url }}" defer></script> {% endcomment %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+<script src="{{ 'j-main.js' | asset_url }}" defer></script>
 
 {% schema %}
 {
