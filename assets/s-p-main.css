@@ -243,7 +243,7 @@
     left: 120rem;
     bottom: -28rem;
     @media (width < 770px) {
-      width: 80rem;
+      width: 70rem;
       left: 8;
       bottom: -16rem;
     }
@@ -254,7 +254,7 @@
     top: -40rem;
 
     @media (width < 770px) {
-      width: 40rem;
+      width: 50rem;
       right: 8;
       bottom: -16rem;
       top: unset;
