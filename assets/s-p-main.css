@@ -196,6 +196,8 @@
   @media (width < 770px) {
     gap: 16rem;
     flex-direction: column;
+    width: 300rem;
+    margin-inline: auto;
   }
 }
 .s-life li {
