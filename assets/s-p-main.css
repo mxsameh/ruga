@@ -194,9 +194,9 @@
   display: flex;
   gap: 24rem;
   @media (width < 770px) {
-    gap: 16rem;
+    gap: 24rem;
     flex-direction: column;
-    width: 300rem;
+    width: 250rem;
     margin-inline: auto;
   }
 }
