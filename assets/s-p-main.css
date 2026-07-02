@@ -168,7 +168,7 @@
 }
 
 .sw-nav {
-  display: hidden;
+  display: none;
   padding-inline: var(--p-i);
   position: absolute;
   left: 0;
