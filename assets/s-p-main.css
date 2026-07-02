@@ -222,7 +222,7 @@
     left: 48rem;
     bottom: -32rem;
     @media (width < 770px) {
-      width: 50rem;
+      width: 60rem;
       left: 8rem;
       bottom: unset;
       top: -16rem;
@@ -235,7 +235,7 @@
     @media (width < 770px) {
       top: -24rem;
       right: 4rem;
-      width: 50rem;
+      width: 60rem;
     }
   }
   &:nth-child(3) a > img {
@@ -243,7 +243,7 @@
     left: 120rem;
     bottom: -28rem;
     @media (width < 770px) {
-      width: 60rem;
+      width: 70rem;
       left: 8;
       bottom: -16rem;
     }
