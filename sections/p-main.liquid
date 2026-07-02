@@ -1,8 +1,8 @@
 {{ 's-p-main.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'a-main.js' | asset_url }}" defer></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 <script src="{{ 'j-main.js' | asset_url }}" defer></script>
+<script src="{{ 'a-main.js' | asset_url }}" defer></script>
 
 {% assign collection = collections.coolers %}
 
@@ -49,17 +49,16 @@
             </div>
           {% endfor %}
         </div>
+        <nav class="sw-nav ">
+          <button id="swiper-b-prv">
+            {{ 'i-t-arr.svg' | inline_asset_content }}
+          </button>
+          <button id="swiper-b-nxt">
+            {{ 'i-t-arr.svg' | inline_asset_content }}
+          </button>
+        </nav>
       </div>
     </div>
-
-    <nav class="sw-nav d-n">
-      <button id="swiper-b-prv">
-        {{ 'i-t-arr.svg' | inline_asset_content }}
-      </button>
-      <div id="swiper-b-nxt">
-        {{ 'i-t-arr.svg' | inline_asset_content }}
-      </div>
-    </nav>
 
     <ul>
       {% for product in collection.products %}
