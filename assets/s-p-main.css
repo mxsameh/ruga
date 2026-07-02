@@ -191,7 +191,7 @@
   transform: scaleX(-1);
 }
 .sw-nav div {
-  margin-right: 40px !important;
+  /* margin-right: 40px !important; */
   background-color: red;
   width: 100px;
 }
