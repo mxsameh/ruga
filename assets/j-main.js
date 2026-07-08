@@ -11,9 +11,9 @@ var swiper = new Swiper(".swiper", {
 const initResponsiveVideoSources = () => {
   var isMobile = window.matchMedia("(max-width: 770px)").matches;
 
-  const $vid = document.getElementById("anat-video")
-    video.src = isMobile ? video.dataset.mobileSrc : video.dataset.desktopSrc;
-    video.load();
+  const $vid = document.getElementById("anat-video");
+  $vid.src = isMobile ? video.dataset.mobileSrc : video.dataset.desktopSrc;
+  $vid.load();
 };
 
 initResponsiveVideoSources();
