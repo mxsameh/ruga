@@ -8,7 +8,7 @@ var swiper = new Swiper(".swiper", {
   },
 });
 
-const initResponsiveVideoSources = () => {
+const initAnatVid = () => {
   var isMobile = window.matchMedia("(max-width: 770px)").matches;
 
   const $vid = document.getElementById("anat-video");
@@ -16,4 +16,4 @@ const initResponsiveVideoSources = () => {
   $vid.load();
 };
 
-initResponsiveVideoSources();
+initAnatVid();
