@@ -8,17 +8,15 @@ var swiper = new Swiper(".swiper", {
   },
 });
 
-const initResponsiveVideoSources =() => {
+const initResponsiveVideoSources = () => {
   var isMobile = window.matchMedia("(max-width: 770px)").matches;
 
-  document
-    .getElementById("[data-responsive-video]")
-    .forEach(function (video) {
-      video.src = isMobile ? video.dataset.mobileSrc : video.dataset.desktopSrc;
-      video.load();
-      var p = video.play();
-      if (p) p.catch(function () {});
-    });
-}
+  const document.getElementById("anat-video").forEach(function (video) {
+    video.src = isMobile ? video.dataset.mobileSrc : video.dataset.desktopSrc;
+    video.load();
+    var p = video.play();
+    if (p) p.catch(function () {});
+  });
+};
 
 initResponsiveVideoSources();
