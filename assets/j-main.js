@@ -7,3 +7,14 @@ var swiper = new Swiper(".swiper", {
     prevEl: "#swiper-b-prv",
   },
 });
+
+const initAnatVid = () => {
+  var isMobile = window.matchMedia("(max-width: 770px)").matches;
+
+  const $vid = document.getElementById("anat-video");
+
+  $vid.src = isMobile ? $vid.dataset.mobileSrc : $vid.dataset.desktopSrc;
+  $vid.load();
+};
+
+initAnatVid();

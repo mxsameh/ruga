@@ -11,7 +11,7 @@
 <div id="p">
   <section class="s-hero">
     <figure id="he-ban">
-      {{ section.settings.d_video | video_tag: autoplay: true, muted: true, loop: true, class: 'd-video' }}
+      {{ section.settings.d_video | video_tag: autoplay: true, muted: true, loop: true }}
       <h1>
         <span class="y_">
           <span class="y">THIS IS</span>
@@ -33,6 +33,7 @@
         <span class="y">SHELL 35 COOLER</span>
       </span>
     </h2>
+
     <div class="swiper_ m-o">
       <div class="swiper">
         <div class="swiper-wrapper">
@@ -147,14 +148,14 @@
       </span>
     </h2>
     <div class="vid-w">
-      <video id="anat-video" preload="auto" muted playsinline>
-        <source
-          media="(max-width: 770px)"
-          src="{{ 'rum.mp4' | asset_url }}"
-          type="video/mp4"
-        >
-        <source src="{{ 'anat.mp4' | asset_url }}" type="video/mp4">
-      </video>
+      <video
+        id="anat-video"
+        preload="auto"
+        muted
+        playsinline
+        data-mobile-src="{{ 'rum.mp4' | asset_url }}"
+        data-desktop-src="{{ 'anat.mp4' | asset_url }}"
+      ></video>
     </div>
   </section>
 
