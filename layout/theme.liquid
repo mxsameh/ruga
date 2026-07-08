@@ -17,7 +17,12 @@
     <script src="{{ 'j-global.js' | asset_url }}" defer></script>
   </head>
   <body>
-    <div id="_">
+    <div id="_" style="opacity: 0; visibility: hidden;">
+      {% section 'loader' %}
+      {% section 'header' %}
+      {% section 'cart-drawer' %}
+      {{ content_for_layout }}
+      {% section 'footer' %}
       {% section 'header' %}
       {% section 'cart-drawer' %}
       {{ content_for_layout }}
