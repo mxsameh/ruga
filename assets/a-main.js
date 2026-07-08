@@ -148,6 +148,7 @@ const colcA = () => {
     },
   });
 };
+
 const colcAM = () => {
   gsap.from(".s-colc h2 .y", {
     yPercent: 100,
