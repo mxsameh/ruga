@@ -148,7 +148,14 @@
       </span>
     </h2>
     <div class="vid-w">
-      <video id="anat-video" preload="auto" muted playsinline>
+      <video
+        id="anat-video"
+        preload="auto"
+        muted
+        playsinline
+        data-mobile-src="{{ 'rum.mp4' | asset_url }}"
+        data-desktop-src="{{ 'anat.mp4' | asset_url }}"
+      >
         <source
           media="(max-width: 770px)"
           src="{{ 'rum.mp4' | asset_url }}"
