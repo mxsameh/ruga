@@ -156,12 +156,14 @@
         data-mobile-src="{{ 'rum.mp4' | asset_url }}"
         data-desktop-src="{{ 'anat.mp4' | asset_url }}"
       >
-        <source
-          media="(max-width: 770px)"
-          src="{{ 'rum.mp4' | asset_url }}"
-          type="video/mp4"
-        >
-        <source src="{{ 'anat.mp4' | asset_url }}" type="video/mp4">
+        {% comment %}
+          <source
+            media="(max-width: 770px)"
+            src="{{ 'rum.mp4' | asset_url }}"
+            type="video/mp4"
+          >
+          <source src="{{ 'anat.mp4' | asset_url }}" type="video/mp4">
+        {% endcomment %}
       </video>
     </div>
   </section>
