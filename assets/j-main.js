@@ -7,3 +7,17 @@ var swiper = new Swiper(".swiper", {
     prevEl: "#swiper-b-prv",
   },
 });
+
+const initResponsiveVideoSources =() => {
+  var isMobile = window.matchMedia("(max-width: 770px)").matches;
+  document
+    .querySelectorAll("[data-responsive-video]")
+    .forEach(function (video) {
+      video.src = isMobile ? video.dataset.mobileSrc : video.dataset.desktopSrc;
+      video.load();
+      var p = video.play();
+      if (p) p.catch(function () {});
+    });
+}
+
+initResponsiveVideoSources();
