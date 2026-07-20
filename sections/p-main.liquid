@@ -11,16 +11,18 @@
 <div id="p">
   <section class="s-hero">
     <figure id="he-ban">
-      {% comment %} {{ section.settings.d_video | video_tag: autoplay: true, muted: true, loop: true }} {% endcomment %}
-      <video
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="auto"
-      >
-        <source src="{{ 'rug-ban2.mp4' | asset_url }}" type="video/mp4">
-      </video>
+      {{ section.settings.d_video | video_tag: autoplay: true, muted: true, loop: true }}
+      {% comment %}
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+        >
+          <source src="{{ 'rug-ban2.mp4' | asset_url }}" type="video/mp4">
+        </video>
+      {% endcomment %}
 
       <h1>
         <span class="y_">
