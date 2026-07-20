@@ -268,6 +268,8 @@ const animation = async () => {
       masterTl.add(loA()).add(heA()).add(hA(), "-=0.8");
     } else {
       // normal page-to-page navigation
+      window.lenis.start();
+
       gsap.set("#lo", {
         autoAlpha: 0,
       });
@@ -275,6 +277,7 @@ const animation = async () => {
 
     colcA();
   }
+
   if (isMobile) {
     heAM();
     colcAM();
