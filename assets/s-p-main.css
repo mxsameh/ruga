@@ -47,8 +47,8 @@
   line-height: 100%;
   letter-spacing: -0.05em;
   & .y_:last-child {
-    margin-left: 290rem;
-    margin-top: -30rem;
+    /* margin-left: 290rem; */
+    margin-top: -10rem;
     @media (width < 770px) {
       margin-left: 105rem;
       margin-top: -10rem;
