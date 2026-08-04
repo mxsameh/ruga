@@ -43,7 +43,7 @@
   bottom: 0;
   /* left: 48rem; */
   color: var(--c-y);
-  font-size: 160rem;
+  font-size: 80rem;
   line-height: 100%;
   letter-spacing: -0.05em;
   & .y_:last-child {
