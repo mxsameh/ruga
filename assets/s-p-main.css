@@ -53,10 +53,10 @@
     }
   }
   @media (width < 770px) {
-    width: 294rem;
-    left: 24rem;
+    /* width: 294rem; */
+    /* left: 24rem; */
     bottom: 8rem;
-    font-size: 60rem;
+    font-size: 40rem;
   }
 }
 
