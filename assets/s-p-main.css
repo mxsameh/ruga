@@ -48,7 +48,7 @@
   & .y_:last-child {
     margin-top: -10rem;
     @media (width < 770px) {
-      margin-left: 105rem;
+      /* margin-left: 105rem; */
       margin-top: -10rem;
     }
   }
@@ -56,7 +56,7 @@
     /* width: 294rem; */
     /* left: 24rem; */
     bottom: 8rem;
-    font-size: 40rem;
+    font-size: 24rem;
   }
 }
 
