@@ -253,7 +253,7 @@ const animation = async () => {
   await document.fonts.ready;
   await Promise.all([
     document.fonts.load("800 16px 't'"),
-    document.fonts.load(" 16px 'pf'"),
+    document.fonts.load("200 16px 'm'"),
   ]);
   console.timeEnd("fonts");
   init();
