@@ -265,7 +265,8 @@ const animation = async () => {
     // - OR user refreshed page
     if (!hasPlayed || isReload) {
       sessionStorage.setItem("loaderPlayed", "true");
-      masterTl.add(loA()).add(heA()).add(hA(), "-=0.8");
+      masterTl.add(loA()).add(hA());
+      // masterTl.add(loA()).add(heA()).add(hA(), "-=0.8");
     } else {
       // normal page-to-page navigation
       window.lenis.start();
@@ -279,7 +280,7 @@ const animation = async () => {
   }
 
   if (isMobile) {
-    heAM();
+    // heAM();
     colcAM();
   }
 
