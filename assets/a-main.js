@@ -288,5 +288,5 @@ const animation = async () => {
   // if (isMobile) uspAM();
 };
 
-// animation();
-init();
+animation();
+// init();
