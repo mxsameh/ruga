@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 <script src="{{ 'j-main.js' | asset_url }}" defer></script>
-<script src="{{ 'a-main.js' | asset_url }}" defer></script>
+{% comment %} <script src="{{ 'a-main.js' | asset_url }}" defer></script> {% endcomment %}
 
 {% assign collection = collections.coolers %}
 {% render 'loader' %}
@@ -136,29 +136,31 @@
     </ul>
   </section>
 
-  <section class="s-anat">
-    <h2>
-      <span class="y_">
-        <span class="y">THE</span>
-      </span>
-      <span class="y_">
-        <span class="y">ANATOMY</span>
-      </span>
-      <span class="y_">
-        <span class="y">OF RUGA</span>
-      </span>
-    </h2>
-    <div class="vid-w">
-      <video
-        id="anat-video"
-        preload="auto"
-        muted
-        playsinline
-        data-mobile-src="{{ 'rum.mp4' | asset_url }}"
-        data-desktop-src="{{ 'anat.mp4' | asset_url }}"
-      ></video>
-    </div>
-  </section>
+  {% comment %}
+    <section class="s-anat">
+      <h2>
+        <span class="y_">
+          <span class="y">THE</span>
+        </span>
+        <span class="y_">
+          <span class="y">ANATOMY</span>
+        </span>
+        <span class="y_">
+          <span class="y">OF RUGA</span>
+        </span>
+      </h2>
+      <div class="vid-w">
+        <video
+          id="anat-video"
+          preload="auto"
+          muted
+          playsinline
+          data-mobile-src="{{ 'rum.mp4' | asset_url }}"
+          data-desktop-src="{{ 'anat.mp4' | asset_url }}"
+        ></video>
+      </div>
+    </section>
+  {% endcomment %}
 
   <section class="s-usp">
     <ul>
