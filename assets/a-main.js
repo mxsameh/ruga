@@ -248,9 +248,9 @@ const vidA = () => {
 
 const animation = async () => {
   const isMobile = window.innerWidth < 770;
+  init();
   await document.fonts.ready;
 
-  init();
 
   const navEntry = performance.getEntriesByType("navigation")[0];
   const isReload = navEntry?.type === "reload";
