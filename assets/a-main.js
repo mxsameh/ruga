@@ -260,9 +260,7 @@ const animation = async () => {
 
   if (!isMobile) {
     window.lenis.stop();
-    // play if:
-    // - first visit in tab
-    // - OR user refreshed page
+    // play if: first visit in tab OR user refreshed page
     if (!hasPlayed || isReload) {
       sessionStorage.setItem("loaderPlayed", "true");
       // masterTl.add(loA()).add(hA());
