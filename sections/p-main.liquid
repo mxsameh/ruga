@@ -136,29 +136,31 @@
     </ul>
   </section>
 
-  <section class="s-anat">
-    <h2>
-      <span class="y_">
-        <span class="y">THE</span>
-      </span>
-      <span class="y_">
-        <span class="y">ANATOMY</span>
-      </span>
-      <span class="y_">
-        <span class="y">OF RUGA</span>
-      </span>
-    </h2>
-    <div class="vid-w">
-      <video
-        id="anat-video"
-        preload="auto"
-        muted
-        playsinline
-        data-mobile-src="{{ 'rum.mp4' | asset_url }}"
-        data-desktop-src="{{ 'anat.mp4' | asset_url }}"
-      ></video>
-    </div>
-  </section>
+  {% comment %}
+    <section class="s-anat">
+      <h2>
+        <span class="y_">
+          <span class="y">THE</span>
+        </span>
+        <span class="y_">
+          <span class="y">ANATOMY</span>
+        </span>
+        <span class="y_">
+          <span class="y">OF RUGA</span>
+        </span>
+      </h2>
+      <div class="vid-w">
+        <video
+          id="anat-video"
+          preload="auto"
+          muted
+          playsinline
+          data-mobile-src="{{ 'rum.mp4' | asset_url }}"
+          data-desktop-src="{{ 'anat.mp4' | asset_url }}"
+        ></video>
+      </div>
+    </section>
+  {% endcomment %}
 
   <section class="s-usp">
     <ul>
