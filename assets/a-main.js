@@ -251,10 +251,6 @@ const animation = async () => {
 
   console.time("fonts");
   await document.fonts.ready;
-  await Promise.all([
-    document.fonts.load("500 16px 'f-h-b'"),
-    document.fonts.load("700 16px 'Neue Montreal'"),
-  ]);
   console.timeEnd("fonts");
   init();
 
