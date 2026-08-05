@@ -265,7 +265,8 @@ const animation = async () => {
     // - OR user refreshed page
     if (!hasPlayed || isReload) {
       sessionStorage.setItem("loaderPlayed", "true");
-      masterTl.add(loA()).add(heA()).add(hA(), "-=0.8");
+      masterTl.add(loA()).add(heA()).addhA();
+      // masterTl.add(loA()).add(heA()).add(hA(), "-=0.8");
     } else {
       // normal page-to-page navigation
       window.lenis.start();
