@@ -8,19 +8,21 @@
 {% render 'loader' %}
 
 <div id="p">
-  <section class="s-hero">
-    <figure id="he-ban">
-      {{ section.settings.d_video | video_tag: autoplay: true, muted: true, loop: true, preload: 'none' }}
-      <h1>
-        <span class="y_">
-          <span class="y">EGYPT’S FIRST</span>
-        </span>
-        <span class="y_">
-          <span class="y">ROTOMOLDED COOLER</span>
-        </span>
-      </h1>
-    </figure>
-  </section>
+  {% comment %}
+    <section class="s-hero">
+      <figure id="he-ban">
+        {{ section.settings.d_video | video_tag: autoplay: true, muted: true, loop: true, preload: 'none' }}
+        <h1>
+          <span class="y_">
+            <span class="y">EGYPT’S FIRST</span>
+          </span>
+          <span class="y_">
+            <span class="y">ROTOMOLDED COOLER</span>
+          </span>
+        </h1>
+      </figure>
+    </section>
+  {% endcomment %}
 
   <section class="s-colc">
     <h2>
