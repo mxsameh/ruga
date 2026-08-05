@@ -248,8 +248,11 @@ const vidA = () => {
 
 const animation = async () => {
   const isMobile = window.innerWidth < 770;
-  init();
+
+  console.time('fonts')
   await document.fonts.ready;
+  init();
+  console.time('fonts')
 
 
   const navEntry = performance.getEntriesByType("navigation")[0];
