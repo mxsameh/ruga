@@ -17,8 +17,8 @@
     <script src="{{ 'j-global.js' | asset_url }}" defer></script>
   </head>
   <body>
-    {% comment %} <div id="_" style="opacity: 0; visibility: hidden;"> {% endcomment %}
-    <div id="_">
+    <div id="_" style="opacity: 0; visibility: hidden;">
+    {% comment %} <div id="_"> {% endcomment %}
       {% section 'header' %}
       {% section 'cart-drawer' %}
       {{ content_for_layout }}
