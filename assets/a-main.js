@@ -250,7 +250,11 @@ const animation = async () => {
   const isMobile = window.innerWidth < 770;
 
   console.time("fonts");
-  await document.fonts.ready;
+  // await document.fonts.ready;
+  await Promise.all([
+    document.fonts.load("800 16px 't'"),
+    document.fonts.load("200 16px 'm'"),
+  ]);
   console.timeEnd("fonts");
   init();
 
