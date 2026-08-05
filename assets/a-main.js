@@ -280,7 +280,7 @@ const animation = async () => {
   }
 
   if (isMobile) {
-    // heAM();
+    heAM();
     colcAM();
   }
 
