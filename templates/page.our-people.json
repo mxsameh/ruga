@@ -9,13 +9,6 @@
  */
 {
   "sections": {
-    "banner_WgLppw": {
-      "type": "banner",
-      "name": "Banner",
-      "settings": {
-        "collection_url": ""
-      }
-    },
     "main": {
       "type": "p-our-people",
       "blocks": {
@@ -24,16 +17,8 @@
           "settings": {
             "id": "Aly balbaa",
             "image": "shopify://shop_images/DSCF0386_1.png",
-            "title": "cruise Director - Katana Liveaboard",
+            "title": "ALY BALBAA",
             "bio": "Aly Balbaa is the Cruise Director of Katana Liveaboard, a luxury safari yacht exploring the Red Sea. Outside of work, he spends his time fishing, kitesurfing, diving, and exploring Egypt's coastline. Drawn to life on the water, Aly is always seeking new adventures and remote places, with a passion for the outdoors and the freedom that comes with it. Whether navigating the Red Sea or planning his next expedition, he's happiest surrounded by good company, open water, and the unexpected."
-          }
-        },
-        "ambassador_pzBArq": {
-          "type": "ambassador",
-          "settings": {
-            "id": "",
-            "title": "",
-            "bio": ""
           }
         },
         "ambassador_E46p7T": {
@@ -66,7 +51,6 @@
       },
       "block_order": [
         "ambassador_Pr6xbP",
-        "ambassador_pzBArq",
         "ambassador_E46p7T",
         "ambassador_xfJYki",
         "ambassador_WhdN6r"
@@ -75,7 +59,6 @@
     }
   },
   "order": [
-    "banner_WgLppw",
     "main"
   ]
 }
