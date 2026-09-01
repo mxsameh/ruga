@@ -12,6 +12,15 @@
     "main": {
       "type": "p-our-people",
       "blocks": {
+        "ambassador_VqHM4T": {
+          "type": "ambassador",
+          "settings": {
+            "id": "",
+            "image": "shopify://shop_images/WhatsApp_Image_2026-08-31_at_12.08.34.jpg",
+            "title": "Ahmed Deeb",
+            "bio": "Deeb grew up camping by the sea, where a connection to the outdoors became part of who he is. A former taekwondo champion, sports addict, and certified personal trainer, he spends his time kitesurfing, fishing, cycling, and staying active.While his career began in sound and audio, his passion has always been the sea and the outdoors. Ras Sudr and El Gouna are his happy places - defined by wind, water, and community. Calm yet energetic, and always ready to fish in any conditions, Deeb brings a grounded connection to the outdoors into everything he does."
+          }
+        },
         "ambassador_Pr6xbP": {
           "type": "ambassador",
           "settings": {
@@ -50,6 +59,7 @@
         }
       },
       "block_order": [
+        "ambassador_VqHM4T",
         "ambassador_Pr6xbP",
         "ambassador_E46p7T",
         "ambassador_xfJYki",
