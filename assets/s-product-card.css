@@ -4,6 +4,9 @@
   padding: 16rem;
   min-width: 0; /* ✅ Critical to prevent overflow */
 }
+.pc figure{
+  aspect-ratio: 1;
+}
 .pc_info {
   display: flex;
   justify-content: space-between;
