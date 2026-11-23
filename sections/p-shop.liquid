@@ -5,6 +5,7 @@
 {% liquid
   assign collection1 = collections.coolers
   assign collection2 = collections.accessories
+  assign collection3 = collections.drinkware
 %}
 
 <div class="p">
@@ -38,9 +39,20 @@
   </section>
 
   <section class="s-col">
-    <h2>RUG<span>A ACCESSORIES</span></h2>
+    <h2>RUG<span>A DRINKWARE</span></h2>
     <ul>
       {% for product in collection2.products %}
+        <li>
+          {% render 'product-card', product: product %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="s-col">
+    <h2>RUG<span>A ACCESSORIES</span></h2>
+    <ul>
+      {% for product in collection3.products %}
         <li>
           {% render 'product-card', product: product %}
         </li>
