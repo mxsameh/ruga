@@ -1,11 +1,10 @@
-
 const $menu_btn = document.querySelector("#menu-icon");
 const $menu_drawer = document.querySelector("#menu-drawer");
+const $nav_items = document.querySelectorAll(".h_n-item");
 
 const $drawer_item_with_dropdown = document.querySelectorAll(
   "#menu-drawer .has-dd",
 );
-
 
 // NAV DROPDOWN
 $nav_items.forEach(($item) => {
