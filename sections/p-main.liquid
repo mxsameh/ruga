@@ -4,7 +4,7 @@
 <script src="{{ 'j-main.js' | asset_url }}" defer></script>
 <script src="{{ 'a-main.js' | asset_url }}" defer></script>
 
-{% assign collection = collections.coolers %}
+{% assign collection = collections.home %}
 {% render 'loader' %}
 
 <div id="p">
@@ -29,7 +29,8 @@
       </span>
 
       <span class="y_">
-        <span class="y">SHELL 35 COOLER</span>
+        {% comment %} <span class="y">SHELL 35 COOLER</span> {% endcomment %}
+        <span class="y">NEW ARRIVALS</span>
       </span>
     </h2>
 

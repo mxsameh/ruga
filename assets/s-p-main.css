@@ -111,6 +111,16 @@
 
 .s-colc li figure {
   aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.s-colc li img {
+  width: 80%;
+  transition: all 0.3s linear;
+  &:hover {
+    width: 90%;
+  }
 }
 
 .s-colc li h3 {
@@ -163,7 +173,8 @@
 }
 
 .swiper figure {
-  aspect-ratio: 3/2;
+  /* aspect-ratio: 3/2; */
+  aspect-ratio: 1;
   & img {
     height: 100%;
   }
