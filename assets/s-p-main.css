@@ -117,10 +117,9 @@
 }
 .s-colc img {
   width: 80%;
-  transform: all ;
-  &:hover{
+  transition: all 0.6s linear;
+  &:hover {
     width: 90%;
-
   }
 }
 
