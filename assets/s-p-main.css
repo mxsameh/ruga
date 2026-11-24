@@ -111,9 +111,16 @@
 
 .s-colc li figure {
   aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.s-colc img{
-  width: 80;
+.s-colc img {
+  width: 80%;
+  &:hover{
+    width: ;
+
+  }
 }
 
 .s-colc li h3 {
