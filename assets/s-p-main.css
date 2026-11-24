@@ -112,6 +112,9 @@
 .s-colc li figure {
   aspect-ratio: 1;
 }
+.s-colc img{
+  width: 80;
+}
 
 .s-colc li h3 {
   text-align: center;
